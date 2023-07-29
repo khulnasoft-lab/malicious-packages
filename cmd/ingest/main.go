@@ -1,3 +1,17 @@
+// Copyright 2023 Malicious Packages Authors
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
 package main
 
 import (
@@ -15,12 +29,12 @@ import (
 	_ "gocloud.dev/blob/gcsblob"
 	_ "gocloud.dev/blob/s3blob"
 
-	"github.com/khulnasoft-labs/infected-packages/cmd/ingest/sourceio"
-	"github.com/khulnasoft-labs/infected-packages/cmd/ingest/startkeys"
-	"github.com/khulnasoft-labs/infected-packages/internal/config"
-	"github.com/khulnasoft-labs/infected-packages/internal/report"
-	"github.com/khulnasoft-labs/infected-packages/internal/reportio"
-	"github.com/khulnasoft-labs/infected-packages/internal/source"
+	"github.com/khulnasoft/infected-packages/cmd/ingest/sourceio"
+	"github.com/khulnasoft/infected-packages/cmd/ingest/startkeys"
+	"github.com/khulnasoft/infected-packages/internal/config"
+	"github.com/khulnasoft/infected-packages/internal/report"
+	"github.com/khulnasoft/infected-packages/internal/reportio"
+	"github.com/khulnasoft/infected-packages/internal/source"
 )
 
 var tempDir string
@@ -85,7 +99,7 @@ func main() {
 		sources = []*source.Source{src}
 	}
 
-	log.Printf("Using config: id prefix=%s, infected=%s, false positives=%s, sources=%d", c.IDPrefix, c.InfectedPath, c.FalsePositivePath, len(sources))
+	log.Printf("Using config: id prefix=%s, malicious=%s, false positives=%s, sources=%d", c.IDPrefix, c.MaliciousPath, c.FalsePositivePath, len(sources))
 
 	keys, err := loadStartKeys(*startKeysFlag)
 	if err != nil {
@@ -165,7 +179,7 @@ func ingestReports(ctx context.Context, s *source.Source, c *config.Config, star
 		r.StripID()
 
 		// Prepare the destination path, creating it if needed.
-		dest := filepath.Clean(filepath.Join(c.InfectedPath, path))
+		dest := filepath.Clean(filepath.Join(c.MaliciousPath, path))
 		log.Printf("[%s]   dest = %s", s.ID, dest)
 		if err := os.MkdirAll(dest, 0o777); err != nil {
 			return fmt.Errorf("failed to create destination: %w", err)

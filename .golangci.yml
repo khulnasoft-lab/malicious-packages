@@ -86,7 +86,7 @@ linters-settings:
     sections:
       - standard
       - default
-      - prefix(github.com/khulnasoft-labs/infected-packages)
+      - prefix(github.com/khulnasoft/infected-packages)
   gocritic:
     enabled-checks:
       # Diagnostic
@@ -139,3 +139,4 @@ linters-settings:
       - ptrToRefParam
       - typeUnparen
       - unnecessaryBlock
+
