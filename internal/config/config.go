@@ -1,4 +1,4 @@
-// Copyright 2023 Malicious Packages Authors
+// Copyright 2023 Infected Packages Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -29,7 +29,7 @@ var ErrInvalidConfig = errors.New("invalid config")
 
 type Config struct {
 	IDPrefix          string           `yaml:"id-prefix"`
-	MaliciousPath     string           `yaml:"malicious-path"`
+	InfectedPath      string           `yaml:"infected-path"`
 	FalsePositivePath string           `yaml:"false-positive-path"`
 	Sources           []*source.Source `yaml:"sources"`
 }
@@ -48,16 +48,16 @@ func (c *Config) Init() error {
 	if c.IDPrefix == "" {
 		return fmt.Errorf("%w: id-prefix is required", ErrInvalidConfig)
 	}
-	if c.MaliciousPath == "" {
-		return fmt.Errorf("%w: malicious-path is required", ErrInvalidConfig)
+	if c.InfectedPath == "" {
+		return fmt.Errorf("%w: infected-path is required", ErrInvalidConfig)
 	}
 	if c.FalsePositivePath == "" {
 		return fmt.Errorf("%w: false-positive-path is required", ErrInvalidConfig)
 	}
 	var err error
-	c.MaliciousPath, err = filepath.Abs(c.MaliciousPath)
+	c.InfectedPath, err = filepath.Abs(c.InfectedPath)
 	if err != nil {
-		return fmt.Errorf("invalid malicious path: %w", err)
+		return fmt.Errorf("invalid infected path: %w", err)
 	}
 	c.FalsePositivePath, err = filepath.Abs(c.FalsePositivePath)
 	if err != nil {
@@ -69,7 +69,7 @@ func (c *Config) Init() error {
 // Paths returns the config paths in a single string slice.
 func (c *Config) Paths() []string {
 	return []string{
-		c.MaliciousPath,
+		c.InfectedPath,
 		c.FalsePositivePath,
 	}
 }

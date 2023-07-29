@@ -1,4 +1,4 @@
-// Copyright 2023 Malicious Packages Authors
+// Copyright 2023 Infected Packages Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -99,7 +99,7 @@ func main() {
 		sources = []*source.Source{src}
 	}
 
-	log.Printf("Using config: id prefix=%s, malicious=%s, false positives=%s, sources=%d", c.IDPrefix, c.MaliciousPath, c.FalsePositivePath, len(sources))
+	log.Printf("Using config: id prefix=%s, infected=%s, false positives=%s, sources=%d", c.IDPrefix, c.InfectedPath, c.FalsePositivePath, len(sources))
 
 	keys, err := loadStartKeys(*startKeysFlag)
 	if err != nil {
@@ -179,7 +179,7 @@ func ingestReports(ctx context.Context, s *source.Source, c *config.Config, star
 		r.StripID()
 
 		// Prepare the destination path, creating it if needed.
-		dest := filepath.Clean(filepath.Join(c.MaliciousPath, path))
+		dest := filepath.Clean(filepath.Join(c.InfectedPath, path))
 		log.Printf("[%s]   dest = %s", s.ID, dest)
 		if err := os.MkdirAll(dest, 0o777); err != nil {
 			return fmt.Errorf("failed to create destination: %w", err)

@@ -1,4 +1,4 @@
-// Copyright 2023 Malicious Packages Authors
+// Copyright 2023 Infected Packages Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -29,12 +29,12 @@ import (
 
 const validConfigYAML = `
 id-prefix: TEST
-malicious-path: "mal/"
+infected-path: "mal/"
 false-positive-path: "false-positives/"
 sources:
 - id: all
   bucket: file://test-bucket/
-  prefix: malicious
+  prefix: infected
   lookback-entries: 123
 - id: default
 `
@@ -54,8 +54,8 @@ func TestReadYAML(t *testing.T) {
 	if got, want := c.IDPrefix, "TEST"; got != want {
 		t.Errorf("IDPrefix = %v; want %v", got, want)
 	}
-	if got, want := c.MaliciousPath, filepath.Join(wd, "mal"); got != want {
-		t.Errorf("MaliciousPath = %v; want %v", got, want)
+	if got, want := c.InfectedPath, filepath.Join(wd, "mal"); got != want {
+		t.Errorf("InfectedPath = %v; want %v", got, want)
 	}
 	if got, want := c.FalsePositivePath, filepath.Join(wd, "false-positives"); got != want {
 		t.Errorf("FalsePositivePath = %v; want %v", got, want)
@@ -99,9 +99,9 @@ func TestInit_NoIDPrefix(t *testing.T) {
 	}
 }
 
-func TestInit_NoMaliciousPath(t *testing.T) {
+func TestInit_NoInfectedPath(t *testing.T) {
 	c := getTestConfig()
-	c.MaliciousPath = ""
+	c.InfectedPath = ""
 	if err := c.Init(); err == nil {
 		t.Error("Init() = nil; want an error")
 	}
@@ -118,7 +118,7 @@ func TestInit_NoFalsePositivePath(t *testing.T) {
 func getTestConfig() *config.Config {
 	return &config.Config{
 		IDPrefix:          "FOO",
-		MaliciousPath:     "./mal/path/",
+		InfectedPath:      "./mal/path/",
 		FalsePositivePath: "./false/positives/",
 		Sources: []*source.Source{
 			{

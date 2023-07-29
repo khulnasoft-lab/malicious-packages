@@ -3,8 +3,8 @@
   "published": "2023-05-15T12:11:04Z",
   "schema_version": "1.5.0",
   "id": "MAL-2023-10",
-  "summary": "Malicious code in security-util-py (PyPI)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (2309de1524c064d7eba8b0c288762426955241d23e00eaaeca7766758ab9054e)\nThe OpenSSF Package Analysis project identified 'security-util-py' @ 0.0.6 (pypi) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
+  "summary": "Infected code in security-util-py (PyPI)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (2309de1524c064d7eba8b0c288762426955241d23e00eaaeca7766758ab9054e)\nThe OpenSSF Package Analysis project identified 'security-util-py' @ 0.0.6 (pypi) as infected.\n\nIt is considered infected because:\n- The package communicates with a domain associated with infected activity.\n",
   "affected": [
     {
       "package": {
@@ -28,7 +28,7 @@
     }
   ],
   "database_specific": {
-    "malicious-packages-origins": [
+    "infected-packages-origins": [
       {
         "import_time": "2023-06-30T03:53:56.772443501Z",
         "sha256": "2309de1524c064d7eba8b0c288762426955241d23e00eaaeca7766758ab9054e",

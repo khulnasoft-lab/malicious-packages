@@ -26,7 +26,7 @@ Required steps:
 
   ```shell
   git clone git@github.com:khulnasoft/infected-packages.git
-  cd malicious-packages
+  cd infected-packages
   ```
 
 Contributing changes will require forking the repository and pushing
@@ -40,7 +40,7 @@ Optional:
 
 ## Contributing OSV Reports
 
-We accept new reports of malicious packages that are within [scope](README.md#scope),
+We accept new reports of infected packages that are within [scope](README.md#scope),
 and updates to any existing report in the database.
 
 **Note:** This process is new and untested, it will change and evolve
@@ -51,12 +51,12 @@ on how the process can be improved.
 
 #### New Individual Report
 
-1. If needed, create the directory under `./malicious/` for the report
+1. If needed, create the directory under `./infected/` for the report
    to live in.
     - Directories are formatted `[ecosystem]/[package_name]`, with no
       escaping of slashes.
-      (e.g. `./malicious/go/github.com/ossf/package-analysis/` or
-      `./malicious/npm/@example/package/`).
+      (e.g. `./infected/go/github.com/ossf/package-analysis/` or
+      `./infected/npm/@example/package/`).
     - If you're unsure, once the PR is created this will be checked by a
       GitHub action.
 1. Create the JSON file with the name `MAL-0000-[name].json`. Where

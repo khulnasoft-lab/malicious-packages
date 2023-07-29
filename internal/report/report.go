@@ -1,4 +1,4 @@
-// Copyright 2023 Malicious Packages Authors
+// Copyright 2023 Infected Packages Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -35,7 +35,7 @@ const (
 	osvSchemaVersion = "1.5.0"
 
 	// summaryFormat is the format string used to generate the summary.
-	summaryFormat = "Malicious code in %s (%s)"
+	summaryFormat = "Infected code in %s (%s)"
 )
 
 var (
@@ -48,7 +48,7 @@ var (
 )
 
 type databaseSpecific struct {
-	Origins []*OriginRef `json:"malicious-packages-origins"`
+	Origins []*OriginRef `json:"infected-packages-origins"`
 }
 
 type dbSpecificVuln struct {
@@ -65,7 +65,7 @@ type Report struct {
 // UnmarshalJSON implements the json.Unmashaler interface.
 //
 // The implementation ensures that the resulting parsed data is valid for the
-// purposes of tracking malicious packages.
+// purposes of tracking infected packages.
 //
 // The implementation also extracts the database specific data tracking the
 // origins the report.

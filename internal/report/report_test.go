@@ -1,4 +1,4 @@
-// Copyright 2023 Malicious Packages Authors
+// Copyright 2023 Infected Packages Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -84,7 +84,7 @@ func TestNormalize_Summary(t *testing.T) {
 		t.Fatalf("Normalize() = %v; want no error", err)
 	}
 
-	want := "Malicious code in example (RubyGems)"
+	want := "Infected code in example (RubyGems)"
 	if got := r.Vuln().Summary; got != want {
 		t.Errorf("Summary = %v; want %v", got, want)
 	}

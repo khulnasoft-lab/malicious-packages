@@ -1,4 +1,4 @@
-// Copyright 2023 Malicious Packages Authors
+// Copyright 2023 Infected Packages Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ import (
 	"github.com/google/osv-scanner/pkg/models"
 )
 
-const originRefKey = "malicious-packages-origins"
+const originRefKey = "infected-packages-origins"
 
 type OriginRef struct {
 	Source       string         `json:"source"`
