@@ -1,4 +1,4 @@
-module github.com/khulnasoft/infected-packages
+module github.com/khulnasoft-lab/infected-packages
 
 go 1.20
 
