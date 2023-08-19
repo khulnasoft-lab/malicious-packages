@@ -29,9 +29,9 @@ func TestPath(t *testing.T) {
 		want      string
 	}{
 		{
-			name:      "github.com/khulnasoft/infected-packages/cmd/ingest",
+			name:      "github.com/khulnasoft-lab/infected-packages/cmd/ingest",
 			ecosystem: "Go",
-			want:      "go/github.com/khulnasoft/infected-packages/cmd/ingest",
+			want:      "go/github.com/khulnasoft-lab/infected-packages/cmd/ingest",
 		},
 		{
 			name:      "ThIs-is-A-Package",
