@@ -139,4 +139,3 @@ linters-settings:
       - ptrToRefParam
       - typeUnparen
       - unnecessaryBlock
-

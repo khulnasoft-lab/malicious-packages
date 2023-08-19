@@ -3,8 +3,8 @@
   "published": "2023-05-01T02:25:46Z",
   "schema_version": "1.5.0",
   "id": "MAL-2023-5",
-  "summary": "Infected code in eslint-plugin-indeed (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (cd3cf0dfdda3ea0bf705d385efb05c56b971a408c4a0dceef3771d2e474a33e0)\nThe OpenSSF Package Analysis project identified 'eslint-plugin-indeed' @ 99.99.9 (npm) as infected.\n\nIt is considered infected because:\n- The package communicates with a domain associated with infected activity.\n",
+  "summary": "Malicious code in eslint-plugin-indeed (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (cd3cf0dfdda3ea0bf705d385efb05c56b971a408c4a0dceef3771d2e474a33e0)\nThe OpenSSF Package Analysis project identified 'eslint-plugin-indeed' @ 99.99.9 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -27,7 +27,7 @@
     }
   ],
   "database_specific": {
-    "infected-packages-origins": [
+    "malicious-packages-origins": [
       {
         "import_time": "2023-06-30T03:53:17.18663345Z",
         "sha256": "cd3cf0dfdda3ea0bf705d385efb05c56b971a408c4a0dceef3771d2e474a33e0",
