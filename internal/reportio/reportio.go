@@ -21,7 +21,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/khulnasoft/infected-packages/internal/report"
+	"github.com/khulnasoft-lab/infected-packages/internal/report"
 )
 
 const (

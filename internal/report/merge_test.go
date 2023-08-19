@@ -23,7 +23,7 @@ import (
 	"github.com/google/osv-scanner/pkg/models"
 	"golang.org/x/exp/slices"
 
-	"github.com/khulnasoft/infected-packages/internal/report"
+	"github.com/khulnasoft-lab/infected-packages/internal/report"
 )
 
 func TestMerge_MismatchName(t *testing.T) {

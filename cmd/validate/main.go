@@ -24,9 +24,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/khulnasoft/infected-packages/internal/config"
-	"github.com/khulnasoft/infected-packages/internal/report"
-	"github.com/khulnasoft/infected-packages/internal/reportio"
+	"github.com/khulnasoft-lab/infected-packages/internal/config"
+	"github.com/khulnasoft-lab/infected-packages/internal/report"
+	"github.com/khulnasoft-lab/infected-packages/internal/reportio"
 )
 
 const (

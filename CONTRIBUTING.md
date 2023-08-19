@@ -25,7 +25,7 @@ Required steps:
 1. Clone the repository, e.g:
 
   ```shell
-  git clone git@github.com:khulnasoft/infected-packages.git
+  git clone git@github.com:khulnasoft-lab/infected-packages.git
   cd infected-packages
   ```
 
@@ -44,7 +44,7 @@ We accept new reports of infected packages that are within [scope](README.md#sco
 and updates to any existing report in the database.
 
 **Note:** This process is new and untested, it will change and evolve
-over time. We welcome [suggestions](https://github.com/khulnasoft/infected-packages/issues/new)
+over time. We welcome [suggestions](https://github.com/khulnasoft-lab/infected-packages/issues/new)
 on how the process can be improved.
 
 ### Via Pull Request
@@ -68,7 +68,7 @@ on how the process can be improved.
 
 #### Bulk Import
 
-1. [Create an issue](https://github.com/khulnasoft/infected-packages/issues/new)
+1. [Create an issue](https://github.com/khulnasoft-lab/infected-packages/issues/new)
    if this is the first bulk import. The issue should include the following:
     - A proposed unique "source id" if you do not already have one.
     - Some details on the reports (i.e. quantity, ecosystems), etc.
@@ -109,7 +109,7 @@ on how the process can be improved.
 
 #### Process
 
-1. [Create an issue](https://github.com/khulnasoft/infected-packages/issues/new),
+1. [Create an issue](https://github.com/khulnasoft-lab/infected-packages/issues/new),
    which should include the following:
     - A proposed unique "source id" if you do not already have one.
     - Some information about the organization/group producticing the
@@ -147,7 +147,7 @@ on how the process can be improved.
 Code contributions are welcome!
 
 For larger features or changes, please
-[create an issue](https://github.com/khulnasoft/infected-packages/issues/new) first.
+[create an issue](https://github.com/khulnasoft-lab/infected-packages/issues/new) first.
 
 When creating a Pull Request, please ensure:
 

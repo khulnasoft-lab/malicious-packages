@@ -23,8 +23,8 @@ import (
 
 	"golang.org/x/exp/slices"
 
-	"github.com/khulnasoft/infected-packages/internal/config"
-	"github.com/khulnasoft/infected-packages/internal/source"
+	"github.com/khulnasoft-lab/infected-packages/internal/config"
+	"github.com/khulnasoft-lab/infected-packages/internal/source"
 )
 
 const validConfigYAML = `

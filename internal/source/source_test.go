@@ -21,7 +21,7 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/khulnasoft/infected-packages/internal/source"
+	"github.com/khulnasoft-lab/infected-packages/internal/source"
 )
 
 func TestParseSources_InvalidIDs(t *testing.T) {

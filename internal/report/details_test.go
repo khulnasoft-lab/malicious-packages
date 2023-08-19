@@ -23,7 +23,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/khulnasoft/infected-packages/internal/report"
+	"github.com/khulnasoft-lab/infected-packages/internal/report"
 )
 
 func reportWithDetail(details string) *report.Report {

@@ -24,7 +24,7 @@ import (
 	"github.com/google/osv-scanner/pkg/models"
 	"golang.org/x/exp/slices"
 
-	"github.com/khulnasoft/infected-packages/internal/report"
+	"github.com/khulnasoft-lab/infected-packages/internal/report"
 )
 
 func testReport(ecosystem models.Ecosystem, name string) *report.Report {
@@ -43,9 +43,9 @@ func TestPath(t *testing.T) {
 		want      string
 	}{
 		{
-			name:      "github.com/khulnasoft/infected-packages/cmd/ingest",
+			name:      "github.com/khulnasoft-lab/infected-packages/cmd/ingest",
 			ecosystem: "Go",
-			want:      "go/github.com/khulnasoft/infected-packages/cmd/ingest",
+			want:      "go/github.com/khulnasoft-lab/infected-packages/cmd/ingest",
 		},
 		{
 			name:      "ThIs-is-A-Package",

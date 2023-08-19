@@ -18,7 +18,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/khulnasoft/infected-packages/cmd/ingest/startkeys"
+	"github.com/khulnasoft-lab/infected-packages/cmd/ingest/startkeys"
 )
 
 func TestNew(t *testing.T) {

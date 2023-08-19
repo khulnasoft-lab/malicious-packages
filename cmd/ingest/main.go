@@ -29,12 +29,12 @@ import (
 	_ "gocloud.dev/blob/gcsblob"
 	_ "gocloud.dev/blob/s3blob"
 
-	"github.com/khulnasoft/infected-packages/cmd/ingest/sourceio"
-	"github.com/khulnasoft/infected-packages/cmd/ingest/startkeys"
-	"github.com/khulnasoft/infected-packages/internal/config"
-	"github.com/khulnasoft/infected-packages/internal/report"
-	"github.com/khulnasoft/infected-packages/internal/reportio"
-	"github.com/khulnasoft/infected-packages/internal/source"
+	"github.com/khulnasoft-lab/infected-packages/cmd/ingest/sourceio"
+	"github.com/khulnasoft-lab/infected-packages/cmd/ingest/startkeys"
+	"github.com/khulnasoft-lab/infected-packages/internal/config"
+	"github.com/khulnasoft-lab/infected-packages/internal/report"
+	"github.com/khulnasoft-lab/infected-packages/internal/reportio"
+	"github.com/khulnasoft-lab/infected-packages/internal/source"
 )
 
 var tempDir string

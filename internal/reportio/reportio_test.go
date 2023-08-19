@@ -18,7 +18,7 @@ import (
 	"io/fs"
 	"testing"
 
-	"github.com/khulnasoft/infected-packages/internal/reportio"
+	"github.com/khulnasoft-lab/infected-packages/internal/reportio"
 )
 
 func TestValidatePath(t *testing.T) {
@@ -29,7 +29,7 @@ func TestValidatePath(t *testing.T) {
 		"a/b/c/d/e",
 		"npm/@namespace/package",
 		"pypi/example",
-		"golang/github.com/khulnasoft/infected-packages",
+		"golang/github.com/khulnasoft-lab/infected-packages",
 		"a/../b/c",
 		"a/./b/../c/",
 		"a/b/",
