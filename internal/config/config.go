@@ -22,7 +22,7 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/khulnasoft/infected-packages/internal/source"
+	"github.com/khulnasoft-lab/infected-packages/internal/source"
 )
 
 var ErrInvalidConfig = errors.New("invalid config")
