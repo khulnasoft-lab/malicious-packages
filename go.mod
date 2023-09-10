@@ -3,7 +3,7 @@ module github.com/khulnasoft-lab/infected-packages
 go 1.20
 
 require (
-	cloud.google.com/go/storage v1.31.0
+	cloud.google.com/go/storage v1.33.0
 	github.com/aws/aws-sdk-go v1.45.2
 	github.com/aws/aws-sdk-go-v2/service/s3 v1.38.5
 	github.com/google/osv-scanner v1.3.6
