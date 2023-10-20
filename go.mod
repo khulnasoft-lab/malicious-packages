@@ -6,10 +6,10 @@ require (
 	cloud.google.com/go/storage v1.33.0
 	github.com/aws/aws-sdk-go v1.46.0
 	github.com/aws/aws-sdk-go-v2/service/s3 v1.38.5
-	github.com/google/osv-scanner v1.3.6
+	github.com/google/osv-scanner v1.4.1
 	github.com/google/renameio v1.0.1
 	gocloud.dev v0.34.0
-	golang.org/x/exp v0.0.0-20230626212559-97b1e661b5df
+	golang.org/x/exp v0.0.0-20230905200255-921286631fa9
 	gopkg.in/yaml.v3 v3.0.1
 )
 
