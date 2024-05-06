@@ -19,9 +19,9 @@ jobs:
 
     steps:
     - name: Checkout self
-      uses: actions/checkout@v4.1.1 # v3.5.3
+      uses: actions/checkout@v4.1.5 # v3.5.3
     - name: Checkout ossf/osv-schema
-      uses: actions/checkout@v4.1.1 # v3.5.3
+      uses: actions/checkout@v4.1.5 # v3.5.3
       with:
         repository: ossf/osv-schema
         ref: c2daa7514282ba34925e4dd8fb1177e78e3cf431
