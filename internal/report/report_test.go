@@ -1,4 +1,4 @@
-// Copyright 2023 Infected Packages Authors
+// Copyright 2023 Malicious Packages Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -19,12 +19,12 @@ import (
 	"errors"
 	"fmt"
 	"reflect"
+	"slices"
 	"testing"
 
 	"github.com/google/osv-scanner/pkg/models"
-	"golang.org/x/exp/slices"
 
-	"github.com/khulnasoft-lab/infected-packages/internal/report"
+	"github.com/khulnasoft-lab/malicious-packages/internal/report"
 )
 
 func testReport(ecosystem models.Ecosystem, name string) *report.Report {
@@ -43,9 +43,9 @@ func TestPath(t *testing.T) {
 		want      string
 	}{
 		{
-			name:      "github.com/khulnasoft-lab/infected-packages/cmd/ingest",
+			name:      "github.com/khulnasoft-lab/malicious-packages/cmd/ingest",
 			ecosystem: "Go",
-			want:      "go/github.com/khulnasoft-lab/infected-packages/cmd/ingest",
+			want:      "go/github.com/khulnasoft-lab/malicious-packages/cmd/ingest",
 		},
 		{
 			name:      "ThIs-is-A-Package",
@@ -77,6 +77,44 @@ func TestNormalize_WithID(t *testing.T) {
 	}
 }
 
+func TestNormalize_CanonicalizeName(t *testing.T) {
+	tests := []struct {
+		eco  models.Ecosystem
+		name string
+		want string
+	}{
+		{
+			eco:  models.EcosystemPyPI,
+			name: "This--Is__A1..Test_-.Example",
+			want: "this-is-a1-test-example",
+		},
+		{
+			eco:  models.EcosystemCratesIO,
+			name: "This-Is-A1_Test_Example",
+			want: "this_is_a1_test_example",
+		},
+		{
+			eco:  models.EcosystemRubyGems,
+			name: "This-is_a1.test_Example",
+			want: "This-is_a1.test_Example",
+		},
+	}
+
+	for _, test := range tests {
+		t.Run(test.name, func(t *testing.T) {
+			r := testReport(test.eco, test.name)
+
+			if err := r.Normalize(); err != nil {
+				t.Fatalf("Normalize() = %v; want no error", err)
+			}
+
+			if got := r.Name; got != test.want {
+				t.Errorf("Name = %v; want %v", got, test.want)
+			}
+		})
+	}
+}
+
 func TestNormalize_Summary(t *testing.T) {
 	r := testReport(models.EcosystemRubyGems, "example")
 
@@ -84,7 +122,7 @@ func TestNormalize_Summary(t *testing.T) {
 		t.Fatalf("Normalize() = %v; want no error", err)
 	}
 
-	want := "Infected code in example (RubyGems)"
+	want := "Malicious code in example (RubyGems)"
 	if got := r.Vuln().Summary; got != want {
 		t.Errorf("Summary = %v; want %v", got, want)
 	}
@@ -228,5 +266,41 @@ func TestAliasID_Duplicate(t *testing.T) {
 	want := []string{"TEST-1234-4", "OTHER-5432-1"}
 	if got := r.Vuln().Aliases; !slices.Equal(got, want) {
 		t.Errorf("Aliases = %v; want %s", got, want)
+	}
+}
+
+func TestFilterSelf(t *testing.T) {
+	r := testReport(models.EcosystemPyPI, "example")
+	r.Vuln().ID = "TEST-1234-4"
+	r.Vuln().Aliases = []string{"TEST-1234-4", "OTHER-5432-1"}
+	r.Vuln().References = []models.Reference{
+		{
+			Type: models.ReferenceArticle,
+			URL:  "path/to/TEST-1234-4.json",
+		},
+		{
+			Type: models.ReferenceReport,
+			URL:  "https://example.org/",
+		},
+	}
+
+	r.FilterSelf()
+
+	wantAliases := []string{"OTHER-5432-1"}
+	if got := r.Vuln().Aliases; !slices.Equal(got, wantAliases) {
+		t.Errorf("Aliases = %v; want %s", got, wantAliases)
+	}
+
+	wantReferences := []models.Reference{{Type: models.ReferenceReport, URL: "https://example.org/"}}
+	if got := r.Vuln().References; !slices.Equal(got, wantReferences) {
+		t.Errorf("References = %v; want %s", got, wantReferences)
+	}
+}
+
+func TestInvalidReport(t *testing.T) {
+	rJSON := `{ "schema_version": "1.5.0", "summary": "test report", "affected": [{"package":{"ecosystem": "PyPI"}}]}`
+	_, err := report.ReadJSON(bytes.NewBufferString(rJSON))
+	if err == nil {
+		t.Error("ReadJSON = nil; want an error")
 	}
 }

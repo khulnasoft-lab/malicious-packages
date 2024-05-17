@@ -1,4 +1,4 @@
-// Copyright 2023 Infected Packages Authors
+// Copyright 2023 Malicious Packages Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -17,13 +17,13 @@ package report_test
 import (
 	"errors"
 	"reflect"
+	"slices"
 	"testing"
 	"time"
 
 	"github.com/google/osv-scanner/pkg/models"
-	"golang.org/x/exp/slices"
 
-	"github.com/khulnasoft-lab/infected-packages/internal/report"
+	"github.com/khulnasoft-lab/malicious-packages/internal/report"
 )
 
 func TestMerge_MismatchName(t *testing.T) {
@@ -31,6 +31,14 @@ func TestMerge_MismatchName(t *testing.T) {
 	other := testReport(models.EcosystemNPM, "example2")
 	if err := r.Merge(other); err == nil || !errors.Is(err, report.ErrMergeFailure) {
 		t.Fatalf("Merge() = %v; want %v", err, report.ErrMergeFailure)
+	}
+}
+
+func TestMerge_NuGetName(t *testing.T) {
+	r := testReport(models.EcosystemNuGet, "example.Utility.Test")
+	other := testReport(models.EcosystemNuGet, "Example.utility.TEST")
+	if err := r.Merge(other); err != nil {
+		t.Fatalf("Merge() = %v; want no error", err)
 	}
 }
 
@@ -91,15 +99,45 @@ func TestMerge_Ranges(t *testing.T) {
 		Type: models.RangeEcosystem,
 		Events: []models.Event{
 			{
-				Introduced: "c",
+				Introduced: "a",
+			},
+			{
+				Fixed: "c",
 			},
 		},
 	}
 	r3 := models.Range{
+		Type: models.RangeSemVer,
+		Events: []models.Event{
+			{
+				Introduced: "a",
+			},
+		},
+	}
+	r4 := models.Range{
+		Type: models.RangeSemVer,
+		Events: []models.Event{
+			{
+				Introduced: "a",
+			},
+		},
+	}
+	r5 := models.Range{
 		Type: models.RangeEcosystem,
 		Events: []models.Event{
 			{
-				Fixed: "d",
+				Introduced: "a",
+			},
+			{
+				Fixed: "c",
+			},
+		},
+	}
+	r6 := models.Range{
+		Type: models.RangeEcosystem,
+		Events: []models.Event{
+			{
+				Introduced: "a",
 			},
 		},
 	}
@@ -108,13 +146,16 @@ func TestMerge_Ranges(t *testing.T) {
 	r.Vuln().Affected[0].Ranges = []models.Range{
 		r1,
 		r2,
+		r3,
 	}
 	other := testReport(models.EcosystemNPM, "example")
 	other.Vuln().Affected[0].Ranges = []models.Range{
-		r3,
+		r4,
+		r5,
+		r6,
 	}
 	want := []models.Range{
-		r1, r2, r3,
+		r1, r2, r3, r6,
 	}
 
 	if err := r.Merge(other); err != nil {
@@ -189,9 +230,10 @@ func TestMerge_NoEcosystemSpecificData(t *testing.T) {
 
 func TestMerge_Aliases(t *testing.T) {
 	r := testReport(models.EcosystemNPM, "example")
+	r.Vuln().ID = "id"
 	r.Vuln().Aliases = []string{"z", "b", "c"}
 	other := testReport(models.EcosystemNPM, "example")
-	other.Vuln().Aliases = []string{"b", "c", "d"}
+	other.Vuln().Aliases = []string{"b", "c", "d", "id"}
 
 	want := []string{"z", "b", "c", "d"}
 
@@ -238,10 +280,15 @@ func TestMerge_References(t *testing.T) {
 		Type: models.ReferenceArticle,
 		URL:  "https://example.com/advisory",
 	}
+	ref5 := models.Reference{
+		Type: models.ReferenceReport,
+		URL:  "https://example.com/id.json",
+	}
 	r := testReport(models.EcosystemNPM, "example")
+	r.Vuln().ID = "id"
 	r.Vuln().References = []models.Reference{ref1, ref2, ref3}
 	other := testReport(models.EcosystemNPM, "example")
-	other.Vuln().References = []models.Reference{ref2, ref3, ref4}
+	other.Vuln().References = []models.Reference{ref2, ref3, ref4, ref5}
 
 	want := []models.Reference{ref1, ref2, ref3, ref4}
 
@@ -293,6 +340,11 @@ func TestMerge_CreditsContactMerge(t *testing.T) {
 		Contact: []string{"john.appleseed@example.com"},
 	}
 	c2 := models.Credit{
+		Name:    "XYZ",
+		Type:    models.CreditFinder,
+		Contact: []string{"xyz@example.com"},
+	}
+	c3 := models.Credit{
 		Name:    "John Appleseed",
 		Type:    models.CreditFinder,
 		Contact: []string{"https://twitter.com/john_appleseed_this_does_not_exist"},
@@ -300,13 +352,18 @@ func TestMerge_CreditsContactMerge(t *testing.T) {
 	r := testReport(models.EcosystemNPM, "example")
 	r.Vuln().Credits = []models.Credit{c1}
 	other := testReport(models.EcosystemNPM, "example")
-	other.Vuln().Credits = []models.Credit{c2}
+	other.Vuln().Credits = []models.Credit{c2, c3}
 
 	want := []models.Credit{
 		{
 			Name:    "John Appleseed",
 			Type:    models.CreditFinder,
 			Contact: []string{"john.appleseed@example.com", "https://twitter.com/john_appleseed_this_does_not_exist"},
+		},
+		{
+			Name:    "XYZ",
+			Type:    models.CreditFinder,
+			Contact: []string{"xyz@example.com"},
 		},
 	}
 

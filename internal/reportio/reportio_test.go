@@ -1,4 +1,4 @@
-// Copyright 2023 Infected Packages Authors
+// Copyright 2023 Malicious Packages Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ import (
 	"io/fs"
 	"testing"
 
-	"github.com/khulnasoft-lab/infected-packages/internal/reportio"
+	"github.com/khulnasoft-lab/malicious-packages/internal/reportio"
 )
 
 func TestValidatePath(t *testing.T) {
@@ -29,7 +29,7 @@ func TestValidatePath(t *testing.T) {
 		"a/b/c/d/e",
 		"npm/@namespace/package",
 		"pypi/example",
-		"golang/github.com/khulnasoft-lab/infected-packages",
+		"golang/github.com/khulnasoft-lab/malicious-packages",
 		"a/../b/c",
 		"a/./b/../c/",
 		"a/b/",

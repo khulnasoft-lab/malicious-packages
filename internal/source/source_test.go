@@ -1,4 +1,4 @@
-// Copyright 2023 Infected Packages Authors
+// Copyright 2023 Malicious Packages Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/khulnasoft-lab/infected-packages/internal/source"
+	"github.com/khulnasoft-lab/malicious-packages/internal/source"
 )
 
 func TestParseSources_InvalidIDs(t *testing.T) {

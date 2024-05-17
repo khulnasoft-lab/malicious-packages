@@ -1,4 +1,4 @@
-// Copyright 2023 Infected Packages Authors
+// Copyright 2023 Malicious Packages Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -108,7 +108,7 @@ func (r *Report) SetDetails(user string, sourceDetailsSet ...map[*OriginRef]stri
 	if user != "" {
 		res = strings.TrimSpace(user) + "\n"
 	}
-	res = res + detailHeader
+	res += detailHeader
 	bestOrigins := make(map[string]*OriginRef)
 	var sources []string
 	detailMap := make(map[*OriginRef]string)
@@ -140,7 +140,7 @@ func (r *Report) SetDetails(user string, sourceDetailsSet ...map[*OriginRef]stri
 	for _, s := range sources {
 		o := bestOrigins[s]
 		d := detailMap[o]
-		res = res + fmt.Sprintf(detailSectionHeader, o.Source, o.SHASum) + strings.TrimSpace(d) + "\n"
+		res += fmt.Sprintf(detailSectionHeader, o.Source, o.SHASum) + strings.TrimSpace(d) + "\n"
 	}
 	// Assign!
 	r.raw.Details = res

@@ -1,4 +1,4 @@
-// Copyright 2023 Infected Packages Authors
+// Copyright 2023 Malicious Packages Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -24,9 +24,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/khulnasoft-lab/infected-packages/internal/config"
-	"github.com/khulnasoft-lab/infected-packages/internal/report"
-	"github.com/khulnasoft-lab/infected-packages/internal/reportio"
+	"github.com/khulnasoft-lab/malicious-packages/internal/config"
+	"github.com/khulnasoft-lab/malicious-packages/internal/report"
+	"github.com/khulnasoft-lab/malicious-packages/internal/reportio"
 )
 
 const (

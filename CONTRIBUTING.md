@@ -25,8 +25,8 @@ Required steps:
 1. Clone the repository, e.g:
 
   ```shell
-  git clone git@github.com:khulnasoft-lab/infected-packages.git
-  cd infected-packages
+  git clone git@github.com:ossf/malicious-packages.git
+  cd malicious-packages
   ```
 
 Contributing changes will require forking the repository and pushing
@@ -40,23 +40,23 @@ Optional:
 
 ## Contributing OSV Reports
 
-We accept new reports of infected packages that are within [scope](README.md#scope),
+We accept new reports of malicious packages that are within [scope](README.md#scope),
 and updates to any existing report in the database.
 
 **Note:** This process is new and untested, it will change and evolve
-over time. We welcome [suggestions](https://github.com/khulnasoft-lab/infected-packages/issues/new)
+over time. We welcome [suggestions](https://github.com/khulnasoft-lab/malicious-packages/issues/new)
 on how the process can be improved.
 
 ### Via Pull Request
 
 #### New Individual Report
 
-1. If needed, create the directory under `./infected/` for the report
+1. If needed, create the directory under `./malicious/` for the report
    to live in.
     - Directories are formatted `[ecosystem]/[package_name]`, with no
       escaping of slashes.
-      (e.g. `./infected/go/github.com/ossf/package-analysis/` or
-      `./infected/npm/@example/package/`).
+      (e.g. `./malicious/go/github.com/khulnasoft-lab/package-analysis/` or
+      `./malicious/npm/@example/package/`).
     - If you're unsure, once the PR is created this will be checked by a
       GitHub action.
 1. Create the JSON file with the name `MAL-0000-[name].json`. Where
@@ -68,7 +68,7 @@ on how the process can be improved.
 
 #### Bulk Import
 
-1. [Create an issue](https://github.com/khulnasoft-lab/infected-packages/issues/new)
+1. [Create an issue](https://github.com/khulnasoft-lab/malicious-packages/issues/new)
    if this is the first bulk import. The issue should include the following:
     - A proposed unique "source id" if you do not already have one.
     - Some details on the reports (i.e. quantity, ecosystems), etc.
@@ -109,7 +109,7 @@ on how the process can be improved.
 
 #### Process
 
-1. [Create an issue](https://github.com/khulnasoft-lab/infected-packages/issues/new),
+1. [Create an issue](https://github.com/khulnasoft-lab/malicious-packages/issues/new),
    which should include the following:
     - A proposed unique "source id" if you do not already have one.
     - Some information about the organization/group producticing the
@@ -147,7 +147,7 @@ on how the process can be improved.
 Code contributions are welcome!
 
 For larger features or changes, please
-[create an issue](https://github.com/khulnasoft-lab/infected-packages/issues/new) first.
+[create an issue](https://github.com/khulnasoft-lab/malicious-packages/issues/new) first.
 
 When creating a Pull Request, please ensure:
 

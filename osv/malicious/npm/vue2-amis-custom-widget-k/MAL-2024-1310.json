@@ -1,0 +1,65 @@
+{
+  "modified": "2024-04-30T09:50:51Z",
+  "published": "2024-04-30T09:50:50Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-1310",
+  "aliases": [
+    "GHSA-mggw-988v-rj36"
+  ],
+  "summary": "Malicious code in vue2-amis-custom-widget-k (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (7995bc4ce2d3fd487e75baadf8d21d894607e1f79d0142c3aed2ed6c5bf88136)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "vue2-amis-custom-widget-k"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "cwes": [
+          {
+            "cweId": "CWE-506",
+            "description": "The product contains code that appears to be malicious in nature.",
+            "name": "Embedded Malicious Code"
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-mggw-988v-rj36"
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "id": "GHSA-mggw-988v-rj36",
+        "import_time": "2024-05-01T00:27:07.438918073Z",
+        "modified_time": "2024-04-30T09:50:51Z",
+        "ranges": [
+          {
+            "events": [
+              {
+                "introduced": "0"
+              }
+            ],
+            "type": "SEMVER"
+          }
+        ],
+        "sha256": "7995bc4ce2d3fd487e75baadf8d21d894607e1f79d0142c3aed2ed6c5bf88136",
+        "source": "ghsa-malware"
+      }
+    ]
+  }
+}
