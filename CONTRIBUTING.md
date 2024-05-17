@@ -7,7 +7,7 @@ We'd love to accept your patches and contributions to this project.
 ### Review our community guidelines
 
 This project follows
-[OpenSSF's Contributor Code of Conduct](CODE_OF_CONDUCT.md).
+[KhulnaSoft's Contributor Code of Conduct](CODE_OF_CONDUCT.md).
 
 ### Reviews
 
@@ -25,7 +25,7 @@ Required steps:
 1. Clone the repository, e.g:
 
   ```shell
-  git clone git@github.com:ossf/malicious-packages.git
+  git clone git@github.com:khulnasoft-lab/malicious-packages.git
   cd malicious-packages
   ```
 
@@ -61,7 +61,7 @@ on how the process can be improved.
       GitHub action.
 1. Create the JSON file with the name `MAL-0000-[name].json`. Where
    `[name]` can be replaced with any arbitrary text.
-1. Populate the JSON file conforming to the [OSV Schema](https://ossf.github.io/osv-schema/)
+1. Populate the JSON file conforming to the [OSV Schema](https://khulnasoft.github.io/osv-schema/)
    format and the [notes below](#osv-schema-notes).
 1. Commit and push the change to a fork and submit a Pull Request.
     - Please fix any validation errors.
