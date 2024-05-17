@@ -1,7 +1,7 @@
 # Reporting Security Issues
 
 To report a security issue, please email
-[oss-security@googlegroups.com](mailto:oss-security@googlegroups.com)
+[security@khulnasoft.com](mailto:security@khulnasoft.com)
 with a description of the issue, the steps you took to create the issue,
 affected versions, and, if known, mitigations for the issue.
 
