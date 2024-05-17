@@ -19,17 +19,20 @@ jobs:
 
     steps:
     - name: Checkout self
-      uses: actions/checkout@v4.1.1 # v3.5.3
+      uses: actions/checkout@1d96c772d19495a3b5c517cd2bc0cb401ea0529f # v4.1.3
+      with:
+        token: ${{ secrets.ORG_REPO_TOKEN }}
     - name: Checkout ossf/osv-schema
-      uses: actions/checkout@v4.1.1 # v3.5.3
+      uses: actions/checkout@1d96c772d19495a3b5c517cd2bc0cb401ea0529f # v4.1.3
       with:
+        token: ${{ secrets.ORG_REPO_TOKEN }}
         repository: ossf/osv-schema
-        ref: c2daa7514282ba34925e4dd8fb1177e78e3cf431
+        ref: 719ef525491260972fbec8679130052d4086711c
         path: osv-schema
-    - uses: actions/setup-go@93397bea11091df50f3d7e59dc26a7711a8bcfbe # v4.1.0
+    - uses: actions/setup-go@0c52d547c9bc32b1aa3301fd7a9cb496313a4491 # v5.0.0
       with:
-        go-version: "1.20"
-    - uses: actions/setup-python@65d7f2d534ac1bc67fcd62888c5f4f3d2cb2b236 # v4.7.1
+        go-version: "1.21"
+    - uses: actions/setup-python@82c7e631bb3cdc910f68e0081d67478d79c6982d # v5.1.0
       with:
         python-version: "3.11"
         cache: pipenv
@@ -65,7 +68,7 @@ jobs:
       run: |
         git config user.name github-actions
         git config user.email github-actions@github.com
-        git add malicious withdrawn
+        git add osv
     - name: Commit report changes
       run: git diff --cached --quiet || git commit -m 'Ingest OSV - GHSA Malware'
     - name: Push commit

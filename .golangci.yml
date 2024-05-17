@@ -86,7 +86,7 @@ linters-settings:
     sections:
       - standard
       - default
-      - prefix(github.com/khulnasoft-lab/infected-packages)
+      - prefix(github.com/khulnasoft-lab/malicious-packages)
   gocritic:
     enabled-checks:
       # Diagnostic
