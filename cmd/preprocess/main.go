@@ -1,4 +1,4 @@
-// Copyright 2023 Infected Packages Authors
+// Copyright 2023 Malicious Packages Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -25,9 +25,9 @@ import (
 
 	"github.com/google/renameio"
 
-	"github.com/khulnasoft-lab/infected-packages/internal/config"
-	"github.com/khulnasoft-lab/infected-packages/internal/report"
-	"github.com/khulnasoft-lab/infected-packages/internal/reportio"
+	"github.com/khulnasoft-lab/malicious-packages/internal/config"
+	"github.com/khulnasoft-lab/malicious-packages/internal/report"
+	"github.com/khulnasoft-lab/malicious-packages/internal/reportio"
 )
 
 var tempDir string
@@ -69,7 +69,7 @@ func main() {
 }
 
 func preprocessRepo(c *config.Config) error {
-	err := filepath.WalkDir(c.InfectedPath, fs.WalkDirFunc(func(path string, info fs.DirEntry, err error) error {
+	err := filepath.WalkDir(c.MaliciousPath, fs.WalkDirFunc(func(path string, info fs.DirEntry, err error) error {
 		if os.IsNotExist(err) {
 			return filepath.SkipDir
 		} else if err != nil {
@@ -78,7 +78,7 @@ func preprocessRepo(c *config.Config) error {
 		if !info.IsDir() {
 			return nil
 		}
-		p, err := filepath.Rel(c.InfectedPath, path)
+		p, err := filepath.Rel(c.MaliciousPath, path)
 		if err != nil {
 			return fmt.Errorf("relative path: %w", err)
 		}

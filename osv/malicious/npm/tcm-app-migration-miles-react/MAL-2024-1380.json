@@ -1,0 +1,65 @@
+{
+  "modified": "2024-05-21T01:59:28Z",
+  "published": "2024-05-21T01:59:20Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-1380",
+  "aliases": [
+    "GHSA-c3vm-r8q5-j36j"
+  ],
+  "summary": "Malicious code in tcm-app-migration-miles-react (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (9025c83532f86e4420c8cd88f4f408a7857044b1f990a20c9a64fa0cc2ea902f)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "tcm-app-migration-miles-react"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "cwes": [
+          {
+            "cweId": "CWE-506",
+            "description": "The product contains code that appears to be malicious in nature.",
+            "name": "Embedded Malicious Code"
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-c3vm-r8q5-j36j"
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "id": "GHSA-c3vm-r8q5-j36j",
+        "import_time": "2024-05-22T01:33:06.31683527Z",
+        "modified_time": "2024-05-21T01:59:28Z",
+        "ranges": [
+          {
+            "events": [
+              {
+                "introduced": "0"
+              }
+            ],
+            "type": "SEMVER"
+          }
+        ],
+        "sha256": "9025c83532f86e4420c8cd88f4f408a7857044b1f990a20c9a64fa0cc2ea902f",
+        "source": "ghsa-malware"
+      }
+    ]
+  }
+}
