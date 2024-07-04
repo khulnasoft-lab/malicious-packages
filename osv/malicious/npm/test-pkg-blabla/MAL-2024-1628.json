@@ -2,12 +2,12 @@
   "modified": "2024-07-03T10:38:59Z",
   "published": "2024-07-03T10:38:58Z",
   "schema_version": "1.5.0",
-  "id": "",
+  "id": "MAL-2024-1628",
   "aliases": [
     "GHSA-2m7q-68g2-fx8w"
   ],
-  "summary": "Malware in test-pkg-blabla",
-  "details": "Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.",
+  "summary": "Malicious code in test-pkg-blabla (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (83b007683c452075ec2dfb23b7de20d38b8d28441ce63b4745fd114bba008a94)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n",
   "affected": [
     {
       "package": {
@@ -31,8 +31,7 @@
             "description": "The product contains code that appears to be malicious in nature.",
             "name": "Embedded Malicious Code"
           }
-        ],
-        "ghsa": "https://github.com/advisories/GHSA-2m7q-68g2-fx8w"
+        ]
       }
     }
   ],
@@ -45,21 +44,21 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "ghsa-malware",
-        "sha256": "83b007683c452075ec2dfb23b7de20d38b8d28441ce63b4745fd114bba008a94",
-        "import_time": "2024-07-04T01:43:14.650841142Z",
         "id": "GHSA-2m7q-68g2-fx8w",
+        "import_time": "2024-07-04T01:43:14.650841142Z",
         "modified_time": "2024-07-03T10:38:59Z",
         "ranges": [
           {
-            "type": "SEMVER",
             "events": [
               {
                 "introduced": "0"
               }
-            ]
+            ],
+            "type": "SEMVER"
           }
-        ]
+        ],
+        "sha256": "83b007683c452075ec2dfb23b7de20d38b8d28441ce63b4745fd114bba008a94",
+        "source": "ghsa-malware"
       }
     ]
   }
