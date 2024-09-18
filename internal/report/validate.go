@@ -40,11 +40,11 @@ func ValidateVuln(v *models.Vulnerability) error {
 
 	// If a PURL is set, ensure that it matches the package.
 	if v.Affected[0].Package.Purl != "" {
- 		if err := validatePURL(ecosystem, name, v.Affected[0].Package.Purl); err != nil {
- 			return err
- 		}
- 	}
-	
+		if err := validatePURL(ecosystem, name, v.Affected[0].Package.Purl); err != nil {
+			return err
+		}
+	}
+
 	// Validate the ranges are correct.
 	for _, rng := range v.Affected[0].Ranges {
 		if err := validateRange(rng, ecosystem); err != nil {
@@ -134,18 +134,18 @@ func validateRange(r models.Range, ecosystem models.Ecosystem) error {
 
 // validatePURL ensures that a PURL matches the supplied name and ecosystem.
 func validatePURL(ecosystem models.Ecosystem, name, purl string) error {
- 	p, err := models.PURLToPackage(purl)
- 	if err != nil {
- 		return fmt.Errorf("%w: failed parsing PURL %q: %w", ErrInvalidOSV, purl, err)
- 	}
+	p, err := models.PURLToPackage(purl)
+	if err != nil {
+		return fmt.Errorf("%w: failed parsing PURL %q: %w", ErrInvalidOSV, purl, err)
+	}
 
- 	if p.Ecosystem != string(ecosystem) {
- 		return fmt.Errorf("%w: purl %q ecosystem %q does not match %q", ErrInvalidOSV, purl, p.Ecosystem, ecosystem)
- 	}
+	if p.Ecosystem != string(ecosystem) {
+		return fmt.Errorf("%w: purl %q ecosystem %q does not match %q", ErrInvalidOSV, purl, p.Ecosystem, ecosystem)
+	}
 
- 	if p.Name != name {
- 		return fmt.Errorf("%w: purl %q name %q does not match %q", ErrInvalidOSV, purl, p.Name, name)
- 	}
+	if p.Name != name {
+		return fmt.Errorf("%w: purl %q name %q does not match %q", ErrInvalidOSV, purl, p.Name, name)
+	}
 
- 	return nil
+	return nil
 }
