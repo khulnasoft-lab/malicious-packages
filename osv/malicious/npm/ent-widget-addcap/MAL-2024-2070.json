@@ -1,13 +1,13 @@
 {
-  "modified": "2024-07-29T03:11:45Z",
-  "published": "2024-07-29T03:11:44Z",
+  "modified": "2024-09-18T02:42:45Z",
+  "published": "2024-07-27T02:45:54Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-2070",
   "aliases": [
     "GHSA-x328-fw4r-j532"
   ],
   "summary": "Malicious code in ent-widget-addcap (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (2dac2383ab705d5e1f919508cfae3ccfb37e6f6ae1eca078ed12436c55bc7be6)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (2dac2383ab705d5e1f919508cfae3ccfb37e6f6ae1eca078ed12436c55bc7be6)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (82a55206a1f7b93a7ae76150e011ae0d61f6481da8d0703a590140e8d8cdb0ae)\nThe OpenSSF Package Analysis project identified 'ent-widget-addcap' @ 1.9.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -23,6 +23,9 @@
             }
           ]
         }
+      ],
+      "versions": [
+        "1.9.9"
       ],
       "database_specific": {
         "cwes": [
@@ -41,24 +44,43 @@
       "url": "https://github.com/advisories/GHSA-x328-fw4r-j532"
     }
   ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "id": "GHSA-x328-fw4r-j532",
+        "source": "ghsa-malware",
+        "sha256": "2dac2383ab705d5e1f919508cfae3ccfb37e6f6ae1eca078ed12436c55bc7be6",
         "import_time": "2024-07-30T01:41:34.338840418Z",
+        "id": "GHSA-x328-fw4r-j532",
         "modified_time": "2024-07-29T03:11:45Z",
         "ranges": [
           {
+            "type": "SEMVER",
             "events": [
               {
                 "introduced": "0"
               }
-            ],
-            "type": "SEMVER"
+            ]
           }
-        ],
-        "sha256": "2dac2383ab705d5e1f919508cfae3ccfb37e6f6ae1eca078ed12436c55bc7be6",
-        "source": "ghsa-malware"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "82a55206a1f7b93a7ae76150e011ae0d61f6481da8d0703a590140e8d8cdb0ae",
+        "import_time": "2024-09-18T02:41:54.10603992Z",
+        "modified_time": "2024-07-27T02:45:54Z",
+        "versions": [
+          "1.9.9"
+        ]
       }
     ]
   }

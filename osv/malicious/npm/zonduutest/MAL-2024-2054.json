@@ -1,13 +1,13 @@
 {
-  "modified": "2024-07-22T03:04:16Z",
-  "published": "2024-07-22T03:04:16Z",
+  "modified": "2024-09-18T02:42:46Z",
+  "published": "2024-07-16T03:04:00Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-2054",
   "aliases": [
     "GHSA-464j-c8xv-vm4m"
   ],
   "summary": "Malicious code in zonduutest (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (dd104d918d42d9fb61de1d1e24a2c632f2bf39f504ee6c16322e55ca3c977b16)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (dd104d918d42d9fb61de1d1e24a2c632f2bf39f504ee6c16322e55ca3c977b16)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (406f8882c5421b151a8b7f8389e7f80a0524027bb9cabfb72e99cb9c69c40b36)\nThe OpenSSF Package Analysis project identified 'zonduutest' @ 1.0.10 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -23,6 +23,14 @@
             }
           ]
         }
+      ],
+      "versions": [
+        "1.0.4",
+        "1.0.6",
+        "1.0.10",
+        "1.0.9",
+        "1.0.8",
+        "1.0.7"
       ],
       "database_specific": {
         "cwes": [
@@ -41,24 +49,88 @@
       "url": "https://github.com/advisories/GHSA-464j-c8xv-vm4m"
     }
   ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "id": "GHSA-464j-c8xv-vm4m",
+        "source": "ghsa-malware",
+        "sha256": "dd104d918d42d9fb61de1d1e24a2c632f2bf39f504ee6c16322e55ca3c977b16",
         "import_time": "2024-07-23T01:42:07.322246079Z",
+        "id": "GHSA-464j-c8xv-vm4m",
         "modified_time": "2024-07-22T03:04:16Z",
         "ranges": [
           {
+            "type": "SEMVER",
             "events": [
               {
                 "introduced": "0"
               }
-            ],
-            "type": "SEMVER"
+            ]
           }
-        ],
-        "sha256": "dd104d918d42d9fb61de1d1e24a2c632f2bf39f504ee6c16322e55ca3c977b16",
-        "source": "ghsa-malware"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "1b65a2513ff7008377a7fd3229a60126a4151e852536697bfc9e05df0509ad26",
+        "import_time": "2024-09-18T02:41:46.987840989Z",
+        "modified_time": "2024-07-16T03:04:00Z",
+        "versions": [
+          "1.0.4"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "1d7bbaa8b8a23ba41e5ebceab65b0efa1b2a14c8486606f2da0d07b453ad904e",
+        "import_time": "2024-09-18T02:41:47.160557425Z",
+        "modified_time": "2024-07-16T03:50:45Z",
+        "versions": [
+          "1.0.6"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "406f8882c5421b151a8b7f8389e7f80a0524027bb9cabfb72e99cb9c69c40b36",
+        "import_time": "2024-09-18T02:41:47.740931481Z",
+        "modified_time": "2024-07-16T04:20:44Z",
+        "versions": [
+          "1.0.10"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "89b9d45ccd6874a2dbdbdc7506ac09a69ada6d278e41d8bb5e7d614ec9ccf0d4",
+        "import_time": "2024-09-18T02:41:47.462921135Z",
+        "modified_time": "2024-07-16T04:10:38Z",
+        "versions": [
+          "1.0.9"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "cd87e114ee1fdbfda225d2dd5f4fc46e4956157a8137dcf4405517091859b039",
+        "import_time": "2024-09-18T02:41:47.601699908Z",
+        "modified_time": "2024-07-16T04:13:54Z",
+        "versions": [
+          "1.0.8"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "efe14af2669c76a345a439edca2f2b0e7bfbb013a79e7e002dfd91e9525703b6",
+        "import_time": "2024-09-18T02:41:47.30568174Z",
+        "modified_time": "2024-07-16T04:00:58Z",
+        "versions": [
+          "1.0.7"
+        ]
       }
     ]
   }

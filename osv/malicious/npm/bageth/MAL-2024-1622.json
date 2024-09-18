@@ -1,13 +1,13 @@
 {
-  "modified": "2024-07-03T07:31:43Z",
-  "published": "2024-07-03T07:31:37Z",
+  "modified": "2024-09-18T02:42:45Z",
+  "published": "2024-06-29T17:28:08Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-1622",
   "aliases": [
     "GHSA-q3h4-m64v-3ggx"
   ],
   "summary": "Malicious code in bageth (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (ceb1afd39be45104caed0892ba1fa5631e23807d2aa84d0981af466570efd384)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (ceb1afd39be45104caed0892ba1fa5631e23807d2aa84d0981af466570efd384)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (8fef59361ab926e1484b49a9036a60f90f716b0d99477bf60cf783729436146b)\nThe OpenSSF Package Analysis project identified 'bageth' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -23,6 +23,10 @@
             }
           ]
         }
+      ],
+      "versions": [
+        "1.0.0",
+        "2.0.0"
       ],
       "database_specific": {
         "cwes": [
@@ -41,24 +45,52 @@
       "url": "https://github.com/advisories/GHSA-q3h4-m64v-3ggx"
     }
   ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "id": "GHSA-q3h4-m64v-3ggx",
+        "source": "ghsa-malware",
+        "sha256": "ceb1afd39be45104caed0892ba1fa5631e23807d2aa84d0981af466570efd384",
         "import_time": "2024-07-04T01:43:14.657767832Z",
+        "id": "GHSA-q3h4-m64v-3ggx",
         "modified_time": "2024-07-03T07:31:43Z",
         "ranges": [
           {
+            "type": "SEMVER",
             "events": [
               {
                 "introduced": "0"
               }
-            ],
-            "type": "SEMVER"
+            ]
           }
-        ],
-        "sha256": "ceb1afd39be45104caed0892ba1fa5631e23807d2aa84d0981af466570efd384",
-        "source": "ghsa-malware"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "8fef59361ab926e1484b49a9036a60f90f716b0d99477bf60cf783729436146b",
+        "import_time": "2024-09-18T02:41:04.757027633Z",
+        "modified_time": "2024-06-29T17:40:58Z",
+        "versions": [
+          "1.0.0"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "e0fb8d217f32446aeb4dbf744d45c5aadd152f0917a228ead1ad0183ac18b995",
+        "import_time": "2024-09-18T02:41:04.610585232Z",
+        "modified_time": "2024-06-29T17:28:08Z",
+        "versions": [
+          "2.0.0"
+        ]
       }
     ]
   }

@@ -1,0 +1,82 @@
+{
+  "modified": "2024-09-18T02:42:45Z",
+  "published": "2024-07-03T20:10:48Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-3201",
+  "summary": "Malicious code in parser-7.0.0 (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (31a5333925c5a18f4cb586ce86da468937b8953a8c28177aec4cd576bb746faf)\nThe OpenSSF Package Analysis project identified 'parser-7.0.0' @ 4.0.2 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "parser-7.0.0"
+      },
+      "versions": [
+        "4.0.5",
+        "4.0.2",
+        "4.0.6",
+        "4.0.1",
+        "4.0.0"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2024-09-18T02:41:45.330890833Z",
+        "modified_time": "2024-07-03T23:38:15Z",
+        "sha256": "0fb9848c7d524b85f8c67e5278c0eafbd528dae325123fa119fed1b4a3b5adfe",
+        "source": "ossf-package-analysis",
+        "versions": [
+          "4.0.5"
+        ]
+      },
+      {
+        "import_time": "2024-09-18T02:41:07.231419246Z",
+        "modified_time": "2024-07-03T22:54:50Z",
+        "sha256": "31a5333925c5a18f4cb586ce86da468937b8953a8c28177aec4cd576bb746faf",
+        "source": "ossf-package-analysis",
+        "versions": [
+          "4.0.2"
+        ]
+      },
+      {
+        "import_time": "2024-09-18T02:41:07.518575178Z",
+        "modified_time": "2024-07-03T23:40:54Z",
+        "sha256": "362e7d5c9bc5ee6f8637073dc42e7e215fe76d1b8e53ac01e67f6d46ce63a188",
+        "source": "ossf-package-analysis",
+        "versions": [
+          "4.0.6"
+        ]
+      },
+      {
+        "import_time": "2024-09-18T02:41:07.096844598Z",
+        "modified_time": "2024-07-03T20:41:11Z",
+        "sha256": "72c851a27c544af5f7efab5fec1c75174007b92d2f3274e2852e1b12fd90bc2f",
+        "source": "ossf-package-analysis",
+        "versions": [
+          "4.0.1"
+        ]
+      },
+      {
+        "import_time": "2024-09-18T02:41:06.965088367Z",
+        "modified_time": "2024-07-03T20:10:48Z",
+        "sha256": "99ace32a9b913ac4a00ad574ac934c4eb6274d7c0cf3b948ced6b8191f511b68",
+        "source": "ossf-package-analysis",
+        "versions": [
+          "4.0.0"
+        ]
+      }
+    ]
+  }
+}

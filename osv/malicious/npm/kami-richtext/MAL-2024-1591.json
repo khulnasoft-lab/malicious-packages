@@ -1,13 +1,13 @@
 {
-  "modified": "2024-06-24T23:27:18Z",
-  "published": "2024-06-24T23:27:18Z",
+  "modified": "2024-09-18T02:42:45Z",
+  "published": "2024-06-24T11:50:07Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-1591",
   "aliases": [
     "GHSA-gwvc-2g7x-xj5v"
   ],
   "summary": "Malicious code in kami-richtext (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (9634fe3bee06c80f43ca27ad558c4834386dc1bb31779583c7911b679f550bff)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (9634fe3bee06c80f43ca27ad558c4834386dc1bb31779583c7911b679f550bff)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (3f0388b773322a55c52eb87a46d638537ebfae853c7eec0b856b53f51acdd798)\nThe OpenSSF Package Analysis project identified 'kami-richtext' @ 3.0.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -23,6 +23,15 @@
             }
           ]
         }
+      ],
+      "versions": [
+        "3.0.9",
+        "3.0.2",
+        "3.0.0",
+        "3.0.8",
+        "3.1.4",
+        "3.1.7",
+        "3.0.4"
       ],
       "database_specific": {
         "cwes": [
@@ -41,24 +50,97 @@
       "url": "https://github.com/advisories/GHSA-gwvc-2g7x-xj5v"
     }
   ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "id": "GHSA-gwvc-2g7x-xj5v",
+        "source": "ghsa-malware",
+        "sha256": "9634fe3bee06c80f43ca27ad558c4834386dc1bb31779583c7911b679f550bff",
         "import_time": "2024-06-25T01:42:31.002252074Z",
+        "id": "GHSA-gwvc-2g7x-xj5v",
         "modified_time": "2024-06-24T23:27:18Z",
         "ranges": [
           {
+            "type": "SEMVER",
             "events": [
               {
                 "introduced": "0"
               }
-            ],
-            "type": "SEMVER"
+            ]
           }
-        ],
-        "sha256": "9634fe3bee06c80f43ca27ad558c4834386dc1bb31779583c7911b679f550bff",
-        "source": "ghsa-malware"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "3f0388b773322a55c52eb87a46d638537ebfae853c7eec0b856b53f51acdd798",
+        "import_time": "2024-09-18T02:41:01.448316466Z",
+        "modified_time": "2024-06-24T12:55:59Z",
+        "versions": [
+          "3.0.9"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "6733abf0991662a3d888e47eddfb03f015ec9abe21b4b80437c55fb2d11123c0",
+        "import_time": "2024-09-18T02:41:00.901575965Z",
+        "modified_time": "2024-06-24T11:50:07Z",
+        "versions": [
+          "3.0.2"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "78d5f025f10c3b3360fe00ac73200f9ea95a56e4afd142f2ccfa5742772b866b",
+        "import_time": "2024-09-18T02:41:01.022015835Z",
+        "modified_time": "2024-06-24T11:55:52Z",
+        "versions": [
+          "3.0.0"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "7b22dc16409db52b49c9d79f912a95ebaaa4d1cf222ed4685bb143fc916cf764",
+        "import_time": "2024-09-18T02:41:01.315535511Z",
+        "modified_time": "2024-06-24T12:49:51Z",
+        "versions": [
+          "3.0.8"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "91cfcb05e1e664f0866c08f81c7ae55dec72b4b390033614703e8b06b5a8fd10",
+        "import_time": "2024-09-18T02:41:01.592887133Z",
+        "modified_time": "2024-06-24T13:18:59Z",
+        "versions": [
+          "3.1.4"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "d6daa3201f4a9bfc585786cc712819e650ead0362993e649e51814f550131210",
+        "import_time": "2024-09-18T02:41:01.728063321Z",
+        "modified_time": "2024-06-24T13:25:58Z",
+        "versions": [
+          "3.1.7"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "ea5c1e10855fb0281cfd0d7df89c9a72b16154f766e464ed7f7c55072e480d27",
+        "import_time": "2024-09-18T02:41:01.167143315Z",
+        "modified_time": "2024-06-24T11:57:36Z",
+        "versions": [
+          "3.0.4"
+        ]
       }
     ]
   }

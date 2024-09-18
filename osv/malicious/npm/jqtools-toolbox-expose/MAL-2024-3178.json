@@ -1,0 +1,52 @@
+{
+  "modified": "2024-09-18T02:42:45Z",
+  "published": "2024-07-22T14:11:20Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-3178",
+  "summary": "Malicious code in jqtools-toolbox-expose (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (cef84c4fc127d96b90177e4ac442505ddc24484dec5537004743f0ccca43208f)\nThe OpenSSF Package Analysis project identified 'jqtools-toolbox-expose' @ 70.69.69 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "jqtools-toolbox-expose"
+      },
+      "versions": [
+        "70.69.69",
+        "69.69.69"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2024-09-18T02:41:51.794530988Z",
+        "modified_time": "2024-07-24T12:51:02Z",
+        "sha256": "cef84c4fc127d96b90177e4ac442505ddc24484dec5537004743f0ccca43208f",
+        "source": "ossf-package-analysis",
+        "versions": [
+          "70.69.69"
+        ]
+      },
+      {
+        "import_time": "2024-09-18T02:41:50.73312664Z",
+        "modified_time": "2024-07-22T14:11:20Z",
+        "sha256": "cf8ecc5384976555e101e147d0456707c86467e52647ed0bdbc91bc47639356a",
+        "source": "ossf-package-analysis",
+        "versions": [
+          "69.69.69"
+        ]
+      }
+    ]
+  }
+}
