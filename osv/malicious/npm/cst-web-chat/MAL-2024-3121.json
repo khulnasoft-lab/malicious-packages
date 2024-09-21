@@ -1,19 +1,47 @@
 {
-  "modified": "2024-05-24T19:45:53Z",
+  "modified": "2024-09-21T01:47:39Z",
   "published": "2024-05-24T19:45:53Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-3121",
+  "aliases": [
+    "GHSA-h48w-r9f2-pqrc"
+  ],
   "summary": "Malicious code in cst-web-chat (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (d63325ebdbf1c74d7cc5b1900804d59ba11882efb8796b209b0c5b572d4844a2)\nThe OpenSSF Package Analysis project identified 'cst-web-chat' @ 3.3.7 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (f29459986483506a5bda069545676e4bfc990a37afd3dc286ba0e882cc4c8442)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (d63325ebdbf1c74d7cc5b1900804d59ba11882efb8796b209b0c5b572d4844a2)\nThe OpenSSF Package Analysis project identified 'cst-web-chat' @ 3.3.7 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
         "ecosystem": "npm",
         "name": "cst-web-chat"
       },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
       "versions": [
         "3.3.7"
-      ]
+      ],
+      "database_specific": {
+        "cwes": [
+          {
+            "cweId": "CWE-506",
+            "description": "The product contains code that appears to be malicious in nature.",
+            "name": "Embedded Malicious Code"
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-h48w-r9f2-pqrc"
     }
   ],
   "credits": [
@@ -29,12 +57,29 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
+        "source": "ossf-package-analysis",
+        "sha256": "d63325ebdbf1c74d7cc5b1900804d59ba11882efb8796b209b0c5b572d4844a2",
         "import_time": "2024-09-18T02:40:42.44784763Z",
         "modified_time": "2024-05-24T19:45:53Z",
-        "sha256": "d63325ebdbf1c74d7cc5b1900804d59ba11882efb8796b209b0c5b572d4844a2",
-        "source": "ossf-package-analysis",
         "versions": [
           "3.3.7"
+        ]
+      },
+      {
+        "source": "ghsa-malware",
+        "sha256": "f29459986483506a5bda069545676e4bfc990a37afd3dc286ba0e882cc4c8442",
+        "import_time": "2024-09-21T01:47:20.012754337Z",
+        "id": "GHSA-h48w-r9f2-pqrc",
+        "modified_time": "2024-09-20T03:01:56Z",
+        "ranges": [
+          {
+            "type": "SEMVER",
+            "events": [
+              {
+                "introduced": "0"
+              }
+            ]
+          }
         ]
       }
     ]
