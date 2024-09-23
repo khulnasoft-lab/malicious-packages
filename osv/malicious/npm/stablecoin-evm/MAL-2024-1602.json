@@ -1,13 +1,13 @@
 {
-  "modified": "2024-06-27T02:49:43Z",
-  "published": "2024-06-27T02:49:43Z",
+  "modified": "2024-09-18T02:42:46Z",
+  "published": "2024-06-19T17:33:03Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-1602",
   "aliases": [
     "GHSA-653x-vcvg-rppm"
   ],
   "summary": "Malicious code in stablecoin-evm (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (f1daf169798945fe6cee3633291f3666bed20fc0f646d492f42d0266dc80f25e)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (f1daf169798945fe6cee3633291f3666bed20fc0f646d492f42d0266dc80f25e)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (07fd06811502163c5f5d566caa13720cc66436480565596b01f001e181df2294)\nThe OpenSSF Package Analysis project identified 'stablecoin-evm' @ 2.2.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -23,6 +23,11 @@
             }
           ]
         }
+      ],
+      "versions": [
+        "2.2.0",
+        "2.0.0",
+        "2.2.1"
       ],
       "database_specific": {
         "cwes": [
@@ -41,24 +46,61 @@
       "url": "https://github.com/advisories/GHSA-653x-vcvg-rppm"
     }
   ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "id": "GHSA-653x-vcvg-rppm",
+        "source": "ghsa-malware",
+        "sha256": "f1daf169798945fe6cee3633291f3666bed20fc0f646d492f42d0266dc80f25e",
         "import_time": "2024-06-28T01:38:04.799932895Z",
+        "id": "GHSA-653x-vcvg-rppm",
         "modified_time": "2024-06-27T02:49:43Z",
         "ranges": [
           {
+            "type": "SEMVER",
             "events": [
               {
                 "introduced": "0"
               }
-            ],
-            "type": "SEMVER"
+            ]
           }
-        ],
-        "sha256": "f1daf169798945fe6cee3633291f3666bed20fc0f646d492f42d0266dc80f25e",
-        "source": "ghsa-malware"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "07fd06811502163c5f5d566caa13720cc66436480565596b01f001e181df2294",
+        "import_time": "2024-09-18T02:41:00.32266021Z",
+        "modified_time": "2024-06-21T16:54:42Z",
+        "versions": [
+          "2.2.0"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "68217c4d37db8a590402c927a0ce8dd69ca180ef1f97e06972fa2654ab5a9f44",
+        "import_time": "2024-09-18T02:40:58.569519896Z",
+        "modified_time": "2024-06-19T17:33:03Z",
+        "versions": [
+          "2.0.0"
+        ]
+      },
+      {
+        "source": "ossf-package-analysis",
+        "sha256": "7ed3a5521c6bd40b6ed0e9cfa748c80d5972756c6d664e3cb4e1f84632bf6557",
+        "import_time": "2024-09-18T02:41:00.167678461Z",
+        "modified_time": "2024-06-21T16:40:51Z",
+        "versions": [
+          "2.2.1"
+        ]
       }
     ]
   }
