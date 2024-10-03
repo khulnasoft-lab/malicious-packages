@@ -1,5 +1,5 @@
 {
-  "modified": "2024-10-01T02:01:58Z",
+  "modified": "2024-10-01T00:35:39Z",
   "published": "2023-11-21T22:55:52Z",
   "schema_version": "1.5.0",
   "id": "MAL-2023-8557",
@@ -25,7 +25,8 @@
         }
       ],
       "versions": [
-        "0.1.0"
+        "0.1.0",
+        "1.0.0"
       ],
       "database_specific": {
         "cwes": [
@@ -49,7 +50,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -66,9 +67,18 @@
         ]
       },
       {
+        "source": "ossf-package-analysis",
+        "sha256": "377a1e3b3ed72c01765fdb417c42f825cf9b7bf2a33a8991a37196690ff596d2",
+        "import_time": "2024-09-28T13:34:12.446106128Z",
+        "modified_time": "2024-09-28T13:20:34Z",
+        "versions": [
+          "1.0.0"
+        ]
+      },
+      {
         "source": "ghsa-malware",
         "sha256": "25becd0bffc0a2685831f2227d4ee97a1b406d60a899f7c683bfb4fa5af4e1f9",
-        "import_time": "2024-10-01T02:01:37.386734659Z",
+        "import_time": "2024-10-01T00:35:09.099484809Z",
         "id": "GHSA-r3xc-vhc2-h4rj",
         "modified_time": "2024-09-30T03:55:14Z",
         "ranges": [

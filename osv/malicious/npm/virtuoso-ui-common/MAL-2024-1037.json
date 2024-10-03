@@ -1,5 +1,5 @@
 {
-  "modified": "2024-06-14T01:45:38Z",
+  "modified": "2024-06-28T02:53:18Z",
   "published": "2024-02-24T13:58:42Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-1037",
@@ -25,7 +25,10 @@
         }
       ],
       "versions": [
-        "3.0.4"
+        "3.0.4",
+        "3.0.0",
+        "2.1.48",
+        "2.1.49"
       ],
       "database_specific": {
         "cwes": [
@@ -49,8 +52,15 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
+      ]
+    },
+    {
+      "name": "ReversingLabs",
+      "type": "FINDER",
+      "contact": [
+        "https://www.reversinglabs.com"
       ]
     }
   ],
@@ -68,7 +78,7 @@
       {
         "source": "ghsa-malware",
         "sha256": "e312940c270bdfe72147c1582e1a07fef45096820038e878c4f91bdd444c03dd",
-        "import_time": "2024-06-14T01:41:57.05829195Z",
+        "import_time": "2024-06-14T00:26:04.262369697Z",
         "id": "GHSA-3wh5-2jfj-mwhh",
         "modified_time": "2024-06-13T06:13:30Z",
         "ranges": [
@@ -80,6 +90,19 @@
               }
             ]
           }
+        ]
+      },
+      {
+        "source": "reversing-labs",
+        "sha256": "366fd9e065161faa2ffd01f5de61afdef9639f30efac36594887d19a0132af61",
+        "import_time": "2024-06-28T02:46:24.159438438Z",
+        "id": "RLMA-2024-02600",
+        "modified_time": "2024-06-25T13:19:11Z",
+        "versions": [
+          "3.0.0",
+          "3.0.4",
+          "2.1.48",
+          "2.1.49"
         ]
       }
     ]

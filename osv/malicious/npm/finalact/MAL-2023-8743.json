@@ -26,7 +26,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }

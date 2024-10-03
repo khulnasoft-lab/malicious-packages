@@ -1,0 +1,43 @@
+{
+  "modified": "2024-06-28T02:53:16Z",
+  "published": "2024-06-25T12:21:18Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-2416",
+  "summary": "Malicious code in get-current-env (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "get-current-env",
+        "purl": "pkg:npm/get-current-env"
+      },
+      "versions": [
+        "99.99.99"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "ReversingLabs",
+      "type": "FINDER",
+      "contact": [
+        "https://www.reversinglabs.com"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "id": "RLMA-2024-01076",
+        "import_time": "2024-06-28T02:43:22.282965831Z",
+        "modified_time": "2024-06-25T12:44:09Z",
+        "sha256": "05362eee15ea29ec4db518cd1c02dedfad483bab65f97c84d5695613ac1d3455",
+        "source": "reversing-labs",
+        "versions": [
+          "99.99.99"
+        ]
+      }
+    ]
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "modified": "2024-07-20T01:46:50Z",
+  "modified": "2024-07-20T00:27:39Z",
   "published": "2024-03-15T00:58:33Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-1097",
@@ -49,7 +49,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -68,7 +68,7 @@
       {
         "source": "ghsa-malware",
         "sha256": "f0943eac5b10af47669f7e61c098c7804610dbb51c46b3c716e5667821d36ff1",
-        "import_time": "2024-07-20T01:38:17.748815007Z",
+        "import_time": "2024-07-20T00:27:14.802736987Z",
         "id": "GHSA-p54q-43rm-9x5p",
         "modified_time": "2024-07-19T03:15:24Z",
         "ranges": [
