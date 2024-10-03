@@ -3,9 +3,9 @@ name: Assign OSV IDs
 on:
   push:
     branches:
-    - main
+      - main
   schedule:
-  - cron: '7 * * * *' # Once an hour
+    - cron: "7 * * * *" # Once an hour
   workflow_dispatch:
 
 permissions: read-all
@@ -27,22 +27,22 @@ jobs:
       with:
         go-version: "1.21"
 
-    - name: Preprocess reports
-      run: make preprocess
+      - name: Preprocess reports
+        run: make preprocess
 
-    - name: Assign IDs
-      run: |
-        go install github.com/google/osv/vulnfeeds/cmd/ids@latest
-        ids -dir=./osv/malicious -prefix MAL -format json
-      env:
-        GONOPROXY: github.com/google/osv
+      - name: Assign IDs
+        run: |
+          go install github.com/google/osv/vulnfeeds/cmd/ids@latest
+          ids -dir=./osv/malicious -prefix MAL -format json
+        env:
+          GONOPROXY: github.com/google/osv
 
-    - name: Prepare commit
-      run: |
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        git add .
-    - name: Commit report changes
-      run: git diff --cached --quiet || git commit -m 'Assign IDs'
-    - name: Push commit
-      run: git push
+      - name: Prepare commit
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+      - name: Commit report changes
+        run: git diff --cached --quiet || git commit -m 'Assign IDs'
+      - name: Push commit
+        run: git push

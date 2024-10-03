@@ -1,0 +1,42 @@
+{
+  "modified": "2024-09-23T03:16:57Z",
+  "published": "2024-09-23T03:16:57Z",
+  "schema_version": "1.5.0",
+  "id": "",
+  "summary": "Malicious code in orderly-evm-crosschain (npm)",
+  "details": "The OpenSSF Package Analysis project identified 'orderly-evm-crosschain' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "orderly-evm-crosschain"
+      },
+      "versions": [
+        "1.0.0"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "1e916127a4ccd3500c03f826b54466fa822625e144d52114304b2db20af395ec",
+        "import_time": "2024-10-03T20:17:15.513161282Z",
+        "modified_time": "2024-09-23T03:16:57Z",
+        "versions": [
+          "1.0.0"
+        ]
+      }
+    ]
+  }
+}
