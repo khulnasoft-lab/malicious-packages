@@ -7,7 +7,7 @@
     "SNYK-JS-ESLINTPLUGININDEED-3336031"
   ],
   "summary": "Malicious code in eslint-plugin-indeed (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (cd3cf0dfdda3ea0bf705d385efb05c56b971a408c4a0dceef3771d2e474a33e0)\nThe OpenSSF Package Analysis project identified 'eslint-plugin-indeed' @ 99.99.9 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (cd3cf0dfdda3ea0bf705d385efb05c56b971a408c4a0dceef3771d2e474a33e0)\nThe OpenSSF Package Analysis project identified 'eslint-plugin-indeed' @ 99.99.9 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -31,7 +31,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/ossf/package-analysis",
+        "https://github.com/khulnasoft-lab/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     },
@@ -46,7 +46,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "cd3cf0dfdda3ea0bf705d385efb05c56b971a408c4a0dceef3771d2e474a33e0",
         "import_time": "2023-06-30T03:53:17.18663345Z",
         "modified_time": "0001-01-01T00:00:00Z",

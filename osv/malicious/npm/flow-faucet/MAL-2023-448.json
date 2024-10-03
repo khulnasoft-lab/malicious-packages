@@ -7,7 +7,7 @@
     "GHSA-g9gj-4p6r-6986"
   ],
   "summary": "Malicious code in flow-faucet (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: checkmarx (0cff9be7c9c3ff28671b9dcf41cf2da25e5f96e860a1c0a8e6d0be715487071b)\nMalicious packages campaign since 2021 targeting developers, steals source code and secrets\n\n## Source: ghsa-malware (5942437b149eb1f90d86010b51e1fa676771fb3b439e90cf85cefa115b6ee4a3)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (c6bb150e633e8754f2bbbc9d7cc20f95afe7a243f644ccc07089c216e08d5efb)\nThe OpenSSF Package Analysis project identified 'flow-faucet' @ 10.999.0 (npm) as malicious.\n\nIt is considered malicious because:\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: checkmarx (0cff9be7c9c3ff28671b9dcf41cf2da25e5f96e860a1c0a8e6d0be715487071b)\nMalicious packages campaign since 2021 targeting developers, steals source code and secrets\n\n## Source: ghsa-malware (5942437b149eb1f90d86010b51e1fa676771fb3b439e90cf85cefa115b6ee4a3)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (c6bb150e633e8754f2bbbc9d7cc20f95afe7a243f644ccc07089c216e08d5efb)\nThe OpenSSF Package Analysis project identified 'flow-faucet' @ 10.999.0 (npm) as malicious.\n\nIt is considered malicious because:\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -61,7 +61,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/ossf/package-analysis",
+        "https://github.com/khulnasoft-lab/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -125,7 +125,7 @@
         ]
       },
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "c6bb150e633e8754f2bbbc9d7cc20f95afe7a243f644ccc07089c216e08d5efb",
         "import_time": "2023-08-10T06:16:56.765968635Z",
         "modified_time": "2023-05-04T01:22:13.018094809Z",

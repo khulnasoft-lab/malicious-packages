@@ -7,7 +7,7 @@
     "SNYK-JS-EGSTORECAROUSEL-3336082"
   ],
   "summary": "Malicious code in egstore-carousel (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (e32b3c589f221c9b4e1d86be2924f6e215e6bf6c03844a5084fb1f04eb33275e)\nThe OpenSSF Package Analysis project identified 'egstore-carousel' @ 99.2.2 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (e32b3c589f221c9b4e1d86be2924f6e215e6bf6c03844a5084fb1f04eb33275e)\nThe OpenSSF Package Analysis project identified 'egstore-carousel' @ 99.2.2 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -31,7 +31,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/ossf/package-analysis",
+        "https://github.com/khulnasoft-lab/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     },
@@ -46,7 +46,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "e32b3c589f221c9b4e1d86be2924f6e215e6bf6c03844a5084fb1f04eb33275e",
         "import_time": "2023-08-10T06:15:25.11518627Z",
         "modified_time": "2023-04-30T23:06:42.591333498Z",
@@ -55,7 +55,7 @@
         ]
       },
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "f2e573181b906ae4e5843758fb39ad85056395206a399ec63bd4acb840a42a9b",
         "import_time": "2023-08-10T06:15:20.541890978Z",
         "modified_time": "2023-04-29T10:32:18.453955159Z",

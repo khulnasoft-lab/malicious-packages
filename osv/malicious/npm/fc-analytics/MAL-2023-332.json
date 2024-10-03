@@ -7,7 +7,7 @@
     "GHSA-g38v-6mv3-658x"
   ],
   "summary": "Malicious code in fc-analytics (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (d196877cc4a07d7fc4ab1f9662861e68702c57f8f4b5ef2a5b28d0f2b8db41ab)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (52e00d608119384c8f946a74833a0fac3f87d4927b4a46bba9c17450de431a71)\nThe OpenSSF Package Analysis project identified 'fc-analytics' @ 99999.99999.99999 (npm) as malicious.\n\nIt is considered malicious because:\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (d196877cc4a07d7fc4ab1f9662861e68702c57f8f4b5ef2a5b28d0f2b8db41ab)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (52e00d608119384c8f946a74833a0fac3f87d4927b4a46bba9c17450de431a71)\nThe OpenSSF Package Analysis project identified 'fc-analytics' @ 99999.99999.99999 (npm) as malicious.\n\nIt is considered malicious because:\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -49,7 +49,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/ossf/package-analysis",
+        "https://github.com/khulnasoft-lab/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -74,7 +74,7 @@
         ]
       },
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "52e00d608119384c8f946a74833a0fac3f87d4927b4a46bba9c17450de431a71",
         "import_time": "2023-08-10T06:17:21.769618936Z",
         "modified_time": "2023-06-05T14:22:13.088311048Z",

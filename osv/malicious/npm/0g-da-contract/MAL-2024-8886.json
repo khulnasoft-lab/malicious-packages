@@ -7,7 +7,7 @@
     "GHSA-vpx9-3m2q-x4wf"
   ],
   "summary": "Malicious code in 0g-da-contract (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (e2638730cdc6149851ffde4258625886da39146fb96e355280a2460ec01653ce)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (0593bef0b00705c410da9f501b1181a8f1e9c187cf41e9683a4d41da3b88ed23)\nThe OpenSSF Package Analysis project identified '0g-da-contract' @ 2.2.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (e2638730cdc6149851ffde4258625886da39146fb96e355280a2460ec01653ce)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (0593bef0b00705c410da9f501b1181a8f1e9c187cf41e9683a4d41da3b88ed23)\nThe OpenSSF Package Analysis project identified '0g-da-contract' @ 2.2.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -49,7 +49,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/ossf/package-analysis",
+        "https://github.com/khulnasoft-lab/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -57,7 +57,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "0593bef0b00705c410da9f501b1181a8f1e9c187cf41e9683a4d41da3b88ed23",
         "import_time": "2024-09-17T10:36:43.079874905Z",
         "modified_time": "2024-09-17T10:10:47Z",

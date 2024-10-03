@@ -8,7 +8,7 @@
     "SNYK-JS-SOUNDCLOUDSONGS-6515700"
   ],
   "summary": "Malicious code in soundcloud-songs (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (f1a7a5bdeca432ac351a71a0caac1e58d2f4d31d54fcf357f657e84d8f201f16)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (ed030d1b5898aa130cecf272a18d28a644daf80db33f20519ccbffb594d6a70f)\nThe OpenSSF Package Analysis project identified 'soundcloud-songs' @ 1.0.1 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (f1a7a5bdeca432ac351a71a0caac1e58d2f4d31d54fcf357f657e84d8f201f16)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (ed030d1b5898aa130cecf272a18d28a644daf80db33f20519ccbffb594d6a70f)\nThe OpenSSF Package Analysis project identified 'soundcloud-songs' @ 1.0.1 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -59,7 +59,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/ossf/package-analysis",
+        "https://github.com/khulnasoft-lab/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     },
@@ -74,7 +74,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "ed030d1b5898aa130cecf272a18d28a644daf80db33f20519ccbffb594d6a70f",
         "import_time": "2024-04-02T23:05:12.364996219Z",
         "modified_time": "2024-04-01T00:59:27Z",

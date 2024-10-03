@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2024-7777",
   "summary": "Malicious code in x91yz (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (e4cfb5ebf38924c80a8ac2ab612e4c663039edbec7a6ace7cd55d290f84ca3ce)\nThe OpenSSF Package Analysis project identified 'x91yz' @ 2.4.12 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (e4cfb5ebf38924c80a8ac2ab612e4c663039edbec7a6ace7cd55d290f84ca3ce)\nThe OpenSSF Package Analysis project identified 'x91yz' @ 2.4.12 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/ossf/package-analysis",
+        "https://github.com/khulnasoft-lab/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2024-07-20T05:05:41.999300899Z",
         "modified_time": "2024-07-18T18:32:23Z",
         "sha256": "e4cfb5ebf38924c80a8ac2ab612e4c663039edbec7a6ace7cd55d290f84ca3ce",
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "versions": [
           "2.4.12"
         ]

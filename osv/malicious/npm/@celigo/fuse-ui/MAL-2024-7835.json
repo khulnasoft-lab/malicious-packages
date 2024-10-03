@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2024-7835",
   "summary": "Malicious code in @celigo/fuse-ui (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (c7e04fe72ce959885707ec66262560851804147d1a6816565ff868c45a652c38)\nThe OpenSSF Package Analysis project identified '@celigo/fuse-ui' @ 9.7.7 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (c7e04fe72ce959885707ec66262560851804147d1a6816565ff868c45a652c38)\nThe OpenSSF Package Analysis project identified '@celigo/fuse-ui' @ 9.7.7 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/ossf/package-analysis",
+        "https://github.com/khulnasoft-lab/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2024-07-29T01:31:58.557882923Z",
         "modified_time": "2024-07-20T02:55:51Z",
         "sha256": "c7e04fe72ce959885707ec66262560851804147d1a6816565ff868c45a652c38",
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "versions": [
           "9.7.7"
         ]

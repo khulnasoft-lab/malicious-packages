@@ -2,11 +2,11 @@ id-prefix: "MAL"
 malicious-path: "./osv/malicious/"
 false-positive-path: "./osv/withdrawn/"
 sources:
-- id: "ossf-package-analysis"
-  bucket: "gs://gosst-package-detection-osv?access_id=-"
-  lookback-entries: 10
-  prefixes:
-  - "confident/"
-- id: "ghsa-malware"
-  alias-id: true
+  - id: "khulnasoft-package-analysis"
+    bucket: "gs://gosst-package-detection-osv?access_id=-"
+    lookback-entries: 10
+    prefixes:
+      - "confident/"
+  - id: "ghsa-malware"
+    alias-id: true
 disabled-for-reason: "NPM namespaces are not specified in the package correctly"

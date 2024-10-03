@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-8038",
   "summary": "Malicious code in test-npm-com-test (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: checkmarx (eb86ecfecc56220476e3c33bd4f86f95c17be6c7a9a7a3cdc9ca822205076380)\nMalicious packages campaign since 2021 targeting developers, steals source code and secrets\n\n## Source: ossf-package-analysis (72fc3cf49c97d720ce54e9326b4a860179cf60cc1af17b97c093347dfbe38510)\nThe OpenSSF Package Analysis project identified 'test-npm-com-test' @ 1.995.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: checkmarx (eb86ecfecc56220476e3c33bd4f86f95c17be6c7a9a7a3cdc9ca822205076380)\nMalicious packages campaign since 2021 targeting developers, steals source code and secrets\n\n## Source: khulnasoft-package-analysis (72fc3cf49c97d720ce54e9326b4a860179cf60cc1af17b97c093347dfbe38510)\nThe OpenSSF Package Analysis project identified 'test-npm-com-test' @ 1.995.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -45,7 +45,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/ossf/package-analysis",
+        "https://github.com/khulnasoft-lab/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -108,7 +108,7 @@
         ]
       },
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "72fc3cf49c97d720ce54e9326b4a860179cf60cc1af17b97c093347dfbe38510",
         "import_time": "2024-01-24T22:04:24.63867497Z",
         "modified_time": "2024-01-18T17:11:06Z",

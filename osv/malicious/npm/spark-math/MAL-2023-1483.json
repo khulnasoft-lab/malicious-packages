@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-1483",
   "summary": "Malicious code in spark-math (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (be2eded6c2e466203b1452f7d6e4a87ff55c8dd45fd2d76a093f4b7c16864c2c)\nThe OpenSSF Package Analysis project identified 'spark-math' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (be2eded6c2e466203b1452f7d6e4a87ff55c8dd45fd2d76a093f4b7c16864c2c)\nThe OpenSSF Package Analysis project identified 'spark-math' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/ossf/package-analysis",
+        "https://github.com/khulnasoft-lab/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2023-08-16T00:48:56.472364631Z",
         "modified_time": "2023-08-16T00:37:47.830912853Z",
         "sha256": "be2eded6c2e466203b1452f7d6e4a87ff55c8dd45fd2d76a093f4b7c16864c2c",
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "versions": [
           "1.0.0"
         ]

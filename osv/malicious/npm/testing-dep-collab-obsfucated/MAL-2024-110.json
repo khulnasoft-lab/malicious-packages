@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2024-110",
   "summary": "Malicious code in testing-dep-collab-obsfucated (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (c5a66859a22b9608532f75d7748aee57740c8699a9204d441db0e1104e1c4c50)\nThe OpenSSF Package Analysis project identified 'testing-dep-collab-obsfucated' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (c5a66859a22b9608532f75d7748aee57740c8699a9204d441db0e1104e1c4c50)\nThe OpenSSF Package Analysis project identified 'testing-dep-collab-obsfucated' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/ossf/package-analysis",
+        "https://github.com/khulnasoft-lab/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2024-01-16T04:34:21.088265595Z",
         "modified_time": "2024-01-16T04:31:52Z",
         "sha256": "c5a66859a22b9608532f75d7748aee57740c8699a9204d441db0e1104e1c4c50",
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "versions": [
           "1.0.0"
         ]

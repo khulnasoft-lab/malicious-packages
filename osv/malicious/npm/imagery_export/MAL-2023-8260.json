@@ -7,7 +7,7 @@
     "GHSA-r9h9-7x24-vvqv"
   ],
   "summary": "Malicious code in imagery_export (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (ded43ce2e4a423411edd79212bce33e88313d38fa2930daa39e9a329ba99aa70)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (504b27b800d01677ea1e7821881706d3158c4d32d24bb4bfde04db520c9c1fba)\nThe OpenSSF Package Analysis project identified 'imagery_export' @ 3.3.3 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (ded43ce2e4a423411edd79212bce33e88313d38fa2930daa39e9a329ba99aa70)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (504b27b800d01677ea1e7821881706d3158c4d32d24bb4bfde04db520c9c1fba)\nThe OpenSSF Package Analysis project identified 'imagery_export' @ 3.3.3 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -49,7 +49,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/ossf/package-analysis",
+        "https://github.com/khulnasoft-lab/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -57,7 +57,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "504b27b800d01677ea1e7821881706d3158c4d32d24bb4bfde04db520c9c1fba",
         "import_time": "2023-09-29T13:05:52.745447756Z",
         "modified_time": "2023-09-29T12:47:08Z",

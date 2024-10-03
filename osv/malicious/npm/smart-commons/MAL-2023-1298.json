@@ -7,7 +7,7 @@
     "SNYK-JS-SMARTCOMMONS-3336086"
   ],
   "summary": "Malicious code in smart-commons (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (3d5cef67a87cd4a497f6879379a3829535212f7d703197ce6d3130dd03fd2da6)\nThe OpenSSF Package Analysis project identified 'smart-commons' @ 19.6.1 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (3d5cef67a87cd4a497f6879379a3829535212f7d703197ce6d3130dd03fd2da6)\nThe OpenSSF Package Analysis project identified 'smart-commons' @ 19.6.1 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -37,7 +37,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/ossf/package-analysis",
+        "https://github.com/khulnasoft-lab/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     },
@@ -52,7 +52,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "3d5cef67a87cd4a497f6879379a3829535212f7d703197ce6d3130dd03fd2da6",
         "import_time": "2023-08-10T06:15:24.122729675Z",
         "modified_time": "2023-04-30T22:44:09.194360713Z",

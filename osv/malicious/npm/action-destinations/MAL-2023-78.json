@@ -8,7 +8,7 @@
     "SNYK-JS-ACTIONDESTINATIONS-3336016"
   ],
   "summary": "Malicious code in action-destinations (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (96505de3d3aa2e8998dd55d2d3c5571986d30ba16c8bc9971c3f9e8348264ed9)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (928d316f5fb71c83a8aef3c8182a5358dc113e19d14b6402d735f155627a3761)\nThe OpenSSF Package Analysis project identified 'action-destinations' @ 60.54.35 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (96505de3d3aa2e8998dd55d2d3c5571986d30ba16c8bc9971c3f9e8348264ed9)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (928d316f5fb71c83a8aef3c8182a5358dc113e19d14b6402d735f155627a3761)\nThe OpenSSF Package Analysis project identified 'action-destinations' @ 60.54.35 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -56,7 +56,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/ossf/package-analysis",
+        "https://github.com/khulnasoft-lab/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     },
@@ -88,7 +88,7 @@
         ]
       },
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "928d316f5fb71c83a8aef3c8182a5358dc113e19d14b6402d735f155627a3761",
         "import_time": "2023-08-10T06:15:22.253034063Z",
         "modified_time": "2023-04-29T14:36:12.657978191Z",
@@ -97,7 +97,7 @@
         ]
       },
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "f83c1928dfba11c4634352e5fbf4e2aa9d0090d538962d4c5da8fb0e99b1b2b4",
         "import_time": "2023-08-10T06:15:22.520183261Z",
         "modified_time": "2023-04-29T14:37:12.54062801Z",

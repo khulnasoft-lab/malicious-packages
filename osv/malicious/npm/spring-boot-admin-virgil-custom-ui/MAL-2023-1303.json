@@ -8,7 +8,7 @@
     "SNYK-JS-SPRINGBOOTADMINVIRGILCUSTOMUI-6070634"
   ],
   "summary": "Malicious code in spring-boot-admin-virgil-custom-ui (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (bf3bf8c73b2a5a04555aa1692341d9861a37ad32f428b123c88751322e74c66d)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (418a658b5f764aedca166096d5ffffd316247528be6d53c91be899190cfcb2ed)\nThe OpenSSF Package Analysis project identified 'spring-boot-admin-virgil-custom-ui' @ 99.9.92 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (bf3bf8c73b2a5a04555aa1692341d9861a37ad32f428b123c88751322e74c66d)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (418a658b5f764aedca166096d5ffffd316247528be6d53c91be899190cfcb2ed)\nThe OpenSSF Package Analysis project identified 'spring-boot-admin-virgil-custom-ui' @ 99.9.92 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -61,7 +61,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/ossf/package-analysis",
+        "https://github.com/khulnasoft-lab/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     },
@@ -76,7 +76,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "44c2406f7561120fa863bb93792cdeea9732a0e7e8269d31f4a6b36e36aaf900",
         "import_time": "2023-08-10T06:15:34.15179633Z",
         "modified_time": "2023-05-03T01:31:43.392945727Z",
@@ -85,7 +85,7 @@
         ]
       },
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "418a658b5f764aedca166096d5ffffd316247528be6d53c91be899190cfcb2ed",
         "import_time": "2023-11-17T07:05:02.715476847Z",
         "modified_time": "2023-11-17T07:01:34Z",

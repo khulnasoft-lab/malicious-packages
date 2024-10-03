@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-8540",
   "summary": "Malicious code in discomusic (PyPI)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (d5ae86bb92ecda0b9d67bf6bcb933e00f57e91de9916d1b3a3ad5a68993c0778)\nThe OpenSSF Package Analysis project identified 'discomusic' @ 0.0.3 (pypi) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (d5ae86bb92ecda0b9d67bf6bcb933e00f57e91de9916d1b3a3ad5a68993c0778)\nThe OpenSSF Package Analysis project identified 'discomusic' @ 0.0.3 (pypi) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/ossf/package-analysis",
+        "https://github.com/khulnasoft-lab/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2023-11-19T23:34:13.602053334Z",
         "modified_time": "2023-11-18T16:43:17Z",
         "sha256": "d5ae86bb92ecda0b9d67bf6bcb933e00f57e91de9916d1b3a3ad5a68993c0778",
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "versions": [
           "0.0.3"
         ]

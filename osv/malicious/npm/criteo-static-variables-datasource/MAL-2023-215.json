@@ -7,7 +7,7 @@
     "GHSA-ffjx-vmgh-34cp"
   ],
   "summary": "Malicious code in criteo-static-variables-datasource (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (65ae832c9a084b0c39c57bf3bb68ff1877e5f1370b9c29e564368e0a2d224d9b)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (80b66a01395a3ad7d1482b1ebdb5991eadfdf22116fa8a27e18626af4474d508)\nThe OpenSSF Package Analysis project identified 'criteo-static-variables-datasource' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (65ae832c9a084b0c39c57bf3bb68ff1877e5f1370b9c29e564368e0a2d224d9b)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (80b66a01395a3ad7d1482b1ebdb5991eadfdf22116fa8a27e18626af4474d508)\nThe OpenSSF Package Analysis project identified 'criteo-static-variables-datasource' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -49,7 +49,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/ossf/package-analysis",
+        "https://github.com/khulnasoft-lab/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -74,7 +74,7 @@
         ]
       },
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "80b66a01395a3ad7d1482b1ebdb5991eadfdf22116fa8a27e18626af4474d508",
         "import_time": "2023-08-10T06:16:21.546742171Z",
         "modified_time": "2023-06-24T18:46:28.998704652Z",

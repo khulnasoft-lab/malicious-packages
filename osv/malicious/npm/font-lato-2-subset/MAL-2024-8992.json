@@ -7,7 +7,7 @@
     "GHSA-354g-f856-q44w"
   ],
   "summary": "Malicious code in font-lato-2-subset (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (b613318a5c7aecc4baa2401877fcc8216636e03d2487ca00748977bca9763ae8)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (fa19710136d23e32cda9b2f7b74765dcb638e264f62fa8d34e49a3f32a5c9465)\nThe OpenSSF Package Analysis project identified 'font-lato-2-subset' @ 0.4.1 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (b613318a5c7aecc4baa2401877fcc8216636e03d2487ca00748977bca9763ae8)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (fa19710136d23e32cda9b2f7b74765dcb638e264f62fa8d34e49a3f32a5c9465)\nThe OpenSSF Package Analysis project identified 'font-lato-2-subset' @ 0.4.1 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -49,7 +49,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/ossf/package-analysis",
+        "https://github.com/khulnasoft-lab/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -57,7 +57,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "fa19710136d23e32cda9b2f7b74765dcb638e264f62fa8d34e49a3f32a5c9465",
         "import_time": "2024-09-27T04:06:23.942738807Z",
         "modified_time": "2024-09-27T04:03:12Z",

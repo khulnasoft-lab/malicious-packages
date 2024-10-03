@@ -7,7 +7,7 @@
     "SNYK-JS-CPTALERTBOX-5876605"
   ],
   "summary": "Malicious code in cptalertbox (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: checkmarx (88c1f10ff1d7a9b89a479bd30b9548a7adc533c677f7913c88563b08e9d28814)\nMalicious packages campaign since 2021 targeting developers, steals source code and secrets\n\n## Source: ossf-package-analysis (6335c6dc85309d9e802aa0989e277e329a7e87887f9ddba2aeb7db0ebc1772f2)\nThe OpenSSF Package Analysis project identified 'cptalertbox' @ 71.999.0 (npm) as malicious.\n\nIt is considered malicious because:\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: checkmarx (88c1f10ff1d7a9b89a479bd30b9548a7adc533c677f7913c88563b08e9d28814)\nMalicious packages campaign since 2021 targeting developers, steals source code and secrets\n\n## Source: khulnasoft-package-analysis (6335c6dc85309d9e802aa0989e277e329a7e87887f9ddba2aeb7db0ebc1772f2)\nThe OpenSSF Package Analysis project identified 'cptalertbox' @ 71.999.0 (npm) as malicious.\n\nIt is considered malicious because:\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -54,7 +54,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/ossf/package-analysis",
+        "https://github.com/khulnasoft-lab/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     },
@@ -108,7 +108,7 @@
     },
     "malicious-packages-origins": [
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "6335c6dc85309d9e802aa0989e277e329a7e87887f9ddba2aeb7db0ebc1772f2",
         "import_time": "2023-08-10T06:17:18.535277012Z",
         "modified_time": "2023-05-29T11:07:17.020062066Z",

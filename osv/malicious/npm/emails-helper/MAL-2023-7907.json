@@ -8,7 +8,7 @@
     "SNYK-JS-EMAILSHELPER-5862643"
   ],
   "summary": "Malicious code in emails-helper (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (ddc90c0866243db5fa4b1832affff6a24b819654f1cc4a03c1930ceda374059c)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (29b7bc9198bf925ba5a647e99fa8348478ec12e0c5c23644b94a6394365f7e48)\nThe OpenSSF Package Analysis project identified 'emails-helper' @ 2.0.20230825130552 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (ddc90c0866243db5fa4b1832affff6a24b819654f1cc4a03c1930ceda374059c)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (29b7bc9198bf925ba5a647e99fa8348478ec12e0c5c23644b94a6394365f7e48)\nThe OpenSSF Package Analysis project identified 'emails-helper' @ 2.0.20230825130552 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -67,7 +67,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/ossf/package-analysis",
+        "https://github.com/khulnasoft-lab/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     },
@@ -82,7 +82,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "29b7bc9198bf925ba5a647e99fa8348478ec12e0c5c23644b94a6394365f7e48",
         "import_time": "2023-08-25T13:34:17.819827638Z",
         "modified_time": "2023-08-25T13:10:51Z",
@@ -91,7 +91,7 @@
         ]
       },
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "7cbf13842cd31380d30e831c182b380efa93d41da4659bd8ccc2f340230c8229",
         "import_time": "2023-08-25T13:34:17.925071114Z",
         "modified_time": "2023-08-25T13:15:51Z",
@@ -100,7 +100,7 @@
         ]
       },
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "da61b01a6d519236748506bbfc7423e007e3ffff647db44458489c9d926cb7cf",
         "import_time": "2023-08-25T13:34:18.063086275Z",
         "modified_time": "2023-08-25T13:25:40Z",
@@ -109,7 +109,7 @@
         ]
       },
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "e6925ee8c5852e817bbd07752fd8a6ff2e88b5daec5e4ed441a99916aa1c1aff",
         "import_time": "2023-08-26T08:05:35.302394167Z",
         "modified_time": "2023-08-26T07:53:13Z",

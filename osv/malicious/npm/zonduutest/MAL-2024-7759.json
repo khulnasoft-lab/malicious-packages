@@ -7,7 +7,7 @@
     "GHSA-464j-c8xv-vm4m"
   ],
   "summary": "Malicious code in zonduutest (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (dd104d918d42d9fb61de1d1e24a2c632f2bf39f504ee6c16322e55ca3c977b16)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (406f8882c5421b151a8b7f8389e7f80a0524027bb9cabfb72e99cb9c69c40b36)\nThe OpenSSF Package Analysis project identified 'zonduutest' @ 1.0.10 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (dd104d918d42d9fb61de1d1e24a2c632f2bf39f504ee6c16322e55ca3c977b16)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (406f8882c5421b151a8b7f8389e7f80a0524027bb9cabfb72e99cb9c69c40b36)\nThe OpenSSF Package Analysis project identified 'zonduutest' @ 1.0.10 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -54,7 +54,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/ossf/package-analysis",
+        "https://github.com/khulnasoft-lab/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -62,7 +62,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "1b65a2513ff7008377a7fd3229a60126a4151e852536697bfc9e05df0509ad26",
         "import_time": "2024-07-16T03:06:26.564570383Z",
         "modified_time": "2024-07-16T03:04:00Z",
@@ -71,7 +71,7 @@
         ]
       },
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "1d7bbaa8b8a23ba41e5ebceab65b0efa1b2a14c8486606f2da0d07b453ad904e",
         "import_time": "2024-07-16T04:06:36.073824607Z",
         "modified_time": "2024-07-16T03:50:45Z",
@@ -80,7 +80,7 @@
         ]
       },
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "efe14af2669c76a345a439edca2f2b0e7bfbb013a79e7e002dfd91e9525703b6",
         "import_time": "2024-07-16T04:06:36.146279889Z",
         "modified_time": "2024-07-16T04:00:58Z",
@@ -89,7 +89,7 @@
         ]
       },
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "406f8882c5421b151a8b7f8389e7f80a0524027bb9cabfb72e99cb9c69c40b36",
         "import_time": "2024-07-16T04:34:46.571696904Z",
         "modified_time": "2024-07-16T04:20:44Z",
@@ -98,7 +98,7 @@
         ]
       },
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "89b9d45ccd6874a2dbdbdc7506ac09a69ada6d278e41d8bb5e7d614ec9ccf0d4",
         "import_time": "2024-07-16T04:34:46.053042571Z",
         "modified_time": "2024-07-16T04:10:38Z",
@@ -107,7 +107,7 @@
         ]
       },
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "cd87e114ee1fdbfda225d2dd5f4fc46e4956157a8137dcf4405517091859b039",
         "import_time": "2024-07-16T04:34:46.293513008Z",
         "modified_time": "2024-07-16T04:13:54Z",

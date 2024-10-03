@@ -1,10 +1,10 @@
 # Purpose
 
 This document describes the database specific additions to the
-[OSV Schema](https://github.com/ossf/osv-schema) specific to the Malicious
+[OSV Schema](https://github.com/khulnasoft-lab/osv-schema) specific to the Malicious
 Packages repository.
 
-The [OSV Schema](https://github.com/ossf/osv-schema) is a format specification
+The [OSV Schema](https://github.com/khulnasoft-lab/osv-schema) is a format specification
 for reporting vulnerabilities in Open Source projects. This format has been
 chosen to work with existing OSV tooling.
 
@@ -146,11 +146,11 @@ OSV, as an RFC3339-formatted timestamp in UTC (ending in "Z"). The
 The ranges field is optional. It is a copy of the ranges field from the
 `affected[].ranges` field in the origin OSV.
 
-See https://ossf.github.io/osv-schema/#affectedranges-field.
+See https://khulnasoft-lab.github.io/osv-schema/#affectedranges-field.
 
 ### malicious-packages-origins[].versions field
 
 The `versions` field is optional. It is a copy of the versions field from the
 `affected[].versions` field in the origin OSV.
 
-See https://ossf.github.io/osv-schema/#affectedversions-field.
+See https://khulnasoft-lab.github.io/osv-schema/#affectedversions-field.

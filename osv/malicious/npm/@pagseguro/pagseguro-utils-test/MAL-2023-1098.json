@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-1098",
   "summary": "Malicious code in @pagseguro/pagseguro-utils-test (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: checkmarx (1ca218112e7cf19df5928168bb7ac862f943cd50af825db0fd09289b710a719d)\nMalicious packages campaign since 2021 targeting developers, steals source code and secrets\n\n## Source: ossf-package-analysis (c80d50a5d149e186763199f475ecd3c23a25e41c93cabeea13494c6bf8c1641a)\nThe OpenSSF Package Analysis project identified '@pagseguro/pagseguro-utils-test' @ 1.999.1 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: checkmarx (1ca218112e7cf19df5928168bb7ac862f943cd50af825db0fd09289b710a719d)\nMalicious packages campaign since 2021 targeting developers, steals source code and secrets\n\n## Source: khulnasoft-package-analysis (c80d50a5d149e186763199f475ecd3c23a25e41c93cabeea13494c6bf8c1641a)\nThe OpenSSF Package Analysis project identified '@pagseguro/pagseguro-utils-test' @ 1.999.1 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -45,7 +45,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/ossf/package-analysis",
+        "https://github.com/khulnasoft-lab/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -92,7 +92,7 @@
     },
     "malicious-packages-origins": [
       {
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "sha256": "c80d50a5d149e186763199f475ecd3c23a25e41c93cabeea13494c6bf8c1641a",
         "import_time": "2023-08-10T06:15:37.883369391Z",
         "modified_time": "2023-05-04T10:36:19.19959104Z",

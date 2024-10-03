@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-8259",
   "summary": "Malicious code in react-fixtures (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (f7ea40ab857f7a705b1222e01f7e58ccf47405ca6a8ea75dca286c1d0df7a797)\nThe OpenSSF Package Analysis project identified 'react-fixtures' @ 9.1.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (f7ea40ab857f7a705b1222e01f7e58ccf47405ca6a8ea75dca286c1d0df7a797)\nThe OpenSSF Package Analysis project identified 'react-fixtures' @ 9.1.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/ossf/package-analysis",
+        "https://github.com/khulnasoft-lab/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2023-09-29T10:05:34.417956373Z",
         "modified_time": "2023-09-27T03:10:44Z",
         "sha256": "f7ea40ab857f7a705b1222e01f7e58ccf47405ca6a8ea75dca286c1d0df7a797",
-        "source": "ossf-package-analysis",
+        "source": "khulnasoft-package-analysis",
         "versions": [
           "9.1.9"
         ]
