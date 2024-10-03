@@ -2,9 +2,9 @@
   "modified": "2024-09-22T22:51:44Z",
   "published": "2024-09-22T22:51:44Z",
   "schema_version": "1.5.0",
-  "id": "",
+  "id": "MAL-2024-9084",
   "summary": "Malicious code in gradio-ui (npm)",
-  "details": "The OpenSSF Package Analysis project identified 'gradio-ui' @ 0.1.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (ecba892c426097e89ddb7da20ae009df5af4b8a4fa2c30106f99260530138016)\nThe OpenSSF Package Analysis project identified 'gradio-ui' @ 0.1.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -29,10 +29,10 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
-        "sha256": "ecba892c426097e89ddb7da20ae009df5af4b8a4fa2c30106f99260530138016",
         "import_time": "2024-10-03T20:17:15.425677849Z",
         "modified_time": "2024-09-22T22:51:44Z",
+        "sha256": "ecba892c426097e89ddb7da20ae009df5af4b8a4fa2c30106f99260530138016",
+        "source": "khulnasoft-package-analysis",
         "versions": [
           "0.1.0"
         ]
