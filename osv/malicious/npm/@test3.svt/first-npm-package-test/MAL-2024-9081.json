@@ -1,5 +1,5 @@
 {
-  "modified": "2024-10-03T15:06:13Z",
+  "modified": "2024-10-04T08:21:02Z",
   "published": "2024-10-03T12:43:13Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-9081",
@@ -13,7 +13,8 @@
       },
       "versions": [
         "1.0.1",
-        "1.0.4"
+        "1.0.4",
+        "1.0.7"
       ]
     }
   ],
@@ -23,7 +24,8 @@
       "type": "FINDER",
       "contact": [
         "https://github.com/khulnasoft-lab/package-analysis",
-        "https://openssf.slack.com/channels/package_analysis"
+        "https://openssf.slack.com/channels/package_analysis",
+        "https://github.com/ossf/package-analysis"
       ]
     }
   ],
@@ -45,6 +47,15 @@
         "modified_time": "2024-10-03T14:45:50Z",
         "versions": [
           "1.0.4"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "90dbe682892e0d79ba3ddfd2a10b15030f8402fe744d6543a62cb85ae1ed3f33",
+        "import_time": "2024-10-04T08:20:34.978883186Z",
+        "modified_time": "2024-10-04T07:15:45Z",
+        "versions": [
+          "1.0.7"
         ]
       }
     ]
