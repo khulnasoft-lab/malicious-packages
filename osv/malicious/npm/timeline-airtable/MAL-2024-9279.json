@@ -1,0 +1,52 @@
+{
+  "modified": "2024-10-12T19:12:36Z",
+  "published": "2024-10-12T18:48:15Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-9279",
+  "summary": "Malicious code in timeline-airtable (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (5db983bca6736ba70c473d5252c1d939fa4bcbf513fb41f82dbbdb48695e0ed0)\nThe OpenSSF Package Analysis project identified 'timeline-airtable' @ 7.1.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "timeline-airtable"
+      },
+      "versions": [
+        "7.1.9",
+        "7.3.9"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2024-10-12T19:12:08.341795291Z",
+        "modified_time": "2024-10-12T18:48:15Z",
+        "sha256": "5db983bca6736ba70c473d5252c1d939fa4bcbf513fb41f82dbbdb48695e0ed0",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "7.1.9"
+        ]
+      },
+      {
+        "import_time": "2024-10-12T19:12:08.479546789Z",
+        "modified_time": "2024-10-12T19:10:09Z",
+        "sha256": "74a0a8521a2b4de3cbf98368316a56e47ef13d4420df5c16d48d84c661fc03e8",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "7.3.9"
+        ]
+      }
+    ]
+  }
+}
