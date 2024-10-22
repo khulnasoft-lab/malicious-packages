@@ -1,5 +1,5 @@
 {
-  "modified": "2024-10-22T18:29:17Z",
+  "modified": "2024-10-22T18:47:05Z",
   "published": "2024-10-22T17:40:47Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-9442",
@@ -13,7 +13,8 @@
       },
       "versions": [
         "1.0.1",
-        "1.0.2"
+        "1.0.2",
+        "1.0.3"
       ]
     }
   ],
@@ -30,21 +31,30 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "0511d29fc5da2e5b913f1015e3a397abcd973ec98bffbff3b41a857ba68dab31",
         "import_time": "2024-10-22T18:28:52.192889325Z",
         "modified_time": "2024-10-22T17:40:47Z",
-        "sha256": "0511d29fc5da2e5b913f1015e3a397abcd973ec98bffbff3b41a857ba68dab31",
-        "source": "khulnasoft-package-analysis",
         "versions": [
           "1.0.1"
         ]
       },
       {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "274f8e2bcc73ffb698d1da64b0386761161f829aebe08af423708dbb01e440f4",
         "import_time": "2024-10-22T18:28:52.253303933Z",
         "modified_time": "2024-10-22T17:52:02Z",
-        "sha256": "274f8e2bcc73ffb698d1da64b0386761161f829aebe08af423708dbb01e440f4",
-        "source": "khulnasoft-package-analysis",
         "versions": [
           "1.0.2"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "5f68b1d66b84981dd2a054c36b63464bbc70c53b5d795aa3443a6c9d34ec38ec",
+        "import_time": "2024-10-22T18:46:38.845847488Z",
+        "modified_time": "2024-10-22T18:40:30Z",
+        "versions": [
+          "1.0.3"
         ]
       }
     ]
