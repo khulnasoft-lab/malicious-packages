@@ -1,5 +1,5 @@
 {
-  "modified": "2024-10-30T12:41:54Z",
+  "modified": "2024-10-30T14:42:58Z",
   "published": "2024-10-30T11:45:52Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-9500",
@@ -14,7 +14,9 @@
       "versions": [
         "19.9.9",
         "39.9.9",
-        "29.9.9"
+        "29.9.9",
+        "43.9.9",
+        "44.9.9"
       ]
     }
   ],
@@ -31,30 +33,48 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "38f085e8ad70a0aa05591593e7dc21b95dfeeaaea8e0e649759f92e2dc82370a",
         "import_time": "2024-10-30T12:41:32.834895023Z",
         "modified_time": "2024-10-30T11:45:52Z",
-        "sha256": "38f085e8ad70a0aa05591593e7dc21b95dfeeaaea8e0e649759f92e2dc82370a",
-        "source": "khulnasoft-package-analysis",
         "versions": [
           "19.9.9"
         ]
       },
       {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "704563903abf31418be74ffa897fd04ceed854158b154ab327ad471af53842ba",
         "import_time": "2024-10-30T12:41:33.22459311Z",
         "modified_time": "2024-10-30T12:40:22Z",
-        "sha256": "704563903abf31418be74ffa897fd04ceed854158b154ab327ad471af53842ba",
-        "source": "khulnasoft-package-analysis",
         "versions": [
           "39.9.9"
         ]
       },
       {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "e855d99dff08cf3c300bb2ee8393088648b6adc0f577f8eee4116b424090e25b",
         "import_time": "2024-10-30T12:41:33.083829075Z",
         "modified_time": "2024-10-30T11:55:50Z",
-        "sha256": "e855d99dff08cf3c300bb2ee8393088648b6adc0f577f8eee4116b424090e25b",
-        "source": "khulnasoft-package-analysis",
         "versions": [
           "29.9.9"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "bce10172f87d0a35ce5205061aa6338f6ac9bfc098cb58f704d5c56ec3786047",
+        "import_time": "2024-10-30T14:42:32.659287388Z",
+        "modified_time": "2024-10-30T14:26:09Z",
+        "versions": [
+          "43.9.9"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "e6f344f29ad1e2b80dd5e14144616c61a92dae2067d5c60632a0a5e7cb9bea0b",
+        "import_time": "2024-10-30T14:42:32.780249692Z",
+        "modified_time": "2024-10-30T14:40:55Z",
+        "versions": [
+          "44.9.9"
         ]
       }
     ]
