@@ -1,10 +1,10 @@
 {
-  "modified": "2024-10-30T07:16:17Z",
+  "modified": "2024-10-30T07:39:42Z",
   "published": "2024-10-30T07:16:17Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-9499",
   "summary": "Malicious code in orb-sync-lib (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (8944b3b318fd212a509dc20fdd5f659acb4b8c3247e42913f3d97b43d066505a)\nThe OpenSSF Package Analysis project identified 'orb-sync-lib' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (66fd78c3bd4a6a0c78fd807883122d9472771728d739f90d169cd1ba62760f3c)\nThe OpenSSF Package Analysis project identified 'orb-sync-lib' @ 100.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -12,7 +12,8 @@
         "name": "orb-sync-lib"
       },
       "versions": [
-        "1.0.0"
+        "1.0.0",
+        "100.0.0"
       ]
     }
   ],
@@ -29,12 +30,21 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "8944b3b318fd212a509dc20fdd5f659acb4b8c3247e42913f3d97b43d066505a",
         "import_time": "2024-10-30T07:19:43.359457691Z",
         "modified_time": "2024-10-30T07:16:17Z",
-        "sha256": "8944b3b318fd212a509dc20fdd5f659acb4b8c3247e42913f3d97b43d066505a",
-        "source": "khulnasoft-package-analysis",
         "versions": [
           "1.0.0"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "66fd78c3bd4a6a0c78fd807883122d9472771728d739f90d169cd1ba62760f3c",
+        "import_time": "2024-10-30T07:39:20.917999841Z",
+        "modified_time": "2024-10-30T07:34:12Z",
+        "versions": [
+          "100.0.0"
         ]
       }
     ]
