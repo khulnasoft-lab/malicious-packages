@@ -1,5 +1,5 @@
 {
-  "modified": "2024-10-30T07:39:42Z",
+  "modified": "2024-10-30T17:41:07Z",
   "published": "2024-10-30T07:16:17Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-9499",
@@ -13,7 +13,8 @@
       },
       "versions": [
         "1.0.0",
-        "100.0.0"
+        "100.0.0",
+        "100.0.1"
       ]
     }
   ],
@@ -45,6 +46,15 @@
         "modified_time": "2024-10-30T07:34:12Z",
         "versions": [
           "100.0.0"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "c80265186f00207f4551a89048d5bca6e8d20736cead33a109aeef941e405317",
+        "import_time": "2024-10-30T17:40:45.220861969Z",
+        "modified_time": "2024-10-30T17:21:36Z",
+        "versions": [
+          "100.0.1"
         ]
       }
     ]
