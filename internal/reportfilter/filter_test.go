@@ -14,11 +14,11 @@
 package reportfilter_test
 
 import (
-	"github.com/google/osv-scanner/pkg/models"
-
-	"github.com/khulnasoft-lab/malicious-packages/internal/reportfilter"
 	"reflect"
 	"testing"
+
+	"github.com/google/osv-scanner/pkg/models"
+
 )
 
 func TestNew_PatternError(t *testing.T) {

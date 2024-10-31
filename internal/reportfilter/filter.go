@@ -15,10 +15,10 @@ package reportfilter
 
 import (
 	"fmt"
-	"github.com/google/osv-scanner/pkg/models"
 	"regexp"
 	"slices"
 
+	"github.com/google/osv-scanner/pkg/models"
 )
 
 var supportedFields = []string{
