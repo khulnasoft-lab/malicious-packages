@@ -2,11 +2,20 @@ id-prefix: "MAL"
 malicious-path: "./osv/malicious/"
 false-positive-path: "./osv/withdrawn/"
 sources:
-  - id: "khulnasoft-package-analysis"
-    bucket: "gs://gosst-package-detection-osv?access_id=-"
-    lookback-entries: 10
-    prefixes:
-      - "confident/"
-  - id: "ghsa-malware"
-    alias-id: true
-disabled-for-reason: "NPM namespaces are not specified in the package correctly"
+- id: "khulnasoft-package-analysis"
+  bucket: "gs://gosst-package-detection-osv?access_id=-"
+  lookback-entries: 10
+  prefixes:
+  - "confident/"
+- id: "ghsa-malware"
+  alias-id: true
+- id: "reversing-labs"
+  bucket: "s3://rl-github-khulnasoft?awssdk=v2&profile=reversinglabs&region=us-east-1"
+  prefixes:
+  - "RLMA-"
+  - "RLUA-"
+  lookback-entries: 10
+  disabled-for-reason: "NPM namespaces are not specified in the package correctly"
+  filters:
+  - field: "related"
+    pattern: "^RLMA-"
