@@ -27,7 +27,7 @@ linters:
     - exportloopref
     - gci
     #- gochecknoinits  # Temporarily disabled.
-    #- gocognit # Temporarily disabled.
+    #- gocognit  # Temporarily disabled.
     - goconst
     - gocritic
     - gocyclo
@@ -139,4 +139,3 @@ linters-settings:
       - ptrToRefParam
       - typeUnparen
       - unnecessaryBlock
-
