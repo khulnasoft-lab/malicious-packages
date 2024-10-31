@@ -27,6 +27,7 @@ import (
 	"unicode"
 
 	"github.com/google/osv-scanner/pkg/models"
+
 	"github.com/khulnasoft-lab/malicious-packages/internal/reportfilter"
 )
 

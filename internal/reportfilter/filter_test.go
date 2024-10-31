@@ -4,7 +4,7 @@
 // you may not use this file except in compliance with the License.
 // You may obtain a copy of the License at
 //
-//     https://www.apache.org/licenses/LICENSE-2.0
+//	https://www.apache.org/licenses/LICENSE-2.0
 //
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
@@ -12,24 +12,29 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 package reportfilter_test
+
 import (
+	"github.com/google/osv-scanner/pkg/models"
+
+	"github.com/khulnasoft-lab/malicious-packages/internal/reportfilter"
 	"reflect"
 	"testing"
-	"github.com/google/osv-scanner/pkg/models"
-	"github.com/khulnasoft-lab/malicious-packages/internal/reportfilter"
 )
+
 func TestNew_PatternError(t *testing.T) {
 	_, err := reportfilter.New("aliases", "(")
 	if err == nil {
 		t.Fatal("New() = nil, want an error")
 	}
 }
+
 func TestNew_UnsupportedFieldError(t *testing.T) {
 	_, err := reportfilter.New("not_a_valid_field", ".*")
 	if err == nil {
 		t.Fatal("New() = nil, want an error")
 	}
 }
+
 func TestRemoveFilter(t *testing.T) {
 	vuln := &models.Vulnerability{
 		ID: "MAL-0123-45678",
