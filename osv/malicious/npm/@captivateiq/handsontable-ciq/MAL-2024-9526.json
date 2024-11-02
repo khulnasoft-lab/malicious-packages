@@ -1,10 +1,10 @@
 {
-  "modified": "2024-11-02T20:47:02Z",
+  "modified": "2024-11-02T22:20:21Z",
   "published": "2024-11-02T20:47:02Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-9526",
   "summary": "Malicious code in @captivateiq/handsontable-ciq (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (599a5852b9eda74d5a6332139849d2d1453f122369ec02b7629e4ea77af243bf)\nThe OpenSSF Package Analysis project identified '@captivateiq/handsontable-ciq' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (854e1d67a15c62ccd0e73b5672cd5a1c611e64a8ca86961ba1977c72d976a568)\nThe OpenSSF Package Analysis project identified '@captivateiq/handsontable-ciq' @ 153.1.5 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -12,7 +12,9 @@
         "name": "@captivateiq/handsontable-ciq"
       },
       "versions": [
-        "1.0.0"
+        "1.0.0",
+        "153.1.5",
+        "152.1.5"
       ]
     }
   ],
@@ -29,12 +31,30 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "599a5852b9eda74d5a6332139849d2d1453f122369ec02b7629e4ea77af243bf",
         "import_time": "2024-11-02T21:18:55.802987828Z",
         "modified_time": "2024-11-02T20:47:02Z",
-        "sha256": "599a5852b9eda74d5a6332139849d2d1453f122369ec02b7629e4ea77af243bf",
-        "source": "khulnasoft-package-analysis",
         "versions": [
           "1.0.0"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "854e1d67a15c62ccd0e73b5672cd5a1c611e64a8ca86961ba1977c72d976a568",
+        "import_time": "2024-11-02T22:19:52.840890103Z",
+        "modified_time": "2024-11-02T22:14:05Z",
+        "versions": [
+          "153.1.5"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "ff5087a0a343a66ce310683b4fd7d9e169476f92ada3408d8dcc63fa1da6645a",
+        "import_time": "2024-11-02T22:19:52.708484701Z",
+        "modified_time": "2024-11-02T21:44:50Z",
+        "versions": [
+          "152.1.5"
         ]
       }
     ]
