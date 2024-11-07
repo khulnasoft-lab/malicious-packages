@@ -2,7 +2,7 @@ name: Ingest Cloud OSV
 
 on:
   schedule:
-    - cron: '0 * * * *' # Every hour
+    - cron: '*/30 * * * *' # Every 30 minutes
   workflow_dispatch:
 
 permissions: read-all
@@ -23,7 +23,7 @@ jobs:
       with:
         token: ${{ secrets.ORG_REPO_TOKEN }}
         
-    - uses: actions/setup-go@v5.0.1
+    - uses: actions/setup-go@v5.1.0
       with:
         go-version: "1.21"
 

@@ -1,0 +1,42 @@
+{
+  "modified": "2024-09-08T10:14:27Z",
+  "published": "2024-09-08T10:14:27Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-9456",
+  "summary": "Malicious code in ori-gabriel-test2 (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (97118bb098b3b51630483b77d70977a582c54e3768ff5c54a65435870b3840de)\nThe OpenSSF Package Analysis project identified 'ori-gabriel-test2' @ 7.7.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "ori-gabriel-test2"
+      },
+      "versions": [
+        "7.7.9"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2024-10-24T02:51:47.553093083Z",
+        "modified_time": "2024-09-08T10:14:27Z",
+        "sha256": "97118bb098b3b51630483b77d70977a582c54e3768ff5c54a65435870b3840de",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "7.7.9"
+        ]
+      }
+    ]
+  }
+}
