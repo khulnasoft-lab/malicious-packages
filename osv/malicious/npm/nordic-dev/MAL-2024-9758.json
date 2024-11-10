@@ -1,5 +1,5 @@
 {
-  "modified": "2024-11-10T07:38:00Z",
+  "modified": "2024-11-10T08:24:19Z",
   "published": "2024-11-10T07:38:00Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-9758",
@@ -12,7 +12,9 @@
         "name": "nordic-dev"
       },
       "versions": [
-        "1.0.0"
+        "1.0.0",
+        "1.0.1",
+        "1.0.2"
       ]
     }
   ],
@@ -29,12 +31,30 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "5d21d3d3f68faf4153ba2233a6681447e484625e8f2a2b83cf966ac28f5e8c6b",
         "import_time": "2024-11-10T07:38:03.364870364Z",
         "modified_time": "2024-11-10T07:38:00Z",
-        "sha256": "5d21d3d3f68faf4153ba2233a6681447e484625e8f2a2b83cf966ac28f5e8c6b",
-        "source": "khulnasoft-package-analysis",
         "versions": [
           "1.0.0"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "64081f0c831c73e8520f5f0e3e67cd52de50826931e8ce50c28ff418dc029680",
+        "import_time": "2024-11-10T08:23:50.431840223Z",
+        "modified_time": "2024-11-10T07:41:16Z",
+        "versions": [
+          "1.0.1"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "cce437c1b7b03dda479905a86aa5000c57da0dc61ee14cd2a9e8a6dc4a4351fa",
+        "import_time": "2024-11-10T08:23:50.591099431Z",
+        "modified_time": "2024-11-10T07:55:52Z",
+        "versions": [
+          "1.0.2"
         ]
       }
     ]
