@@ -1,0 +1,42 @@
+{
+  "modified": "2024-11-10T22:06:54Z",
+  "published": "2024-11-10T22:06:54Z",
+  "schema_version": "1.5.0",
+  "id": "",
+  "summary": "Malicious code in @sportdigi/scripts (npm)",
+  "details": "The OpenSSF Package Analysis project identified '@sportdigi/scripts' @ 9.10.3 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "@sportdigi/scripts"
+      },
+      "versions": [
+        "9.10.3"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "9878449ddf1460d926a00a1cf26c93c5c034b55fcbb1db2904ac5351efdf982f",
+        "import_time": "2024-11-10T22:18:34.096479441Z",
+        "modified_time": "2024-11-10T22:06:54Z",
+        "versions": [
+          "9.10.3"
+        ]
+      }
+    ]
+  }
+}
