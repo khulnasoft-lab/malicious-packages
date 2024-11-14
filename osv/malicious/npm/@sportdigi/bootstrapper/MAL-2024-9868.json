@@ -1,5 +1,5 @@
 {
-  "modified": "2024-11-14T18:30:11Z",
+  "modified": "2024-11-14T19:17:20Z",
   "published": "2024-11-13T10:11:20Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-9868",
@@ -23,7 +23,9 @@
         "22.1.0",
         "23.1.0",
         "24.1.0",
-        "25.1.0"
+        "25.1.0",
+        "27.1.0",
+        "29.1.0"
       ]
     }
   ],
@@ -154,6 +156,24 @@
         "modified_time": "2024-11-14T18:12:50Z",
         "versions": [
           "25.1.0"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "0e37ebad501c96a3638cf55c011f4c8212a264dc9e70ab3b5cfbb71927379806",
+        "import_time": "2024-11-14T19:16:57.975469787Z",
+        "modified_time": "2024-11-14T18:55:37Z",
+        "versions": [
+          "27.1.0"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "f368dc856c7c20c0e2b624c649d7f1c8aa0d470be7c53d8a271794bd16112dd1",
+        "import_time": "2024-11-14T19:16:58.043671092Z",
+        "modified_time": "2024-11-14T19:15:20Z",
+        "versions": [
+          "29.1.0"
         ]
       }
     ]
