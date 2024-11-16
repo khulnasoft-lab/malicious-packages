@@ -1,0 +1,72 @@
+{
+  "modified": "2024-11-16T16:27:07Z",
+  "published": "2024-11-16T13:19:35Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-9959",
+  "summary": "Malicious code in alex_evil-test-package (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (76022960f65c9abbc45f3673473a4dcf43679d404d2363bda725d39a76224de3)\nThe OpenSSF Package Analysis project identified 'alex_evil-test-package' @ 1.0.4 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "alex_evil-test-package"
+      },
+      "versions": [
+        "1.0.4",
+        "1.0.5",
+        "1.0.6",
+        "1.0.9"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "76022960f65c9abbc45f3673473a4dcf43679d404d2363bda725d39a76224de3",
+        "import_time": "2024-11-16T13:25:23.164694281Z",
+        "modified_time": "2024-11-16T13:19:35Z",
+        "versions": [
+          "1.0.4"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "98614aecb08a7498d6b2bfe534d9d5d27549918d698d9311e97bad4d9cdd1aa1",
+        "import_time": "2024-11-16T15:22:40.531621172Z",
+        "modified_time": "2024-11-16T15:06:37Z",
+        "versions": [
+          "1.0.5"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "b76f36d2d64a89f492c2fbb9de14c25e35d7d42c059b033243e2e382b78113e5",
+        "import_time": "2024-11-16T15:22:40.616004638Z",
+        "modified_time": "2024-11-16T15:10:47Z",
+        "versions": [
+          "1.0.6"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "6869271393e35e24d1d4fd4d80e7937560d2952afc573f8749affd0e71b20e3e",
+        "import_time": "2024-11-16T16:26:44.892508226Z",
+        "modified_time": "2024-11-16T15:54:11Z",
+        "versions": [
+          "1.0.9"
+        ]
+      }
+    ]
+  }
+}
