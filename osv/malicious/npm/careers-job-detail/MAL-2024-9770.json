@@ -1,0 +1,42 @@
+{
+  "modified": "2024-11-10T14:13:15Z",
+  "published": "2024-11-10T14:13:15Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-9770",
+  "summary": "Malicious code in careers-job-detail (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (f59323aed1f78f5c9cf9638156a540b0d0859f741dc80b1ef238a441da9be856)\nThe OpenSSF Package Analysis project identified 'careers-job-detail' @ 7.1.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "careers-job-detail"
+      },
+      "versions": [
+        "7.1.9"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2024-11-10T22:18:37.184792622Z",
+        "modified_time": "2024-11-10T14:13:15Z",
+        "sha256": "f59323aed1f78f5c9cf9638156a540b0d0859f741dc80b1ef238a441da9be856",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "7.1.9"
+        ]
+      }
+    ]
+  }
+}

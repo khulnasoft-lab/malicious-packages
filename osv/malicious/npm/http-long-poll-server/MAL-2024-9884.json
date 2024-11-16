@@ -1,0 +1,42 @@
+{
+  "modified": "2024-11-13T17:17:31Z",
+  "published": "2024-11-13T17:17:31Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-9884",
+  "summary": "Malicious code in http-long-poll-server (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (f5fe0c27dc08dcb830f8d3811f826187ec340091a1cdf1520807de5ab2c8992c)\nThe OpenSSF Package Analysis project identified 'http-long-poll-server' @ 6.5.8 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "http-long-poll-server"
+      },
+      "versions": [
+        "6.5.8"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2024-11-14T01:39:32.925910702Z",
+        "modified_time": "2024-11-13T17:17:31Z",
+        "sha256": "f5fe0c27dc08dcb830f8d3811f826187ec340091a1cdf1520807de5ab2c8992c",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "6.5.8"
+        ]
+      }
+    ]
+  }
+}

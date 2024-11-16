@@ -1,0 +1,42 @@
+{
+  "modified": "2024-11-13T03:48:14Z",
+  "published": "2024-11-13T03:48:14Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-9875",
+  "summary": "Malicious code in eslint-plugin-mark-i18n (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (1b91d4e6932ee9470769b3d6bbec96308104b8f067534089700ba9b3dbdffbc5)\nThe OpenSSF Package Analysis project identified 'eslint-plugin-mark-i18n' @ 6.5.8 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "eslint-plugin-mark-i18n"
+      },
+      "versions": [
+        "6.5.8"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2024-11-14T01:39:31.928190882Z",
+        "modified_time": "2024-11-13T03:48:14Z",
+        "sha256": "1b91d4e6932ee9470769b3d6bbec96308104b8f067534089700ba9b3dbdffbc5",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "6.5.8"
+        ]
+      }
+    ]
+  }
+}
