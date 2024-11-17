@@ -1,5 +1,5 @@
 {
-  "modified": "2023-12-05T09:08:42Z",
+  "modified": "2024-11-17T23:21:31Z",
   "published": "2023-12-05T09:08:42Z",
   "schema_version": "1.5.0",
   "id": "MAL-2023-8666",
@@ -12,7 +12,8 @@
         "name": "react-dom-16"
       },
       "versions": [
-        "1.0.0"
+        "1.0.0",
+        "6.5.8"
       ]
     }
   ],
@@ -22,19 +23,29 @@
       "type": "FINDER",
       "contact": [
         "https://github.com/khulnasoft-lab/package-analysis",
-        "https://openssf.slack.com/channels/package_analysis"
+        "https://openssf.slack.com/channels/package_analysis",
+        "https://github.com/ossf/package-analysis"
       ]
     }
   ],
   "database_specific": {
     "malicious-packages-origins": [
       {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "5479ab305068e0d7f79a7f0a85f5475647f9294f888a09cc874f957113ac16a3",
         "import_time": "2023-12-05T09:33:28.538947472Z",
         "modified_time": "2023-12-05T09:08:42Z",
-        "sha256": "5479ab305068e0d7f79a7f0a85f5475647f9294f888a09cc874f957113ac16a3",
-        "source": "khulnasoft-package-analysis",
         "versions": [
           "1.0.0"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "0a92028cb07a1d537dc229813117e3b54f22649e5e552f1684d436aa1453f609",
+        "import_time": "2024-11-17T23:20:55.407848332Z",
+        "modified_time": "2024-11-15T09:45:46Z",
+        "versions": [
+          "6.5.8"
         ]
       }
     ]
