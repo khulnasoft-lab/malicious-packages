@@ -1,0 +1,42 @@
+{
+  "modified": "2024-11-21T00:59:10Z",
+  "published": "2024-11-21T00:59:10Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-10086",
+  "summary": "Malicious code in storage-atom (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (c75e8f88e35a28bf1455ae729e572b12dcaffbcf3a34f5a8fb51f49b330f612b)\nThe OpenSSF Package Analysis project identified 'storage-atom' @ 7.2.5 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "storage-atom"
+      },
+      "versions": [
+        "7.2.5"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2024-11-21T23:21:41.465256081Z",
+        "modified_time": "2024-11-21T00:59:10Z",
+        "sha256": "c75e8f88e35a28bf1455ae729e572b12dcaffbcf3a34f5a8fb51f49b330f612b",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "7.2.5"
+        ]
+      }
+    ]
+  }
+}

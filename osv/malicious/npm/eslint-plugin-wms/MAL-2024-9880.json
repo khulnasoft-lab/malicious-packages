@@ -1,0 +1,42 @@
+{
+  "modified": "2024-11-13T07:25:05Z",
+  "published": "2024-11-13T07:25:05Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-9880",
+  "summary": "Malicious code in eslint-plugin-wms (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (bf7616071d39443cfeb498514eaf20ff92364767216387e6bdcd02842eceb6b9)\nThe OpenSSF Package Analysis project identified 'eslint-plugin-wms' @ 6.5.8 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "eslint-plugin-wms"
+      },
+      "versions": [
+        "6.5.8"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2024-11-14T01:39:32.476119593Z",
+        "modified_time": "2024-11-13T07:25:05Z",
+        "sha256": "bf7616071d39443cfeb498514eaf20ff92364767216387e6bdcd02842eceb6b9",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "6.5.8"
+        ]
+      }
+    ]
+  }
+}

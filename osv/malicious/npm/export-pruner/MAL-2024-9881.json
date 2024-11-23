@@ -1,0 +1,42 @@
+{
+  "modified": "2024-11-13T07:50:39Z",
+  "published": "2024-11-13T07:50:39Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-9881",
+  "summary": "Malicious code in export-pruner (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (e899328f922152ac241ed293506708966c3b18c6eb01eea6bc822545bb4a5138)\nThe OpenSSF Package Analysis project identified 'export-pruner' @ 6.5.8 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "export-pruner"
+      },
+      "versions": [
+        "6.5.8"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2024-11-14T01:39:32.547907388Z",
+        "modified_time": "2024-11-13T07:50:39Z",
+        "sha256": "e899328f922152ac241ed293506708966c3b18c6eb01eea6bc822545bb4a5138",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "6.5.8"
+        ]
+      }
+    ]
+  }
+}

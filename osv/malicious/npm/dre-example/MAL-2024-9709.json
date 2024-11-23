@@ -1,0 +1,42 @@
+{
+  "modified": "2024-11-06T15:12:43Z",
+  "published": "2024-11-06T15:12:43Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-9709",
+  "summary": "Malicious code in dre-example (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (1d969b63b46b735c21826fbe02f7284d60374fd3b585179af9a373e5ec8453fa)\nThe OpenSSF Package Analysis project identified 'dre-example' @ 7.2.3 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "dre-example"
+      },
+      "versions": [
+        "7.2.3"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2024-11-07T22:41:32.96921423Z",
+        "modified_time": "2024-11-06T15:12:43Z",
+        "sha256": "1d969b63b46b735c21826fbe02f7284d60374fd3b585179af9a373e5ec8453fa",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "7.2.3"
+        ]
+      }
+    ]
+  }
+}

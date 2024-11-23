@@ -1,0 +1,42 @@
+{
+  "modified": "2024-11-22T06:09:16Z",
+  "published": "2024-11-22T06:09:16Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-10106",
+  "summary": "Malicious code in webpack-support-multi-domain-plugin (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (51d2d55342e62449162a0d8f5e4decfefa0234cf03af272587335d3512654f93)\nThe OpenSSF Package Analysis project identified 'webpack-support-multi-domain-plugin' @ 8.4.10 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "webpack-support-multi-domain-plugin"
+      },
+      "versions": [
+        "8.4.10"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2024-11-23T01:41:24.814427018Z",
+        "modified_time": "2024-11-22T06:09:16Z",
+        "sha256": "51d2d55342e62449162a0d8f5e4decfefa0234cf03af272587335d3512654f93",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "8.4.10"
+        ]
+      }
+    ]
+  }
+}

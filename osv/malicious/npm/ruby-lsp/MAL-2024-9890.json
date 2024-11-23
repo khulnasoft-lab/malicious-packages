@@ -1,0 +1,42 @@
+{
+  "modified": "2024-11-14T01:36:30Z",
+  "published": "2024-11-14T01:36:30Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-9890",
+  "summary": "Malicious code in ruby-lsp (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (0b8834d88ab40b70ef6760d4c04beda1d5dcbe8db59768f8a3ba6b64d9d29795)\nThe OpenSSF Package Analysis project identified 'ruby-lsp' @ 0.8.13 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "ruby-lsp"
+      },
+      "versions": [
+        "0.8.13"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2024-11-14T01:39:31.254242849Z",
+        "modified_time": "2024-11-14T01:36:30Z",
+        "sha256": "0b8834d88ab40b70ef6760d4c04beda1d5dcbe8db59768f8a3ba6b64d9d29795",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "0.8.13"
+        ]
+      }
+    ]
+  }
+}

@@ -1,21 +1,53 @@
 {
-  "modified": "2024-10-12T20:16:38Z",
+  "modified": "2024-10-17T01:52:56Z",
   "published": "2024-10-12T18:48:15Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-9279",
+  "aliases": [
+    "GHSA-5r4c-xw2r-rmmg"
+  ],
   "summary": "Malicious code in timeline-airtable (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (5db983bca6736ba70c473d5252c1d939fa4bcbf513fb41f82dbbdb48695e0ed0)\nThe OpenSSF Package Analysis project identified 'timeline-airtable' @ 7.1.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (82972946c40c712d890ca81684f6f8e6cf2215c45c13f10665f22be10ee7f441)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (6899ca712748c48a73e7e133dc093621db2c318bbfa75a7b9332ae6ac53905a8)\nThe OpenSSF Package Analysis project identified 'timeline-airtable' @ 12.8.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
         "ecosystem": "npm",
         "name": "timeline-airtable"
       },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
       "versions": [
         "7.1.9",
         "7.3.9",
-        "7.5.9"
-      ]
+        "7.5.9",
+        "12.8.9",
+        "12.9.9",
+        "13.1.1",
+        "13.1.4"
+      ],
+      "database_specific": {
+        "cwes": [
+          {
+            "cweId": "CWE-506",
+            "description": "The product contains code that appears to be malicious in nature.",
+            "name": "Embedded Malicious Code"
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-5r4c-xw2r-rmmg"
     }
   ],
   "credits": [
@@ -55,6 +87,59 @@
         "modified_time": "2024-10-12T19:19:44Z",
         "versions": [
           "7.5.9"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "6899ca712748c48a73e7e133dc093621db2c318bbfa75a7b9332ae6ac53905a8",
+        "import_time": "2024-10-15T17:19:52.992306254Z",
+        "modified_time": "2024-10-15T17:05:53Z",
+        "versions": [
+          "12.8.9"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "9182383882fdd607e752a7fc0416bb0b4f597c5c2889463e95036a0b01faf186",
+        "import_time": "2024-10-15T17:19:53.054154568Z",
+        "modified_time": "2024-10-15T17:16:27Z",
+        "versions": [
+          "12.9.9"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "465a6ce4af1fb457abf81bfae165a37ebebc19461ed9148238b40c8dd0f2ad98",
+        "import_time": "2024-10-15T18:28:47.135941639Z",
+        "modified_time": "2024-10-15T18:20:43Z",
+        "versions": [
+          "13.1.1"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "60124ef49726d49e3fbdb579ca976d38b7d577fdc9e7a078302051a153db63d9",
+        "import_time": "2024-10-15T19:18:07.819339849Z",
+        "modified_time": "2024-10-15T19:10:39Z",
+        "versions": [
+          "13.1.4"
+        ]
+      },
+      {
+        "source": "ghsa-malware",
+        "sha256": "82972946c40c712d890ca81684f6f8e6cf2215c45c13f10665f22be10ee7f441",
+        "import_time": "2024-10-17T01:52:34.3388533Z",
+        "id": "GHSA-5r4c-xw2r-rmmg",
+        "modified_time": "2024-10-17T00:36:48Z",
+        "ranges": [
+          {
+            "type": "SEMVER",
+            "events": [
+              {
+                "introduced": "0"
+              }
+            ]
+          }
         ]
       }
     ]

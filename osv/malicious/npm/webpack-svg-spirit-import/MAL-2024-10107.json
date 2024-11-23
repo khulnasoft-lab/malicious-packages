@@ -1,0 +1,42 @@
+{
+  "modified": "2024-11-22T06:39:25Z",
+  "published": "2024-11-22T06:39:25Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-10107",
+  "summary": "Malicious code in webpack-svg-spirit-import (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (1074de87df65ed674a1cd3619edb96563b2e9922f6967dd57a008046f4739b46)\nThe OpenSSF Package Analysis project identified 'webpack-svg-spirit-import' @ 10.3.4 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "webpack-svg-spirit-import"
+      },
+      "versions": [
+        "10.3.4"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2024-11-23T01:41:24.936623089Z",
+        "modified_time": "2024-11-22T06:39:25Z",
+        "sha256": "1074de87df65ed674a1cd3619edb96563b2e9922f6967dd57a008046f4739b46",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "10.3.4"
+        ]
+      }
+    ]
+  }
+}

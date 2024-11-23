@@ -1,0 +1,42 @@
+{
+  "modified": "2024-11-20T20:40:48Z",
+  "published": "2024-11-20T20:40:48Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-10082",
+  "summary": "Malicious code in ssc-org-vue (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (8f7a3ebeb76a418515fac31e05416086ea71291596b241c7749eea0edd582f1a)\nThe OpenSSF Package Analysis project identified 'ssc-org-vue' @ 5.2.10 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "ssc-org-vue"
+      },
+      "versions": [
+        "5.2.10"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2024-11-21T23:21:40.829891756Z",
+        "modified_time": "2024-11-20T20:40:48Z",
+        "sha256": "8f7a3ebeb76a418515fac31e05416086ea71291596b241c7749eea0edd582f1a",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "5.2.10"
+        ]
+      }
+    ]
+  }
+}

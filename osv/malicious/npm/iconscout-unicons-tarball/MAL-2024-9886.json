@@ -1,0 +1,42 @@
+{
+  "modified": "2024-11-13T18:01:01Z",
+  "published": "2024-11-13T18:01:01Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-9886",
+  "summary": "Malicious code in iconscout-unicons-tarball (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (40d452d4eb4e0ea9ea35c7e3d67bfbd623beb36e95c0b8c91e677fbe742e1ce0)\nThe OpenSSF Package Analysis project identified 'iconscout-unicons-tarball' @ 6.5.8 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "iconscout-unicons-tarball"
+      },
+      "versions": [
+        "6.5.8"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2024-11-14T01:39:33.113125715Z",
+        "modified_time": "2024-11-13T18:01:01Z",
+        "sha256": "40d452d4eb4e0ea9ea35c7e3d67bfbd623beb36e95c0b8c91e677fbe742e1ce0",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "6.5.8"
+        ]
+      }
+    ]
+  }
+}

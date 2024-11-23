@@ -1,0 +1,42 @@
+{
+  "modified": "2024-11-07T00:45:58Z",
+  "published": "2024-11-07T00:45:58Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-9711",
+  "summary": "Malicious code in eds-charts (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (c5926f8295ba473ba147ee885455c270a75579355965c21de36d2a3ea4e2a338)\nThe OpenSSF Package Analysis project identified 'eds-charts' @ 5.4.3 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "eds-charts"
+      },
+      "versions": [
+        "5.4.3"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2024-11-07T22:41:33.780335005Z",
+        "modified_time": "2024-11-07T00:45:58Z",
+        "sha256": "c5926f8295ba473ba147ee885455c270a75579355965c21de36d2a3ea4e2a338",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "5.4.3"
+        ]
+      }
+    ]
+  }
+}
