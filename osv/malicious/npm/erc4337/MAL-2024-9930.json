@@ -1,5 +1,5 @@
 {
-  "modified": "2024-11-15T02:47:05Z",
+  "modified": "2024-11-23T14:20:13Z",
   "published": "2024-11-15T02:47:05Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-9930",
@@ -12,7 +12,8 @@
         "name": "erc4337"
       },
       "versions": [
-        "0.0.1"
+        "0.0.1",
+        "0.0.2"
       ]
     }
   ],
@@ -29,12 +30,21 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "0ed2f165cae0981927b234cbecd033e646fd171f37d18323ed9d3d6834413453",
         "import_time": "2024-11-15T02:59:21.834421291Z",
         "modified_time": "2024-11-15T02:47:05Z",
-        "sha256": "0ed2f165cae0981927b234cbecd033e646fd171f37d18323ed9d3d6834413453",
-        "source": "khulnasoft-package-analysis",
         "versions": [
           "0.0.1"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "7070db4c9768dd51614137e0779029a5cd898cbd22d807110c343f343b6521d8",
+        "import_time": "2024-11-23T14:18:58.87051181Z",
+        "modified_time": "2024-11-23T14:07:41Z",
+        "versions": [
+          "0.0.2"
         ]
       }
     ]
