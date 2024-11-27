@@ -1,23 +1,51 @@
 {
-  "modified": "2024-11-10T22:19:11Z",
+  "modified": "2024-11-27T02:01:33Z",
   "published": "2024-11-10T15:37:26Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-9763",
+  "aliases": [
+    "GHSA-hgv3-h493-w5mp"
+  ],
   "summary": "Malicious code in aem-core-react-components (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (e042ae78ceddd02bdc0322335129fae59e6a87c65f8ca2578ce24c2f99b88d3a)\nThe OpenSSF Package Analysis project identified 'aem-core-react-components' @ 6.6.7 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (95d42e3a74bd354e1f4c9ce919082af4d0f85a5bbb6cbd5f32eab262ba83cd6c)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (e042ae78ceddd02bdc0322335129fae59e6a87c65f8ca2578ce24c2f99b88d3a)\nThe OpenSSF Package Analysis project identified 'aem-core-react-components' @ 6.6.7 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
         "ecosystem": "npm",
         "name": "aem-core-react-components"
       },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
       "versions": [
         "6.6.7",
         "6.6.9",
         "6.6.8",
         "6.7.9",
         "6.9.9"
-      ]
+      ],
+      "database_specific": {
+        "cwes": [
+          {
+            "cweId": "CWE-506",
+            "description": "The product contains code that appears to be malicious in nature.",
+            "name": "Embedded Malicious Code"
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-hgv3-h493-w5mp"
     }
   ],
   "credits": [
@@ -75,6 +103,23 @@
         "modified_time": "2024-11-10T18:20:39Z",
         "versions": [
           "6.9.9"
+        ]
+      },
+      {
+        "source": "ghsa-malware",
+        "sha256": "95d42e3a74bd354e1f4c9ce919082af4d0f85a5bbb6cbd5f32eab262ba83cd6c",
+        "import_time": "2024-11-27T02:01:06.50548519Z",
+        "id": "GHSA-hgv3-h493-w5mp",
+        "modified_time": "2024-11-27T00:19:41Z",
+        "ranges": [
+          {
+            "type": "SEMVER",
+            "events": [
+              {
+                "introduced": "0"
+              }
+            ]
+          }
         ]
       }
     ]
