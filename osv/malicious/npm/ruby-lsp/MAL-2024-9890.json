@@ -1,19 +1,47 @@
 {
-  "modified": "2024-11-14T01:36:30Z",
+  "modified": "2024-11-28T02:01:08Z",
   "published": "2024-11-14T01:36:30Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-9890",
+  "aliases": [
+    "GHSA-35gv-767c-hx8p"
+  ],
   "summary": "Malicious code in ruby-lsp (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (0b8834d88ab40b70ef6760d4c04beda1d5dcbe8db59768f8a3ba6b64d9d29795)\nThe OpenSSF Package Analysis project identified 'ruby-lsp' @ 0.8.13 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (23d59cae1de4c2853d318ad10197c82dc6f10fe194854b704b477cc20b271184)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (0b8834d88ab40b70ef6760d4c04beda1d5dcbe8db59768f8a3ba6b64d9d29795)\nThe OpenSSF Package Analysis project identified 'ruby-lsp' @ 0.8.13 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
         "ecosystem": "npm",
         "name": "ruby-lsp"
       },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
       "versions": [
         "0.8.13"
-      ]
+      ],
+      "database_specific": {
+        "cwes": [
+          {
+            "cweId": "CWE-506",
+            "description": "The product contains code that appears to be malicious in nature.",
+            "name": "Embedded Malicious Code"
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-35gv-767c-hx8p"
     }
   ],
   "credits": [
@@ -29,12 +57,29 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "0b8834d88ab40b70ef6760d4c04beda1d5dcbe8db59768f8a3ba6b64d9d29795",
         "import_time": "2024-11-14T01:39:31.254242849Z",
         "modified_time": "2024-11-14T01:36:30Z",
-        "sha256": "0b8834d88ab40b70ef6760d4c04beda1d5dcbe8db59768f8a3ba6b64d9d29795",
-        "source": "khulnasoft-package-analysis",
         "versions": [
           "0.8.13"
+        ]
+      },
+      {
+        "source": "ghsa-malware",
+        "sha256": "23d59cae1de4c2853d318ad10197c82dc6f10fe194854b704b477cc20b271184",
+        "import_time": "2024-11-28T02:00:42.907916406Z",
+        "id": "GHSA-35gv-767c-hx8p",
+        "modified_time": "2024-11-27T06:19:06Z",
+        "ranges": [
+          {
+            "type": "SEMVER",
+            "events": [
+              {
+                "introduced": "0"
+              }
+            ]
+          }
         ]
       }
     ]
