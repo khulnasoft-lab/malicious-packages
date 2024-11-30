@@ -1,0 +1,82 @@
+{
+  "modified": "2024-11-30T16:46:01Z",
+  "published": "2024-11-30T16:34:27Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-10375",
+  "summary": "Malicious code in fetlla2-js (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (05cc474e0b9792d1a84252c60bba2907c2412ba5077a79a58df4529bc203816c)\nThe OpenSSF Package Analysis project identified 'fetlla2-js' @ 1.0.4 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "fetlla2-js"
+      },
+      "versions": [
+        "1.0.4",
+        "1.0.6",
+        "1.0.3",
+        "1.0.7",
+        "1.0.5"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2024-11-30T16:45:32.182643589Z",
+        "modified_time": "2024-11-30T16:37:18Z",
+        "sha256": "05cc474e0b9792d1a84252c60bba2907c2412ba5077a79a58df4529bc203816c",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "1.0.4"
+        ]
+      },
+      {
+        "import_time": "2024-11-30T16:45:32.529773232Z",
+        "modified_time": "2024-11-30T16:43:18Z",
+        "sha256": "a68885e0b721114ab55b9163605e96892750988a4c77b81c2cef84451407ccbf",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "1.0.6"
+        ]
+      },
+      {
+        "import_time": "2024-11-30T16:45:32.099762971Z",
+        "modified_time": "2024-11-30T16:34:27Z",
+        "sha256": "c6bb2254197b62c61d908cdf1d9cd03ba8e36b6c5f90bdc1f1ad5835bab598a9",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "1.0.3"
+        ]
+      },
+      {
+        "import_time": "2024-11-30T16:45:32.75473595Z",
+        "modified_time": "2024-11-30T16:44:35Z",
+        "sha256": "cbb71b9dfc458eea3064fb0d0fc039a1e2547916253ffedb9ea0e441c2c67fcb",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "1.0.7"
+        ]
+      },
+      {
+        "import_time": "2024-11-30T16:45:32.330135714Z",
+        "modified_time": "2024-11-30T16:40:40Z",
+        "sha256": "eb9b9e1ec0c93fdac5a6984b538c65a500a259380564bcff0ff4ff59ce0bd874",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "1.0.5"
+        ]
+      }
+    ]
+  }
+}
