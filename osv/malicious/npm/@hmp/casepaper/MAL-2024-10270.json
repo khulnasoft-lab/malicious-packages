@@ -1,5 +1,5 @@
 {
-  "modified": "2024-11-27T07:23:54Z",
+  "modified": "2024-12-02T03:07:29Z",
   "published": "2024-11-27T03:20:58Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-10270",
@@ -13,7 +13,10 @@
       },
       "versions": [
         "10.0.0",
-        "10.0.1"
+        "10.0.1",
+        "10.0.2",
+        "1.0.16",
+        "1.0.15"
       ]
     }
   ],
@@ -45,6 +48,33 @@
         "modified_time": "2024-11-27T06:46:10Z",
         "versions": [
           "10.0.1"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "80e5bd8a35e7e27ba6040f8dba0ca5850aa01fd6f8ecf9947c24de15f3dafe5a",
+        "import_time": "2024-12-02T03:07:01.154640347Z",
+        "modified_time": "2024-12-02T02:17:44Z",
+        "versions": [
+          "10.0.2"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "e0106482ad43ed8d508439a1816a218517545e682a0228cd1c1be31f0b9d3f34",
+        "import_time": "2024-12-02T03:07:01.287706744Z",
+        "modified_time": "2024-12-02T02:49:23Z",
+        "versions": [
+          "1.0.16"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "ec9e455ee0e1683afff0ec4e1774a356ba57b85f90a2a1f126a7e4a06889023c",
+        "import_time": "2024-12-02T03:07:01.167008877Z",
+        "modified_time": "2024-12-02T02:22:34Z",
+        "versions": [
+          "1.0.15"
         ]
       }
     ]
