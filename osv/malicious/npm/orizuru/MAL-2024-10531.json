@@ -1,5 +1,5 @@
 {
-  "modified": "2024-12-13T14:20:27Z",
+  "modified": "2024-12-13T14:44:28Z",
   "published": "2024-12-13T14:20:27Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-10531",
@@ -12,7 +12,8 @@
         "name": "orizuru"
       },
       "versions": [
-        "1.0.2"
+        "1.0.2",
+        "1.0.4"
       ]
     }
   ],
@@ -29,12 +30,21 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "c64a0d3f4aa85158e24b735af5270cfda12a466564056f38d61f58cec30c3745",
         "import_time": "2024-12-13T14:21:14.857233005Z",
         "modified_time": "2024-12-13T14:20:27Z",
-        "sha256": "c64a0d3f4aa85158e24b735af5270cfda12a466564056f38d61f58cec30c3745",
-        "source": "khulnasoft-package-analysis",
         "versions": [
           "1.0.2"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "42b602a9c58147a6556b33be8ef19fc34ceb1be9146f49b767b0be3f0ddd4052",
+        "import_time": "2024-12-13T14:44:03.168087847Z",
+        "modified_time": "2024-12-13T14:37:13Z",
+        "versions": [
+          "1.0.4"
         ]
       }
     ]
