@@ -1,5 +1,5 @@
 {
-  "modified": "2024-12-18T07:51:06Z",
+  "modified": "2024-12-18T13:30:07Z",
   "published": "2024-12-18T07:51:06Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-10622",
@@ -12,7 +12,8 @@
         "name": "baby-loris"
       },
       "versions": [
-        "1.0.2"
+        "1.0.2",
+        "1.0.4"
       ]
     }
   ],
@@ -29,12 +30,21 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "9155edd098ee3fed04541b192087704f5a42b1f149bdd0f4f487d7e0ae941870",
         "import_time": "2024-12-18T08:29:18.450914359Z",
         "modified_time": "2024-12-18T07:51:06Z",
-        "sha256": "9155edd098ee3fed04541b192087704f5a42b1f149bdd0f4f487d7e0ae941870",
-        "source": "khulnasoft-package-analysis",
         "versions": [
           "1.0.2"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "594d7846237f9c454a870382e1da1b7e9a09397c6594a68f27126028905a9437",
+        "import_time": "2024-12-18T13:29:37.758661394Z",
+        "modified_time": "2024-12-18T13:00:55Z",
+        "versions": [
+          "1.0.4"
         ]
       }
     ]
