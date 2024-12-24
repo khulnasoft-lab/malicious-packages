@@ -1,0 +1,72 @@
+{
+  "modified": "2024-12-24T21:39:06Z",
+  "published": "2024-12-24T21:25:59Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-10831",
+  "summary": "Malicious code in browseui (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (8a19bec9870ca384609684906badcc64f9071471e7cf18bbff8fcd42c223875f)\nThe OpenSSF Package Analysis project identified 'browseui' @ 1.0.4 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "browseui"
+      },
+      "versions": [
+        "1.0.4",
+        "1.0.1",
+        "1.0.3",
+        "1.0.2"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2024-12-24T21:38:43.833545074Z",
+        "modified_time": "2024-12-24T21:35:52Z",
+        "sha256": "8a19bec9870ca384609684906badcc64f9071471e7cf18bbff8fcd42c223875f",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "1.0.4"
+        ]
+      },
+      {
+        "import_time": "2024-12-24T21:38:43.565683259Z",
+        "modified_time": "2024-12-24T21:31:01Z",
+        "sha256": "b865711cc57e93ff56175fee9d7711ab24c1a824c5f9f4f10e569411353ed1c9",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "1.0.1"
+        ]
+      },
+      {
+        "import_time": "2024-12-24T21:38:43.693418583Z",
+        "modified_time": "2024-12-24T21:31:02Z",
+        "sha256": "cd8afb02fbb1993f3045a0c6012430827f7c3478bd24b760e1251e8434ab603c",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "1.0.3"
+        ]
+      },
+      {
+        "import_time": "2024-12-24T21:38:43.442645936Z",
+        "modified_time": "2024-12-24T21:25:59Z",
+        "sha256": "ef17eae3248642551e8322435c85e91a891886956ebb9c148f89c361e01c0918",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "1.0.2"
+        ]
+      }
+    ]
+  }
+}
