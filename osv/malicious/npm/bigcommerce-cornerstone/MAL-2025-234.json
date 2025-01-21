@@ -2,9 +2,9 @@
   "modified": "2025-01-21T09:11:51Z",
   "published": "2025-01-21T09:11:51Z",
   "schema_version": "1.5.0",
-  "id": "",
+  "id": "MAL-2025-234",
   "summary": "Malicious code in bigcommerce-cornerstone (npm)",
-  "details": "The OpenSSF Package Analysis project identified 'bigcommerce-cornerstone' @ 6.16.3 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (494e6e8145930583b08e1bd8ca2253636cbcaa48edeb20bd83d5d37974f3b9d2)\nThe OpenSSF Package Analysis project identified 'bigcommerce-cornerstone' @ 6.16.3 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -29,10 +29,10 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
-        "sha256": "494e6e8145930583b08e1bd8ca2253636cbcaa48edeb20bd83d5d37974f3b9d2",
         "import_time": "2025-01-21T09:22:04.972540417Z",
         "modified_time": "2025-01-21T09:11:51Z",
+        "sha256": "494e6e8145930583b08e1bd8ca2253636cbcaa48edeb20bd83d5d37974f3b9d2",
+        "source": "khulnasoft-package-analysis",
         "versions": [
           "6.16.3"
         ]
