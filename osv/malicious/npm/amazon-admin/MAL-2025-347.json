@@ -2,9 +2,9 @@
   "modified": "2025-01-24T04:17:40Z",
   "published": "2025-01-24T04:17:40Z",
   "schema_version": "1.5.0",
-  "id": "",
+  "id": "MAL-2025-347",
   "summary": "Malicious code in amazon-admin (npm)",
-  "details": "The OpenSSF Package Analysis project identified 'amazon-admin' @ 999.9.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (d8c0584799a75463d5c130aa96af2f9e2528a3059c901d9172db6f1aa601eadd)\nThe OpenSSF Package Analysis project identified 'amazon-admin' @ 999.9.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -29,10 +29,10 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
-        "sha256": "d8c0584799a75463d5c130aa96af2f9e2528a3059c901d9172db6f1aa601eadd",
         "import_time": "2025-01-24T04:24:44.544349651Z",
         "modified_time": "2025-01-24T04:17:40Z",
+        "sha256": "d8c0584799a75463d5c130aa96af2f9e2528a3059c901d9172db6f1aa601eadd",
+        "source": "khulnasoft-package-analysis",
         "versions": [
           "999.9.9"
         ]

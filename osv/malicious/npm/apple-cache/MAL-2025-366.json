@@ -2,9 +2,9 @@
   "modified": "2025-01-24T04:18:06Z",
   "published": "2025-01-24T04:18:06Z",
   "schema_version": "1.5.0",
-  "id": "",
+  "id": "MAL-2025-366",
   "summary": "Malicious code in apple-cache (npm)",
-  "details": "The OpenSSF Package Analysis project identified 'apple-cache' @ 999.9.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (dc09ddd705cb61fae251b9ef88db7a9237d08d212eb332ee3ad9d511ecdebae7)\nThe OpenSSF Package Analysis project identified 'apple-cache' @ 999.9.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -29,10 +29,10 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
-        "sha256": "dc09ddd705cb61fae251b9ef88db7a9237d08d212eb332ee3ad9d511ecdebae7",
         "import_time": "2025-01-24T04:24:44.895049577Z",
         "modified_time": "2025-01-24T04:18:06Z",
+        "sha256": "dc09ddd705cb61fae251b9ef88db7a9237d08d212eb332ee3ad9d511ecdebae7",
+        "source": "khulnasoft-package-analysis",
         "versions": [
           "999.9.9"
         ]

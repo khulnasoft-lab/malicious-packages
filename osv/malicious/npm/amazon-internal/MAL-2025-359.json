@@ -2,9 +2,9 @@
   "modified": "2025-01-24T04:11:49Z",
   "published": "2025-01-24T04:11:49Z",
   "schema_version": "1.5.0",
-  "id": "",
+  "id": "MAL-2025-359",
   "summary": "Malicious code in amazon-internal (npm)",
-  "details": "The OpenSSF Package Analysis project identified 'amazon-internal' @ 999.9.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (37b343f6247424c351b1652a4790cc2f86d3901894612c95b676ed5bf3f96300)\nThe OpenSSF Package Analysis project identified 'amazon-internal' @ 999.9.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -29,10 +29,10 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
-        "sha256": "37b343f6247424c351b1652a4790cc2f86d3901894612c95b676ed5bf3f96300",
         "import_time": "2025-01-24T04:24:43.553688612Z",
         "modified_time": "2025-01-24T04:11:49Z",
+        "sha256": "37b343f6247424c351b1652a4790cc2f86d3901894612c95b676ed5bf3f96300",
+        "source": "khulnasoft-package-analysis",
         "versions": [
           "999.9.9"
         ]

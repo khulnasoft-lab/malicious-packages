@@ -2,9 +2,9 @@
   "modified": "2025-01-24T04:17:51Z",
   "published": "2025-01-24T04:17:51Z",
   "schema_version": "1.5.0",
-  "id": "",
+  "id": "MAL-2025-353",
   "summary": "Malicious code in amazon-cloud (npm)",
-  "details": "The OpenSSF Package Analysis project identified 'amazon-cloud' @ 999.9.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (4b71318a5323c17de18f5573bc2c87a70f80ec6de2577c55c243993d76da1f51)\nThe OpenSSF Package Analysis project identified 'amazon-cloud' @ 999.9.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -29,10 +29,10 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
-        "sha256": "4b71318a5323c17de18f5573bc2c87a70f80ec6de2577c55c243993d76da1f51",
         "import_time": "2025-01-24T04:24:44.715900855Z",
         "modified_time": "2025-01-24T04:17:51Z",
+        "sha256": "4b71318a5323c17de18f5573bc2c87a70f80ec6de2577c55c243993d76da1f51",
+        "source": "khulnasoft-package-analysis",
         "versions": [
           "999.9.9"
         ]

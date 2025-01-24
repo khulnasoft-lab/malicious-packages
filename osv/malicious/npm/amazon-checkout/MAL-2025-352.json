@@ -2,9 +2,9 @@
   "modified": "2025-01-24T04:18:24Z",
   "published": "2025-01-24T04:18:24Z",
   "schema_version": "1.5.0",
-  "id": "",
+  "id": "MAL-2025-352",
   "summary": "Malicious code in amazon-checkout (npm)",
-  "details": "The OpenSSF Package Analysis project identified 'amazon-checkout' @ 999.9.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (4728fc0ef630dde9616340e6f9a3571e2bb5e75e034fac804e6ca9b0030a7846)\nThe OpenSSF Package Analysis project identified 'amazon-checkout' @ 999.9.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -29,10 +29,10 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
-        "sha256": "4728fc0ef630dde9616340e6f9a3571e2bb5e75e034fac804e6ca9b0030a7846",
         "import_time": "2025-01-24T04:24:45.037434235Z",
         "modified_time": "2025-01-24T04:18:24Z",
+        "sha256": "4728fc0ef630dde9616340e6f9a3571e2bb5e75e034fac804e6ca9b0030a7846",
+        "source": "khulnasoft-package-analysis",
         "versions": [
           "999.9.9"
         ]
