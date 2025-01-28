@@ -1,0 +1,52 @@
+{
+  "modified": "2025-01-28T02:46:49Z",
+  "published": "2025-01-28T01:55:52Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2025-571",
+  "summary": "Malicious code in theice (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (2706de025f1bb03d744646216fc8e98b735809b9ce1a0ae2992b62f567b230c2)\nThe OpenSSF Package Analysis project identified 'theice' @ 6.0.1 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "theice"
+      },
+      "versions": [
+        "6.0.1",
+        "6.0.2"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2025-01-28T02:46:25.70329546Z",
+        "modified_time": "2025-01-28T01:55:52Z",
+        "sha256": "2706de025f1bb03d744646216fc8e98b735809b9ce1a0ae2992b62f567b230c2",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "6.0.1"
+        ]
+      },
+      {
+        "import_time": "2025-01-28T02:46:25.867615623Z",
+        "modified_time": "2025-01-28T02:40:46Z",
+        "sha256": "7e863e9c6840136df6f0d72826d4eeee514308583145bfc8bfd45a0573f7a2d7",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "6.0.2"
+        ]
+      }
+    ]
+  }
+}
