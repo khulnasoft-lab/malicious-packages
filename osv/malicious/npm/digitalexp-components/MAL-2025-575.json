@@ -1,5 +1,5 @@
 {
-  "modified": "2025-01-28T16:06:06Z",
+  "modified": "2025-01-29T07:19:28Z",
   "published": "2025-01-28T16:06:06Z",
   "schema_version": "1.5.0",
   "id": "MAL-2025-575",
@@ -12,7 +12,8 @@
         "name": "digitalexp-components"
       },
       "versions": [
-        "10.0.0"
+        "10.0.0",
+        "12.1.0"
       ]
     }
   ],
@@ -29,12 +30,21 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "00758226ff7c14682006c6838634e731d49799e527cf5bdebfbbc01390061a1c",
         "import_time": "2025-01-28T16:26:06.548871439Z",
         "modified_time": "2025-01-28T16:06:06Z",
-        "sha256": "00758226ff7c14682006c6838634e731d49799e527cf5bdebfbbc01390061a1c",
-        "source": "khulnasoft-package-analysis",
         "versions": [
           "10.0.0"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "7bcfe547e32d4a7c98082a970f5cf7f9f3d2146a91036899df04456c247841e0",
+        "import_time": "2025-01-29T07:19:04.630278825Z",
+        "modified_time": "2025-01-29T07:06:26Z",
+        "versions": [
+          "12.1.0"
         ]
       }
     ]
