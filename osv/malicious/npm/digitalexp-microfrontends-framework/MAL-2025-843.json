@@ -2,12 +2,12 @@
   "modified": "2025-02-10T09:23:49Z",
   "published": "2025-02-10T09:23:49Z",
   "schema_version": "1.5.0",
-  "id": "",
+  "id": "MAL-2025-843",
   "aliases": [
     "GHSA-jm55-xqx2-rpxm"
   ],
-  "summary": "Malware in digitalexp-microfrontends-framework",
-  "details": "Any computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.",
+  "summary": "Malicious code in digitalexp-microfrontends-framework (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (e0ca94db6587b92069f32a0574951f800a7cf2789f0ca5ad3dce95bcb122e205)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n",
   "affected": [
     {
       "package": {
@@ -31,8 +31,7 @@
             "description": "The product contains code that appears to be malicious in nature.",
             "name": "Embedded Malicious Code"
           }
-        ],
-        "ghsa": "https://github.com/advisories/GHSA-jm55-xqx2-rpxm"
+        ]
       }
     }
   ],
@@ -45,21 +44,21 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "ghsa-malware",
-        "sha256": "e0ca94db6587b92069f32a0574951f800a7cf2789f0ca5ad3dce95bcb122e205",
-        "import_time": "2025-02-11T01:51:54.637668868Z",
         "id": "GHSA-jm55-xqx2-rpxm",
+        "import_time": "2025-02-11T01:51:54.637668868Z",
         "modified_time": "2025-02-10T09:23:49Z",
         "ranges": [
           {
-            "type": "SEMVER",
             "events": [
               {
                 "introduced": "0"
               }
-            ]
+            ],
+            "type": "SEMVER"
           }
-        ]
+        ],
+        "sha256": "e0ca94db6587b92069f32a0574951f800a7cf2789f0ca5ad3dce95bcb122e205",
+        "source": "ghsa-malware"
       }
     ]
   }
