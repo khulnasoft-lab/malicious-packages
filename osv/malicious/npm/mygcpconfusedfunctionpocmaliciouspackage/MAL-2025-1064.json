@@ -1,0 +1,62 @@
+{
+  "modified": "2025-02-18T20:23:11Z",
+  "published": "2025-02-18T19:55:59Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2025-1064",
+  "summary": "Malicious code in mygcpconfusedfunctionpocmaliciouspackage (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (614fa50efc9b971ecc793218212bb0ff00cabf94fecd43e04c50150d9189ac47)\nThe OpenSSF Package Analysis project identified 'mygcpconfusedfunctionpocmaliciouspackage' @ 1.0.6 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "mygcpconfusedfunctionpocmaliciouspackage"
+      },
+      "versions": [
+        "1.0.6",
+        "1.0.5",
+        "1.0.4"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2025-02-18T20:22:42.011809932Z",
+        "modified_time": "2025-02-18T20:15:46Z",
+        "sha256": "614fa50efc9b971ecc793218212bb0ff00cabf94fecd43e04c50150d9189ac47",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "1.0.6"
+        ]
+      },
+      {
+        "import_time": "2025-02-18T20:22:41.878313536Z",
+        "modified_time": "2025-02-18T20:10:54Z",
+        "sha256": "75475c47cc5209845609035e400502418b62844e08718a37889e63292aeb5147",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "1.0.5"
+        ]
+      },
+      {
+        "import_time": "2025-02-18T20:22:41.724288806Z",
+        "modified_time": "2025-02-18T19:55:59Z",
+        "sha256": "e6b9663bb0820d1a17fd6f836adec423cebccaac9e2e8508e2c81cb3f8b3218e",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "1.0.4"
+        ]
+      }
+    ]
+  }
+}
