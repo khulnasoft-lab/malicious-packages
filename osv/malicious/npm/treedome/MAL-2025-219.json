@@ -1,0 +1,65 @@
+{
+  "modified": "2025-01-20T07:26:42Z",
+  "published": "2025-01-20T07:26:42Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2025-219",
+  "aliases": [
+    "GHSA-fc38-9697-r6rw"
+  ],
+  "summary": "Malicious code in treedome (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (684ae3e40b1c465aa22e0c0351dbd7dee0a7ebd2216a70b401167c95ae3b87d2)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "treedome"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "cwes": [
+          {
+            "cweId": "CWE-506",
+            "description": "The product contains code that appears to be malicious in nature.",
+            "name": "Embedded Malicious Code"
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-fc38-9697-r6rw"
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "id": "GHSA-fc38-9697-r6rw",
+        "import_time": "2025-01-21T01:49:58.350830308Z",
+        "modified_time": "2025-01-20T07:26:42Z",
+        "ranges": [
+          {
+            "events": [
+              {
+                "introduced": "0"
+              }
+            ],
+            "type": "SEMVER"
+          }
+        ],
+        "sha256": "684ae3e40b1c465aa22e0c0351dbd7dee0a7ebd2216a70b401167c95ae3b87d2",
+        "source": "ghsa-malware"
+      }
+    ]
+  }
+}

@@ -1,10 +1,13 @@
 {
-  "modified": "2024-06-25T13:00:19Z",
+  "modified": "2025-02-11T01:52:19Z",
   "published": "2024-06-25T13:00:19Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-2992",
+  "aliases": [
+    "GHSA-6q77-3cp3-7c26"
+  ],
   "summary": "Malicious code in sdg-indicators-usa (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (0a48c1b5ed5fceb3fc94881f03f0f71ec04e088afc35beba3acbc15cc2639a1f)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n",
   "affected": [
     {
       "package": {
@@ -12,9 +15,34 @@
         "name": "sdg-indicators-usa",
         "purl": "pkg:npm/sdg-indicators-usa"
       },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
       "versions": [
         "5.0.0"
-      ]
+      ],
+      "database_specific": {
+        "cwes": [
+          {
+            "cweId": "CWE-506",
+            "description": "The product contains code that appears to be malicious in nature.",
+            "name": "Embedded Malicious Code"
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-6q77-3cp3-7c26"
     }
   ],
   "credits": [
@@ -29,13 +57,30 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "id": "RLMA-2024-01723",
-        "import_time": "2024-06-28T02:44:41.749485212Z",
-        "modified_time": "2024-06-25T13:00:19Z",
-        "sha256": "7bffa0ab147771104d0ab152a639184918fdd2fb9128c22ae23479a49c6b533d",
         "source": "reversing-labs",
+        "sha256": "7bffa0ab147771104d0ab152a639184918fdd2fb9128c22ae23479a49c6b533d",
+        "import_time": "2024-06-28T02:44:41.749485212Z",
+        "id": "RLMA-2024-01723",
+        "modified_time": "2024-06-25T13:00:19Z",
         "versions": [
           "5.0.0"
+        ]
+      },
+      {
+        "source": "ghsa-malware",
+        "sha256": "0a48c1b5ed5fceb3fc94881f03f0f71ec04e088afc35beba3acbc15cc2639a1f",
+        "import_time": "2025-02-11T01:51:54.632784623Z",
+        "id": "GHSA-6q77-3cp3-7c26",
+        "modified_time": "2025-02-10T09:32:39Z",
+        "ranges": [
+          {
+            "type": "SEMVER",
+            "events": [
+              {
+                "introduced": "0"
+              }
+            ]
+          }
         ]
       }
     ]

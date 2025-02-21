@@ -1,10 +1,13 @@
 {
-  "modified": "2024-06-25T12:54:11Z",
+  "modified": "2025-02-04T01:51:11Z",
   "published": "2024-06-25T12:54:11Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-2798",
+  "aliases": [
+    "GHSA-3jph-ccjv-fg4m"
+  ],
   "summary": "Malicious code in ontology-starter-react-app (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (ed3602d6737a3861487c258043efce70d2c7fe3708e9dabb0805841c5fddf6d8)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n",
   "affected": [
     {
       "package": {
@@ -12,9 +15,34 @@
         "name": "ontology-starter-react-app",
         "purl": "pkg:npm/ontology-starter-react-app"
       },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
       "versions": [
         "7.0.0"
-      ]
+      ],
+      "database_specific": {
+        "cwes": [
+          {
+            "cweId": "CWE-506",
+            "description": "The product contains code that appears to be malicious in nature.",
+            "name": "Embedded Malicious Code"
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-3jph-ccjv-fg4m"
     }
   ],
   "credits": [
@@ -29,13 +57,30 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "id": "RLMA-2024-01507",
-        "import_time": "2024-06-28T02:44:15.714974316Z",
-        "modified_time": "2024-06-25T12:54:11Z",
-        "sha256": "48facf98a8b4bd5efa11db04f4f9587f229b89ecddff7256e3bc22661fdf2ec4",
         "source": "reversing-labs",
+        "sha256": "48facf98a8b4bd5efa11db04f4f9587f229b89ecddff7256e3bc22661fdf2ec4",
+        "import_time": "2024-06-28T02:44:15.714974316Z",
+        "id": "RLMA-2024-01507",
+        "modified_time": "2024-06-25T12:54:11Z",
         "versions": [
           "7.0.0"
+        ]
+      },
+      {
+        "source": "ghsa-malware",
+        "sha256": "ed3602d6737a3861487c258043efce70d2c7fe3708e9dabb0805841c5fddf6d8",
+        "import_time": "2025-02-04T01:50:47.699481154Z",
+        "id": "GHSA-3jph-ccjv-fg4m",
+        "modified_time": "2025-02-03T09:01:40Z",
+        "ranges": [
+          {
+            "type": "SEMVER",
+            "events": [
+              {
+                "introduced": "0"
+              }
+            ]
+          }
         ]
       }
     ]
