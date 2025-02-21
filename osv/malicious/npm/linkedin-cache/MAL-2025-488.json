@@ -1,0 +1,42 @@
+{
+  "modified": "2025-01-24T05:19:11Z",
+  "published": "2025-01-24T05:19:11Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2025-488",
+  "summary": "Malicious code in linkedin-cache (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (1ffe0720b3de5b326d3c21a92d61c09a1d9628d2c1402bcec1e868d5ec11ab3d)\nThe OpenSSF Package Analysis project identified 'linkedin-cache' @ 999.9.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "linkedin-cache"
+      },
+      "versions": [
+        "999.9.9"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2025-01-24T05:19:54.753339929Z",
+        "modified_time": "2025-01-24T05:19:11Z",
+        "sha256": "1ffe0720b3de5b326d3c21a92d61c09a1d9628d2c1402bcec1e868d5ec11ab3d",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "999.9.9"
+        ]
+      }
+    ]
+  }
+}

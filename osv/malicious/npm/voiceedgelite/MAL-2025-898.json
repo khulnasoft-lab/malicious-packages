@@ -1,0 +1,92 @@
+{
+  "modified": "2025-02-20T01:41:16Z",
+  "published": "2025-02-17T13:02:56Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2025-898",
+  "summary": "Malicious code in voiceedgelite (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (5c4b6524c408d88e95e6fce41bec25ac610bc0a620c6ac635dbc56a93e119088)\nThe OpenSSF Package Analysis project identified 'voiceedgelite' @ 1.1.6 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "voiceedgelite"
+      },
+      "versions": [
+        "1.0.7",
+        "1.1.6",
+        "1.1.5",
+        "1.1.7",
+        "1.1.8",
+        "1.2.0"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "2e4fd4b9fb9a218b7e587f7885347db6009f6cabf4225963a64a35354ef1cdc5",
+        "import_time": "2025-02-17T22:19:16.833005425Z",
+        "modified_time": "2025-02-17T13:02:56Z",
+        "versions": [
+          "1.0.7"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "5c4b6524c408d88e95e6fce41bec25ac610bc0a620c6ac635dbc56a93e119088",
+        "import_time": "2025-02-18T04:25:10.235232192Z",
+        "modified_time": "2025-02-18T04:08:56Z",
+        "versions": [
+          "1.1.6"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "fd93b14a943a875efb1d2602d31cc497e92f135adac765f65f2a0ffd72d6ad42",
+        "import_time": "2025-02-18T04:25:10.154537663Z",
+        "modified_time": "2025-02-18T04:03:22Z",
+        "versions": [
+          "1.1.5"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "82126c9800523504f45253cbb3207ecc731e122b42fa280e18d86c10b33c6f35",
+        "import_time": "2025-02-18T05:21:43.703703171Z",
+        "modified_time": "2025-02-18T04:44:15Z",
+        "versions": [
+          "1.1.7"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "7ced81fbb971d72f159003fd1c935a6470e75f7416b4e7b64dffbaf06b15c276",
+        "import_time": "2025-02-19T01:40:21.861128001Z",
+        "modified_time": "2025-02-18T05:18:41Z",
+        "versions": [
+          "1.1.8"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "25b6768f91803e84a37502bb19be23ba18df20f6f6d3608028f5da10578885a6",
+        "import_time": "2025-02-20T01:40:49.8559723Z",
+        "modified_time": "2025-02-19T03:40:14Z",
+        "versions": [
+          "1.2.0"
+        ]
+      }
+    ]
+  }
+}
