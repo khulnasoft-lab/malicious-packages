@@ -146,6 +146,11 @@ func (r *Report) StripID() {
 	r.raw.ID = ""
 }
 
+// ApplyFilter applies the filter to the report.
+ func (r *Report) ApplyFilter(f reportfilter.Filter) {
+ 	f.Apply(r.raw)
+ }
+
 // AliasID will add the ID for the report into the aliases section.
 //
 // If no ID has been assigned, this function is a no-op.
