@@ -1,0 +1,65 @@
+{
+  "modified": "2025-02-17T06:53:39Z",
+  "published": "2025-02-17T06:53:29Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2025-995",
+  "aliases": [
+    "GHSA-f3mp-6mw5-3hwf"
+  ],
+  "summary": "Malicious code in mexc-internal (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (aab447e6786fd38bfbfa97d8806d9059980107ba328bfce7738f23b885923b02)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "mexc-internal"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "cwes": [
+          {
+            "cweId": "CWE-506",
+            "description": "The product contains code that appears to be malicious in nature.",
+            "name": "Embedded Malicious Code"
+          }
+        ]
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-f3mp-6mw5-3hwf"
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "id": "GHSA-f3mp-6mw5-3hwf",
+        "import_time": "2025-02-18T01:52:03.871198128Z",
+        "modified_time": "2025-02-17T06:53:39Z",
+        "ranges": [
+          {
+            "events": [
+              {
+                "introduced": "0"
+              }
+            ],
+            "type": "SEMVER"
+          }
+        ],
+        "sha256": "aab447e6786fd38bfbfa97d8806d9059980107ba328bfce7738f23b885923b02",
+        "source": "ghsa-malware"
+      }
+    ]
+  }
+}

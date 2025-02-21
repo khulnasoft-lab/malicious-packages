@@ -1,0 +1,52 @@
+{
+  "modified": "2025-02-11T06:46:55Z",
+  "published": "2024-05-25T20:07:47Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2024-10884",
+  "summary": "Malicious code in discord-react (PyPI)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (bc34a3a31bb6498c18b917bfd0c3049006f5c630220a45dbef402db8ef290775)\nThe OpenSSF Package Analysis project identified 'discord-react' @ 0.0.0.1 (pypi) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "PyPI",
+        "name": "discord-react"
+      },
+      "versions": [
+        "0.0.1",
+        "0.0.0.1"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2025-02-11T06:46:30.20143543Z",
+        "modified_time": "2024-05-25T20:07:47Z",
+        "sha256": "adda9c8a59e1ecc8817a1bb89f4da567923ec1e50020bcc35901a59e6bcdf24b",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "0.0.1"
+        ]
+      },
+      {
+        "import_time": "2025-02-11T06:46:30.349364466Z",
+        "modified_time": "2024-05-25T20:15:55Z",
+        "sha256": "bc34a3a31bb6498c18b917bfd0c3049006f5c630220a45dbef402db8ef290775",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "0.0.0.1"
+        ]
+      }
+    ]
+  }
+}
