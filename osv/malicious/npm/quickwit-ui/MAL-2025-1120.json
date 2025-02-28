@@ -1,0 +1,42 @@
+{
+  "modified": "2025-02-22T17:07:07Z",
+  "published": "2025-02-22T17:07:07Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2025-1120",
+  "summary": "Malicious code in quickwit-ui (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (e3b71a4a3516ef7fb05ca27d4966868f5072f5dd603710d70936d47055698fcc)\nThe OpenSSF Package Analysis project identified 'quickwit-ui' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "quickwit-ui"
+      },
+      "versions": [
+        "1.0.0"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2025-02-22T17:18:37.9734378Z",
+        "modified_time": "2025-02-22T17:07:07Z",
+        "sha256": "e3b71a4a3516ef7fb05ca27d4966868f5072f5dd603710d70936d47055698fcc",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "1.0.0"
+        ]
+      }
+    ]
+  }
+}

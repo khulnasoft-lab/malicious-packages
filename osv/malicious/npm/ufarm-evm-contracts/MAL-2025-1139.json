@@ -1,0 +1,42 @@
+{
+  "modified": "2025-02-28T13:36:02Z",
+  "published": "2025-02-28T13:36:02Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2025-1139",
+  "summary": "Malicious code in ufarm-evm-contracts (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (95c80c0310b0e699eca912fbabda41f503177193a10244ff4ceeecee8706a39f)\nThe OpenSSF Package Analysis project identified 'ufarm-evm-contracts' @ 100.99.99 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "ufarm-evm-contracts"
+      },
+      "versions": [
+        "100.99.99"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2025-02-28T13:41:58.656986138Z",
+        "modified_time": "2025-02-28T13:36:02Z",
+        "sha256": "95c80c0310b0e699eca912fbabda41f503177193a10244ff4ceeecee8706a39f",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "100.99.99"
+        ]
+      }
+    ]
+  }
+}
