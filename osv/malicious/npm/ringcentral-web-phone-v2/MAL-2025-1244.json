@@ -1,0 +1,52 @@
+{
+  "modified": "2025-03-02T08:25:19Z",
+  "published": "2025-03-02T07:51:02Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2025-1244",
+  "summary": "Malicious code in ringcentral-web-phone-v2 (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (0700a9aa057d2ccdf0e151c65189ef0fe72f20f880dcae6b33a21faa11d98ab6)\nThe OpenSSF Package Analysis project identified 'ringcentral-web-phone-v2' @ 10.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "ringcentral-web-phone-v2"
+      },
+      "versions": [
+        "10.0.0",
+        "10.0.1"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2025-03-02T08:24:52.900497505Z",
+        "modified_time": "2025-03-02T07:51:02Z",
+        "sha256": "0700a9aa057d2ccdf0e151c65189ef0fe72f20f880dcae6b33a21faa11d98ab6",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "10.0.0"
+        ]
+      },
+      {
+        "import_time": "2025-03-02T08:24:53.147745604Z",
+        "modified_time": "2025-03-02T08:11:49Z",
+        "sha256": "86c00064e71646292671c4590fe3f28c9143a4b2b3608b701d393bca9a11cb92",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "10.0.1"
+        ]
+      }
+    ]
+  }
+}
