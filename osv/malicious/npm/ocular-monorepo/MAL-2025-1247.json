@@ -1,0 +1,42 @@
+{
+  "modified": "2025-03-02T14:06:14Z",
+  "published": "2025-03-02T14:06:14Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2025-1247",
+  "summary": "Malicious code in ocular-monorepo (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (252f2859c8ce10104d0bc37d5a359b4d611e901c193b26fb17306cab139b7404)\nThe OpenSSF Package Analysis project identified 'ocular-monorepo' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "ocular-monorepo"
+      },
+      "versions": [
+        "1.0.0"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2025-03-02T14:19:27.772977463Z",
+        "modified_time": "2025-03-02T14:06:14Z",
+        "sha256": "252f2859c8ce10104d0bc37d5a359b4d611e901c193b26fb17306cab139b7404",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "1.0.0"
+        ]
+      }
+    ]
+  }
+}

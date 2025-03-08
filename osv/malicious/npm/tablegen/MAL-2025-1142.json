@@ -1,0 +1,42 @@
+{
+  "modified": "2025-02-28T18:26:42Z",
+  "published": "2025-02-28T18:26:42Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2025-1142",
+  "summary": "Malicious code in tablegen (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (339255137c3c977e31e0352977c256590f0c4db4d9eeb47ca6384ce449de6037)\nThe OpenSSF Package Analysis project identified 'tablegen' @ 2.1.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "tablegen"
+      },
+      "versions": [
+        "2.1.0"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2025-02-28T18:29:58.208885531Z",
+        "modified_time": "2025-02-28T18:26:42Z",
+        "sha256": "339255137c3c977e31e0352977c256590f0c4db4d9eeb47ca6384ce449de6037",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "2.1.0"
+        ]
+      }
+    ]
+  }
+}
