@@ -1,0 +1,52 @@
+{
+  "modified": "2025-03-03T20:24:21Z",
+  "published": "2025-03-03T18:01:26Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2025-1268",
+  "summary": "Malicious code in aws-features-signin-proxy-client (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (99d86cb46b8ebebca475cada17123e765863986933c83907bb674738f5a6d949)\nThe OpenSSF Package Analysis project identified 'aws-features-signin-proxy-client' @ 10.9.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "aws-features-signin-proxy-client"
+      },
+      "versions": [
+        "9.9.9",
+        "10.9.9"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "3db812bd8b1ab7ed0904134849016b890fe0d5a9af394d37e09a169fc23fccba",
+        "import_time": "2025-03-03T18:28:48.498260719Z",
+        "modified_time": "2025-03-03T18:01:26Z",
+        "versions": [
+          "9.9.9"
+        ]
+      },
+      {
+        "source": "khulnasoft-package-analysis",
+        "sha256": "99d86cb46b8ebebca475cada17123e765863986933c83907bb674738f5a6d949",
+        "import_time": "2025-03-03T20:23:55.98278506Z",
+        "modified_time": "2025-03-03T19:58:21Z",
+        "versions": [
+          "10.9.9"
+        ]
+      }
+    ]
+  }
+}

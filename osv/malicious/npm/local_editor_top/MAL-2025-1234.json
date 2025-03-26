@@ -1,0 +1,42 @@
+{
+  "modified": "2025-03-01T11:05:41Z",
+  "published": "2025-03-01T11:05:41Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2025-1234",
+  "summary": "Malicious code in local_editor_top (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (36486c011374ed22b8e65ed40e5de2e8b52eb1fd74758190c4b13e1dedef8ca7)\nThe OpenSSF Package Analysis project identified 'local_editor_top' @ 10.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "local_editor_top"
+      },
+      "versions": [
+        "10.0.0"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2025-03-01T11:16:17.191610402Z",
+        "modified_time": "2025-03-01T11:05:41Z",
+        "sha256": "36486c011374ed22b8e65ed40e5de2e8b52eb1fd74758190c4b13e1dedef8ca7",
+        "source": "khulnasoft-package-analysis",
+        "versions": [
+          "10.0.0"
+        ]
+      }
+    ]
+  }
+}
