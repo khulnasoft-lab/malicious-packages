@@ -5,44 +5,89 @@ on:
     branches:
       - main
   schedule:
-    - cron: '*/30 * * * *' # Every 30 minutes
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
-permissions: read-all
+permissions:
+  read-all
 
 jobs:
   assign-ids:
     name: Assign IDs
-    continue-on-error: false
     runs-on: ubuntu-latest
     permissions:
-      actions: read
       contents: write
 
     steps:
-      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.ORG_REPO_TOKEN }}
-      - uses: actions/setup-go@0aaccfd150d50ccaeb58ebd88d36e91967a5f35b # v5.4.0
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
         with:
           go-version: "1.21"
 
       - name: Preprocess reports
-        run: make preprocess
+        id: preprocess
+        run: |
+          make preprocess
+          echo "PREPROCESS_STATUS=$?" >> $GITHUB_OUTPUT # Capture status
+        continue-on-error: true # Allow workflow to continue
 
-      - name: Assign IDs
+      - name: Check Preprocess Status
+        if: steps.preprocess.outcome != 'success'
+        run: |
+          echo "Preprocessing failed. Check the logs for errors."
+          exit 1
+
+      - name: Install ids tool
+        id: install_ids
         run: |
           go install github.com/google/osv/vulnfeeds/cmd/ids@latest
-          ids -dir=./osv/malicious -prefix MAL -format json
+          echo "IDS_INSTALL_STATUS=$?" >> $GITHUB_OUTPUT
         env:
           GONOPROXY: github.com/google/osv
+        continue-on-error: true
+
+      - name: Check Install Status
+        if: steps.install_ids.outcome != 'success'
+        run: |
+          echo "Failed to install the ids tool. Check the logs for errors."
+          exit 1
+
+      - name: Assign IDs
+        id: assign_ids
+        run: |
+          ids -dir=./osv/malicious -prefix MAL -format json
+          echo "IDS_STATUS=$?" >> $GITHUB_OUTPUT
+        continue-on-error: true
+
+      - name: Check Assign IDs Status
+        if: steps.assign_ids.outcome != 'success'
+        run: |
+          echo "Failed to assign IDs. Check the logs for errors."
+          exit 1
 
       - name: Prepare commit
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
           git add .
-      - name: Commit report changes
-        run: git diff --cached --quiet || git commit -m 'Assign IDs'
-      - name: Push commit
+
+      - name: Commit changes
+        id: commit
+        run: |
+          git diff --cached --quiet
+          if [ $? -ne 0 ]; then
+            git commit -m "Assign IDs"
+            echo "COMMIT_STATUS=true" >> $GITHUB_OUTPUT
+          else
+            echo "COMMIT_STATUS=false" >> $GITHUB_OUTPUT
+            echo "No changes to commit."
+          fi
+
+      - name: Push changes
+        if: steps.commit.outputs.COMMIT_STATUS == 'true'
         run: git push
