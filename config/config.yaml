@@ -10,3 +10,6 @@ sources:
   - id: "ghsa-malware"
     alias-id: true
 disabled-for-reason: "NPM namespaces are not specified in the package correctly"
+filters:
+   - field: "related"
+     pattern: "^RLMA-"
