@@ -2,7 +2,7 @@ module github.com/khulnasoft-lab/malicious-packages
 
 go 1.22.7
 
-toolchain go1.23.1
+toolchain go1.24.3
 
 require (
 	cloud.google.com/go/storage v1.47.0
