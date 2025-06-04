@@ -8,7 +8,7 @@ require (
 	cloud.google.com/go/storage v1.54.0
 	github.com/aws/aws-sdk-go v1.55.7
 	github.com/aws/aws-sdk-go-v2/service/s3 v1.79.4
-	github.com/google/osv-scanner v1.9.2
+	github.com/google/osv-scanner/v2 v2.0.2
 	github.com/google/osv-scanner/v2 v2.0.2
 	github.com/google/renameio v1.0.1
 	gocloud.dev v0.41.0
