@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2024-1159",
   "summary": "Malicious code in tchap-translations (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (ca575a89e5cfe2c388f248f9084e97b9cc385753de105d2ada5dc6323d1de06f)\nThe OpenSSF Package Analysis project identified 'tchap-translations' @ 9.9.10 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (ca575a89e5cfe2c388f248f9084e97b9cc385753de105d2ada5dc6323d1de06f)\nThe OpenSSF Package Analysis project identified 'tchap-translations' @ 9.9.10 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -22,7 +22,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -30,7 +30,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "ca575a89e5cfe2c388f248f9084e97b9cc385753de105d2ada5dc6323d1de06f",
         "import_time": "2024-03-29T20:04:57.381343633Z",
         "modified_time": "2024-03-29T19:38:43Z",
@@ -39,7 +39,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "45e0792fee7b854feceb623c6d52a4d9c4a7b841095ac1941a2ed0ad82ed87de",
         "import_time": "2024-03-29T20:33:54.735751302Z",
         "modified_time": "2024-03-29T20:09:27Z",

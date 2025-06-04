@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-1101",
   "summary": "Malicious code in @recordedfuture/rf-native (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (aac1388d71025ac7f2f7dea84dd37f82d5d7392e8714f56bfaa66803982bb1c3)\nThe OpenSSF Package Analysis project identified '@recordedfuture/rf-native' @ 2.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (aac1388d71025ac7f2f7dea84dd37f82d5d7392e8714f56bfaa66803982bb1c3)\nThe OpenSSF Package Analysis project identified '@recordedfuture/rf-native' @ 2.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2023-08-10T06:16:37.352450438Z",
         "modified_time": "2023-07-19T12:50:34.231682553Z",
         "sha256": "aac1388d71025ac7f2f7dea84dd37f82d5d7392e8714f56bfaa66803982bb1c3",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "2.0.0"
         ]

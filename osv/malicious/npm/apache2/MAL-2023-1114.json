@@ -7,7 +7,7 @@
     "SNYK-JS-APACHE2-3336064"
   ],
   "summary": "Malicious code in apache2 (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (12b1a6eed914c86f199b052822217042e2afa047d6b1d9921fd30b56f1e5e650)\nThe OpenSSF Package Analysis project identified 'apache2' @ 1.1.9 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (12b1a6eed914c86f199b052822217042e2afa047d6b1d9921fd30b56f1e5e650)\nThe OpenSSF Package Analysis project identified 'apache2' @ 1.1.9 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -30,7 +30,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     },
@@ -45,7 +45,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "12b1a6eed914c86f199b052822217042e2afa047d6b1d9921fd30b56f1e5e650",
         "import_time": "2023-08-10T06:15:23.325307385Z",
         "modified_time": "2023-04-29T16:39:14.067137742Z",

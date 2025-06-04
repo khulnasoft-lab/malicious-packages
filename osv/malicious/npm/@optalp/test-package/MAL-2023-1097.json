@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-1097",
   "summary": "Malicious code in @optalp/test-package (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (2be61ba56fbca0d8199a70e1257f274b56d233dfc2edd33b2fc29ab7b2a8446a)\nThe OpenSSF Package Analysis project identified '@optalp/test-package' @ 1.0.6 (npm) as malicious.\n\nIt is considered malicious because:\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (2be61ba56fbca0d8199a70e1257f274b56d233dfc2edd33b2fc29ab7b2a8446a)\nThe OpenSSF Package Analysis project identified '@optalp/test-package' @ 1.0.6 (npm) as malicious.\n\nIt is considered malicious because:\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -22,7 +22,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -33,7 +33,7 @@
         "import_time": "2023-08-10T06:17:34.29690382Z",
         "modified_time": "2023-07-18T14:55:48.834768346Z",
         "sha256": "2be61ba56fbca0d8199a70e1257f274b56d233dfc2edd33b2fc29ab7b2a8446a",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "1.0.6"
         ]
@@ -42,7 +42,7 @@
         "import_time": "2023-08-10T06:17:34.070223473Z",
         "modified_time": "2023-07-18T14:42:53.542814525Z",
         "sha256": "516235e4da99212a0b3c1fa16967ebb6bdb8cfb39fc5b19652d169ec10bd5377",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "1.0.5"
         ]

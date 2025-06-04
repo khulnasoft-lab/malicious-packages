@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2024-7645",
   "summary": "Malicious code in sap-badfiles (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (4a9459e9f1bcf3b7c028ace7fe4af0c22616ec0e041f4f784c04288e1e3d4c79)\nThe OpenSSF Package Analysis project identified 'sap-badfiles' @ 0.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (4a9459e9f1bcf3b7c028ace7fe4af0c22616ec0e041f4f784c04288e1e3d4c79)\nThe OpenSSF Package Analysis project identified 'sap-badfiles' @ 0.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2024-07-11T03:06:10.476057023Z",
         "modified_time": "2024-07-11T02:57:28Z",
         "sha256": "4a9459e9f1bcf3b7c028ace7fe4af0c22616ec0e041f4f784c04288e1e3d4c79",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "0.0.0"
         ]

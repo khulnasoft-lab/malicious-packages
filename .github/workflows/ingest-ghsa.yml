@@ -2,7 +2,7 @@ name: Ingest GHSA Malware
 
 on:
   schedule:
-    - cron: "7 0 * * *" # Once an day
+  - cron: '7 0 * * *' # Once an day
   workflow_dispatch:
 
 permissions: read-all
@@ -18,58 +18,58 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout self
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
-        with:
-          token: ${{ secrets.ORG_REPO_TOKEN }}
-      - name: Checkout khulnasoft-lab/osv-schema
-        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
-        with:
-          token: ${{ secrets.ORG_REPO_TOKEN }}
-          repository: khulnasoft-lab/osv-schema
-          ref: 719ef525491260972fbec8679130052d4086711c
-          path: osv-schema
-      - uses: actions/setup-go@d35c59abb061a4a6fb18e82ac0862c26744d6ab5 # v5.5.0
-        with:
-          go-version: "1.21"
-      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
-        with:
-          python-version: "3.11"
-          cache: pipenv
-          cache-dependency-path: osv-schema/tools/ghsa/Pipfile.lock
+    - name: Checkout self
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      with:
+        token: ${{ secrets.GH_TOKEN }}
+    - name: Checkout ossf/osv-schema
+      uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      with:
+        token: ${{ secrets.GH_TOKEN }}
+        repository: ossf/osv-schema
+        ref: ed713ef6511fa4113c89e25ea5e3da5291c6f05d
+        path: osv-schema
+    - uses: actions/setup-go@d35c59abb061a4a6fb18e82ac0862c26744d6ab5 # v5.5.0
+      with:
+        go-version-file: 'go.mod'
+    - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+      with:
+        python-version: "3.11"
+        cache: pipenv
+        cache-dependency-path: osv-schema/tools/ghsa/Pipfile.lock
 
-      - name: Install pipenv
-        run: |
-          pip install pipenv==2023.7.11
+    - name: Install pipenv
+      run: |
+        pip install pipenv==2023.7.11
 
-      - name: Install dependencies
-        run: |
-          cd osv-schema/tools/ghsa
-          pipenv sync
+    - name: Install dependencies
+      run: |
+        cd osv-schema/tools/ghsa
+        pipenv sync
 
-      - name: Dump GHSA Malware
-        run: |
-          cd osv-schema/tools/ghsa
-          mkdir OUT
-          TIMESINCE=`python3 -c 'import datetime; dt=datetime.datetime.now(datetime.UTC)-datetime.timedelta(hours=48); print(dt.isoformat())'`
-          pipenv run python dump_ghsa.py --token "${{ github.token }}" --query "classifications: [MALWARE] updatedSince: \"$TIMESINCE\"" OUT
+    - name: Dump GHSA Malware
+      run: |
+        cd osv-schema/tools/ghsa
+        mkdir OUT
+        TIMESINCE=`python3 -c 'import datetime; dt=datetime.datetime.now(datetime.UTC)-datetime.timedelta(hours=48); print(dt.isoformat())'`
+        pipenv run python dump_ghsa.py --token "${{ github.token }}" --query "classifications: [MALWARE] updatedSince: \"$TIMESINCE\"" OUT
 
-      - name: Convert GHSA to OSV
-        run: |
-          cd osv-schema/tools/ghsa
-          mkdir OSV
-          pipenv run python convert_ghsa.py -o OSV OUT/*.json
+    - name: Convert GHSA to OSV
+      run: |
+        cd osv-schema/tools/ghsa
+        mkdir OSV
+        pipenv run python convert_ghsa.py -o OSV OUT/*.json
 
-      - name: Ingest OSV
-        run: |
-          go run ./cmd/ingest -config config/config.yaml -dir osv-schema/tools/ghsa/OSV -source ghsa-malware
+    - name: Ingest OSV
+      run: |
+        go run ./cmd/ingest -config config/config.yaml -dir osv-schema/tools/ghsa/OSV -source ghsa-malware
 
-      - name: Prepare commit
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add osv
-      - name: Commit report changes
-        run: git diff --cached --quiet || git commit -m 'Ingest OSV - GHSA Malware'
-      - name: Push commit
-        run: git push
+    - name: Prepare commit
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add osv
+    - name: Commit report changes
+      run: git diff --cached --quiet || git commit -m 'Ingest OSV - GHSA Malware'
+    - name: Push commit
+      run: git push

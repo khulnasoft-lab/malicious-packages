@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2024-8858",
   "summary": "Malicious code in priv-pack (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (baeb04b7baba552327c5781a2a0bde2c82381f0d43ed7c4d84c48eb0b7c22fa7)\nThe OpenSSF Package Analysis project identified 'priv-pack' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (baeb04b7baba552327c5781a2a0bde2c82381f0d43ed7c4d84c48eb0b7c22fa7)\nThe OpenSSF Package Analysis project identified 'priv-pack' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2024-09-10T02:46:23.011449468Z",
         "modified_time": "2024-09-10T02:29:11Z",
         "sha256": "baeb04b7baba552327c5781a2a0bde2c82381f0d43ed7c4d84c48eb0b7c22fa7",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "1.0.0"
         ]

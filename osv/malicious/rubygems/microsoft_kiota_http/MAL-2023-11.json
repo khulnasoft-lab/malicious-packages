@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-11",
   "summary": "Malicious code in microsoft_kiota_http (RubyGems)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (1aea1a60f074d92d58e8e1644f08af16097bc4fc496a7acc2b60f586ce504017)\nThe OpenSSF Package Analysis project identified 'microsoft_kiota_http' @ 6.0.1 (rubygems) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (1aea1a60f074d92d58e8e1644f08af16097bc4fc496a7acc2b60f586ce504017)\nThe OpenSSF Package Analysis project identified 'microsoft_kiota_http' @ 6.0.1 (rubygems) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -31,7 +31,7 @@
       {
         "import_time": "2023-06-30T03:53:29.231687801Z",
         "sha256": "1aea1a60f074d92d58e8e1644f08af16097bc4fc496a7acc2b60f586ce504017",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "6.0.1"
         ]

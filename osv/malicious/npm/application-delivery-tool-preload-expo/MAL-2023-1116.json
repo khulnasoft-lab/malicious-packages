@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-1116",
   "summary": "Malicious code in application-delivery-tool-preload-expo (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (56e4071882ebfaf078f45ca400f352aa4473aab57faa966a208f00a8ef67dfd4)\nThe OpenSSF Package Analysis project identified 'application-delivery-tool-preload-expo' @ 3.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (56e4071882ebfaf078f45ca400f352aa4473aab57faa966a208f00a8ef67dfd4)\nThe OpenSSF Package Analysis project identified 'application-delivery-tool-preload-expo' @ 3.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2023-08-10T06:16:03.980256846Z",
         "modified_time": "2023-05-26T19:16:50.13069008Z",
         "sha256": "56e4071882ebfaf078f45ca400f352aa4473aab57faa966a208f00a8ef67dfd4",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "3.0.0"
         ]

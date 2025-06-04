@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2024-8963",
   "summary": "Malicious code in common-icons (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (928c83c31f108c60035b2c6c96605de1111ca0ca0faf7fd554e461357801b6cf)\nThe OpenSSF Package Analysis project identified 'common-icons' @ 1.0.83 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (928c83c31f108c60035b2c6c96605de1111ca0ca0faf7fd554e461357801b6cf)\nThe OpenSSF Package Analysis project identified 'common-icons' @ 1.0.83 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -23,7 +23,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -31,7 +31,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "928c83c31f108c60035b2c6c96605de1111ca0ca0faf7fd554e461357801b6cf",
         "import_time": "2024-09-25T09:05:30.276422809Z",
         "modified_time": "2024-09-25T08:46:25Z",
@@ -40,7 +40,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "76d768eb90101f52b1c577613e453dd7f393f3e30df55076a1e50cbeb3884f55",
         "import_time": "2024-09-25T09:35:27.067824463Z",
         "modified_time": "2024-09-25T09:26:37Z",
@@ -49,7 +49,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "91f6851a2d83a1a268d5cdf204622e4996a8cc1a950dfeb45c796fed87cc5876",
         "import_time": "2024-09-25T09:35:27.204521829Z",
         "modified_time": "2024-09-25T09:31:28Z",

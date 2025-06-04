@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-1105",
   "summary": "Malicious code in @satsuitesdk/score-choice-policy (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (13b7a2826acee9e7a7baa9fc7b0862136ceff1009f5c59474b93511a266abd1e)\nThe OpenSSF Package Analysis project identified '@satsuitesdk/score-choice-policy' @ 0.1.2 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (13b7a2826acee9e7a7baa9fc7b0862136ceff1009f5c59474b93511a266abd1e)\nThe OpenSSF Package Analysis project identified '@satsuitesdk/score-choice-policy' @ 0.1.2 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2023-08-10T06:16:05.91417115Z",
         "modified_time": "2023-05-28T02:51:52.18974771Z",
         "sha256": "13b7a2826acee9e7a7baa9fc7b0862136ceff1009f5c59474b93511a266abd1e",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "0.1.2"
         ]

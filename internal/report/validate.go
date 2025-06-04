@@ -75,7 +75,7 @@ var semverEcosystem = map[models.Ecosystem]struct{}{
 // validateRange ensures r conforms to the OSV Schema. This also ensures code
 // that processes ranges can assume the data is well structured.
 //
-// See https://khulnasoft-lab.github.io/osv-schema/#affectedranges-field for details.
+// See https://ossf.github.io/osv-schema/#affectedranges-field for details.
 func validateRange(r models.Range, ecosystem models.Ecosystem) error {
 	// The range type is required.
 	if r.Type == "" {

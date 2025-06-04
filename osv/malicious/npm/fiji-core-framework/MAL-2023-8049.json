@@ -7,7 +7,7 @@
     "GHSA-8f94-f3c5-6qrv"
   ],
   "summary": "Malicious code in fiji-core-framework (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (840a4749ffe1b469a10dd0123341127855c52cbffc20bd6b9a2a0538ac453578)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (7dbcf589d92b41f3c53a8a0521397ff31931aaa87606a7294904a766db6aea2b)\nThe OpenSSF Package Analysis project identified 'fiji-core-framework' @ 9.999.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (840a4749ffe1b469a10dd0123341127855c52cbffc20bd6b9a2a0538ac453578)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (7dbcf589d92b41f3c53a8a0521397ff31931aaa87606a7294904a766db6aea2b)\nThe OpenSSF Package Analysis project identified 'fiji-core-framework' @ 9.999.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -49,7 +49,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -57,7 +57,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "7dbcf589d92b41f3c53a8a0521397ff31931aaa87606a7294904a766db6aea2b",
         "import_time": "2023-09-05T06:05:40.232811229Z",
         "modified_time": "2023-09-01T12:32:06Z",

@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2024-9035",
   "summary": "Malicious code in @gintel/personal-assistant (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (ceacaddd98b873d32e3e6aa49bd9d48f964eca12ffe724a93abeee1ca81004db)\nThe OpenSSF Package Analysis project identified '@gintel/personal-assistant' @ 0.180.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (ceacaddd98b873d32e3e6aa49bd9d48f964eca12ffe724a93abeee1ca81004db)\nThe OpenSSF Package Analysis project identified '@gintel/personal-assistant' @ 0.180.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2024-09-28T23:34:48.808357152Z",
         "modified_time": "2024-09-28T23:30:42Z",
         "sha256": "ceacaddd98b873d32e3e6aa49bd9d48f964eca12ffe724a93abeee1ca81004db",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "0.180.0"
         ]

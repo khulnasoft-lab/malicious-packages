@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2024-8839",
   "summary": "Malicious code in @pd-mfe/framework-request-context (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (67d85dc3369a40dca0564619e91845710660a0cf77ca76303f641e1b20c5876e)\nThe OpenSSF Package Analysis project identified '@pd-mfe/framework-request-context' @ 99.50.55 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (67d85dc3369a40dca0564619e91845710660a0cf77ca76303f641e1b20c5876e)\nThe OpenSSF Package Analysis project identified '@pd-mfe/framework-request-context' @ 99.50.55 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2024-09-08T17:35:26.762063588Z",
         "modified_time": "2024-09-08T17:25:46Z",
         "sha256": "67d85dc3369a40dca0564619e91845710660a0cf77ca76303f641e1b20c5876e",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "99.50.55"
         ]

@@ -9,7 +9,7 @@
     "SNYK-JS-SHOPIFYCURRENCYCONVERTER-5952257"
   ],
   "summary": "Malicious code in shopify-currency-converter (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (cce5f47f0fb8050c5ba0e74637e692ba095f4628070a3087b67db81de6deca0d)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (c189b025f30ece33625dda1d4ccb55cfadc0d4b78d95414ac8bb615929c58b92)\nThe OpenSSF Package Analysis project identified 'shopify-currency-converter' @ 5.0.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (cce5f47f0fb8050c5ba0e74637e692ba095f4628070a3087b67db81de6deca0d)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (c189b025f30ece33625dda1d4ccb55cfadc0d4b78d95414ac8bb615929c58b92)\nThe OpenSSF Package Analysis project identified 'shopify-currency-converter' @ 5.0.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -65,7 +65,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     },
@@ -80,7 +80,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "c189b025f30ece33625dda1d4ccb55cfadc0d4b78d95414ac8bb615929c58b92",
         "import_time": "2023-10-05T16:06:01.746586502Z",
         "modified_time": "2023-10-05T16:05:45Z",

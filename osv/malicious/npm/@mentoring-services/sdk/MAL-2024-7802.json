@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2024-7802",
   "summary": "Malicious code in @mentoring-services/sdk (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (6248cce7fe3e50ce8c9fe940f959d883f287bff1a15d23813fa4dad7f960a486)\nThe OpenSSF Package Analysis project identified '@mentoring-services/sdk' @ 10.20.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (6248cce7fe3e50ce8c9fe940f959d883f287bff1a15d23813fa4dad7f960a486)\nThe OpenSSF Package Analysis project identified '@mentoring-services/sdk' @ 10.20.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -22,7 +22,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -30,7 +30,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "6248cce7fe3e50ce8c9fe940f959d883f287bff1a15d23813fa4dad7f960a486",
         "import_time": "2024-07-25T12:07:34.202038631Z",
         "modified_time": "2024-07-25T11:47:52Z",
@@ -39,7 +39,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "9d36d78e3ff6435bdef386733e7d56c77e24485497422a1b735c05476e1172c4",
         "import_time": "2024-07-25T18:35:00.61870027Z",
         "modified_time": "2024-07-25T18:20:39Z",

@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-3",
   "summary": "Malicious code in @hyperion-util/script-loader (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (fabcfd39cc4468aaddf92dd77dc548149fa6f7f8d09de7dc5af550bf8fbc2b81)\nThe OpenSSF Package Analysis project identified '@hyperion-util/script-loader' @ 77.77.79 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (fabcfd39cc4468aaddf92dd77dc548149fa6f7f8d09de7dc5af550bf8fbc2b81)\nThe OpenSSF Package Analysis project identified '@hyperion-util/script-loader' @ 77.77.79 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -31,7 +31,7 @@
       {
         "import_time": "2023-06-30T03:52:51.717111111Z",
         "sha256": "fabcfd39cc4468aaddf92dd77dc548149fa6f7f8d09de7dc5af550bf8fbc2b81",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "77.77.79"
         ]

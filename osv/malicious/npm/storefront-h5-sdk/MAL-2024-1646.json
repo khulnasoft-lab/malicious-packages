@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2024-1646",
   "summary": "Malicious code in storefront-h5-sdk (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (3bdecd59d5667e506fd4f66d29c575454020e37384211ce8a27e463cd6971298)\nThe OpenSSF Package Analysis project identified 'storefront-h5-sdk' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (3bdecd59d5667e506fd4f66d29c575454020e37384211ce8a27e463cd6971298)\nThe OpenSSF Package Analysis project identified 'storefront-h5-sdk' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2024-06-20T11:33:49.777052819Z",
         "modified_time": "2024-06-20T11:27:51Z",
         "sha256": "3bdecd59d5667e506fd4f66d29c575454020e37384211ce8a27e463cd6971298",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "1.0.0"
         ]

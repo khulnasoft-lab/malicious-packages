@@ -8,7 +8,7 @@
     "SNYK-JS-STATSCOLLECTCOMPONENTS-3358945"
   ],
   "summary": "Malicious code in stats-collect-components (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (ad3d02771bbae32c6827b2d78a02c6a6f23d67fca38cc7361fdcd739f0ee4398)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (1cf0bcd852a99e89851d35ee7ea4c7ed1e43c5a94fed5cb0ea148778bd1d0c91)\nThe OpenSSF Package Analysis project identified 'stats-collect-components' @ 99.99.99 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (ad3d02771bbae32c6827b2d78a02c6a6f23d67fca38cc7361fdcd739f0ee4398)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (1cf0bcd852a99e89851d35ee7ea4c7ed1e43c5a94fed5cb0ea148778bd1d0c91)\nThe OpenSSF Package Analysis project identified 'stats-collect-components' @ 99.99.99 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -54,7 +54,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     },
@@ -86,7 +86,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "1cf0bcd852a99e89851d35ee7ea4c7ed1e43c5a94fed5cb0ea148778bd1d0c91",
         "import_time": "2023-08-10T06:15:16.60177923Z",
         "modified_time": "2023-04-29T04:35:40.33759801Z",

@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2024-1008",
   "summary": "Malicious code in @dh-io-globalelem/footnote-reference-component (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (b2e6d7cc2b325220bbda28fea49385ce4c68d05c1646bc6a569ca62a0f27c443)\nThe OpenSSF Package Analysis project identified '@dh-io-globalelem/footnote-reference-component' @ 5.990.10 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (b2e6d7cc2b325220bbda28fea49385ce4c68d05c1646bc6a569ca62a0f27c443)\nThe OpenSSF Package Analysis project identified '@dh-io-globalelem/footnote-reference-component' @ 5.990.10 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -22,7 +22,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -30,7 +30,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "b2e6d7cc2b325220bbda28fea49385ce4c68d05c1646bc6a569ca62a0f27c443",
         "import_time": "2024-02-15T16:05:03.363463917Z",
         "modified_time": "2024-02-15T15:46:28Z",
@@ -39,7 +39,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "d85ce06d51da1967799694ca8d573fae92aa826c1b8f4073ac34453e5db0f472",
         "import_time": "2024-02-15T18:33:52.423318257Z",
         "modified_time": "2024-02-15T18:32:51Z",

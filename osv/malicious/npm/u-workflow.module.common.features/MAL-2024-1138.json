@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2024-1138",
   "summary": "Malicious code in u-workflow.module.common.features (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (43c063fa58fdcf0f64acc12e433390c9dc078ab6b6eb6dd773242db454f29a47)\nThe OpenSSF Package Analysis project identified 'u-workflow.module.common.features' @ 1.0.1 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (43c063fa58fdcf0f64acc12e433390c9dc078ab6b6eb6dd773242db454f29a47)\nThe OpenSSF Package Analysis project identified 'u-workflow.module.common.features' @ 1.0.1 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2024-03-21T07:33:54.879191546Z",
         "modified_time": "2024-03-21T07:05:53Z",
         "sha256": "43c063fa58fdcf0f64acc12e433390c9dc078ab6b6eb6dd773242db454f29a47",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "1.0.1"
         ]

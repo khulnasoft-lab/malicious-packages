@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2024-1143",
   "summary": "Malicious code in familylink (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (dcd324585f9b17cb0f06cf892908dbc6dd3a208bb5661635da6283fe5c05f544)\nThe OpenSSF Package Analysis project identified 'familylink' @ 81.2.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (dcd324585f9b17cb0f06cf892908dbc6dd3a208bb5661635da6283fe5c05f544)\nThe OpenSSF Package Analysis project identified 'familylink' @ 81.2.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -22,7 +22,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -30,7 +30,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "235b14070e3e982d6f21559f48c3f25dee209d42ea6b74b98d0fbce6c6946845",
         "import_time": "2024-03-24T13:34:15.954865315Z",
         "modified_time": "2024-03-24T13:32:10Z",
@@ -39,7 +39,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "dcd324585f9b17cb0f06cf892908dbc6dd3a208bb5661635da6283fe5c05f544",
         "import_time": "2024-04-02T23:05:10.391772762Z",
         "modified_time": "2024-03-27T00:41:02Z",

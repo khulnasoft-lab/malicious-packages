@@ -7,7 +7,7 @@
     "GHSA-j4vm-vjgv-vc5h"
   ],
   "summary": "Malicious code in vh3 (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (43579c54bc5b30465c06b594fae446a6677de86c30d00f9808fe280b4d2338dd)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (b048ed843980410b958d57303ec743475e2a3fdb68bebe37a61b0e168be5d0b6)\nThe OpenSSF Package Analysis project identified 'vh3' @ 103.99.99 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (43579c54bc5b30465c06b594fae446a6677de86c30d00f9808fe280b4d2338dd)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (b048ed843980410b958d57303ec743475e2a3fdb68bebe37a61b0e168be5d0b6)\nThe OpenSSF Package Analysis project identified 'vh3' @ 103.99.99 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -49,7 +49,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -74,7 +74,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "b048ed843980410b958d57303ec743475e2a3fdb68bebe37a61b0e168be5d0b6",
         "import_time": "2023-08-10T06:15:08.059982461Z",
         "modified_time": "2023-04-28T12:10:32.990397065Z",

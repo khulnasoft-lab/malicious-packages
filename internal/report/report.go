@@ -27,6 +27,8 @@ import (
 	"unicode"
 
 	"github.com/google/osv-scanner/pkg/models"
+
+	"github.com/khulnasoft-lab/malicious-packages/internal/reportfilter"
 )
 
 const (
@@ -91,6 +93,11 @@ func (r *Report) UnmarshalJSON(b []byte) error {
 	r.Ecosystem = string(r.raw.Affected[0].Package.Ecosystem)
 	r.Name = r.raw.Affected[0].Package.Name
 
+	// Ensure the details can be parsed.
+	if _, _, err := r.ParseDetails(); err != nil {
+		return fmt.Errorf("%w: invalid details: %w", ErrInvalidDetails, err)
+	}
+
 	return nil
 }
 
@@ -142,6 +149,11 @@ func (r *Report) ID() string {
 // StripID removes the ID for the report.
 func (r *Report) StripID() {
 	r.raw.ID = ""
+}
+
+// ApplyFilter applies the filter to the report.
+func (r *Report) ApplyFilter(f reportfilter.Filter) {
+	f.Apply(r.raw)
 }
 
 // AliasID will add the ID for the report into the aliases section.

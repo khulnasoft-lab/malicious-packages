@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-2",
   "summary": "Malicious code in @hyperion-util/deferred-value (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (ee6f14ca7114d9a5fd5096b74a8d6efa41d9df7e63dfcbfa2778ba8ba7d5dc64)\nThe OpenSSF Package Analysis project identified '@hyperion-util/deferred-value' @ 77.77.79 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (ee6f14ca7114d9a5fd5096b74a8d6efa41d9df7e63dfcbfa2778ba8ba7d5dc64)\nThe OpenSSF Package Analysis project identified '@hyperion-util/deferred-value' @ 77.77.79 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -31,7 +31,7 @@
       {
         "import_time": "2023-06-30T03:52:51.416776695Z",
         "sha256": "ee6f14ca7114d9a5fd5096b74a8d6efa41d9df7e63dfcbfa2778ba8ba7d5dc64",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "77.77.79"
         ]

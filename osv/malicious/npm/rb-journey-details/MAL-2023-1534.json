@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-1534",
   "summary": "Malicious code in rb-journey-details (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (3b743557ed9835339d75bb8b71101ba1c088ce15ad0081bae310b2b405e24c01)\nThe OpenSSF Package Analysis project identified 'rb-journey-details' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (3b743557ed9835339d75bb8b71101ba1c088ce15ad0081bae310b2b405e24c01)\nThe OpenSSF Package Analysis project identified 'rb-journey-details' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2023-08-22T05:05:34.27841029Z",
         "modified_time": "2023-08-22T05:00:19Z",
         "sha256": "3b743557ed9835339d75bb8b71101ba1c088ce15ad0081bae310b2b405e24c01",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "1.0.0"
         ]

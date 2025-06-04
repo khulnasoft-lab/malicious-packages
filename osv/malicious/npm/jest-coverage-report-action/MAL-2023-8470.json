@@ -7,7 +7,7 @@
     "GHSA-wjvq-8r89-7mxv"
   ],
   "summary": "Malicious code in jest-coverage-report-action (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (0a570942cc8be879311bbb1b601f658554c30fa3734aacac08c1c53289da55bf)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (ad1581030c9f823e5eace1ee7e3241ed8752831078c998911b73e0d3a5753bee)\nThe OpenSSF Package Analysis project identified 'jest-coverage-report-action' @ 1.0.1 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (0a570942cc8be879311bbb1b601f658554c30fa3734aacac08c1c53289da55bf)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (ad1581030c9f823e5eace1ee7e3241ed8752831078c998911b73e0d3a5753bee)\nThe OpenSSF Package Analysis project identified 'jest-coverage-report-action' @ 1.0.1 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -50,7 +50,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -58,7 +58,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "ad1581030c9f823e5eace1ee7e3241ed8752831078c998911b73e0d3a5753bee",
         "import_time": "2023-11-07T10:34:15.904342724Z",
         "modified_time": "2023-11-07T10:18:31Z",
@@ -67,7 +67,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "26d0637f712fec3d31531b28583884bc72fc77cf5d1031813283cd2e0c4d29eb",
         "import_time": "2023-11-08T08:33:59.104553605Z",
         "modified_time": "2023-11-08T08:31:34Z",

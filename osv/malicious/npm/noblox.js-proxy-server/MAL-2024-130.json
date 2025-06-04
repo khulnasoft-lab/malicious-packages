@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2024-130",
   "summary": "Malicious code in noblox.js-proxy-server (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (2b3d7766d2ada5a6d17ae9ae430365649d4034341202ba6fc6a07a0ab6a553fb)\nThe OpenSSF Package Analysis project identified 'noblox.js-proxy-server' @ 4.15.1 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (2b3d7766d2ada5a6d17ae9ae430365649d4034341202ba6fc6a07a0ab6a553fb)\nThe OpenSSF Package Analysis project identified 'noblox.js-proxy-server' @ 4.15.1 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -23,7 +23,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -34,7 +34,7 @@
         "import_time": "2024-01-18T03:33:58.662712809Z",
         "modified_time": "2024-01-16T23:40:53Z",
         "sha256": "2b3d7766d2ada5a6d17ae9ae430365649d4034341202ba6fc6a07a0ab6a553fb",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "4.15.1"
         ]
@@ -43,7 +43,7 @@
         "import_time": "2024-01-18T03:33:58.885484713Z",
         "modified_time": "2024-01-17T04:17:43Z",
         "sha256": "e70da72314ee635f02bb74208c6d901deef9488f5e1984ef0b15934b191dbf61",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "4.15.4"
         ]
@@ -52,7 +52,7 @@
         "import_time": "2024-01-18T03:33:58.770061774Z",
         "modified_time": "2024-01-17T00:30:23Z",
         "sha256": "e92f511bfbd1c4efd4d29b82282145c7d987a6969f4084ef25b3579e2837fe1c",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "4.15.3"
         ]

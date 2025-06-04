@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2024-7527",
   "summary": "Malicious code in sap-aim (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (244887dfb793a534f8315571ac4ce6a3f97aa3a4177470d47fd5ce38563548e6)\nThe OpenSSF Package Analysis project identified 'sap-aim' @ 0.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (244887dfb793a534f8315571ac4ce6a3f97aa3a4177470d47fd5ce38563548e6)\nThe OpenSSF Package Analysis project identified 'sap-aim' @ 0.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2024-07-11T02:19:14.441165598Z",
         "modified_time": "2024-07-11T01:52:41Z",
         "sha256": "244887dfb793a534f8315571ac4ce6a3f97aa3a4177470d47fd5ce38563548e6",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "0.0.0"
         ]

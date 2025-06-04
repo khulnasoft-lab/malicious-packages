@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-8120",
   "summary": "Malicious code in @healthbridge-design-system/components (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (67a89e843273447a99a5bf30226772af73acc28ebaa30abad7579f363b87e848)\nThe OpenSSF Package Analysis project identified '@healthbridge-design-system/components' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (67a89e843273447a99a5bf30226772af73acc28ebaa30abad7579f363b87e848)\nThe OpenSSF Package Analysis project identified '@healthbridge-design-system/components' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2023-09-17T17:04:55.53422593Z",
         "modified_time": "2023-09-17T16:53:50Z",
         "sha256": "67a89e843273447a99a5bf30226772af73acc28ebaa30abad7579f363b87e848",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "1.0.0"
         ]

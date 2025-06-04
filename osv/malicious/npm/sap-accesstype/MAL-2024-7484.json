@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2024-7484",
   "summary": "Malicious code in sap-accesstype (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (f048a3d772e80ca5a71af05f28f78526ed86b893271b386eaeeadbcf82041570)\nThe OpenSSF Package Analysis project identified 'sap-accesstype' @ 0.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (f048a3d772e80ca5a71af05f28f78526ed86b893271b386eaeeadbcf82041570)\nThe OpenSSF Package Analysis project identified 'sap-accesstype' @ 0.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2024-07-11T01:31:20.711543461Z",
         "modified_time": "2024-07-11T00:56:00Z",
         "sha256": "f048a3d772e80ca5a71af05f28f78526ed86b893271b386eaeeadbcf82041570",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "0.0.0"
         ]

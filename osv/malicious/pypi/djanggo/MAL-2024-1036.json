@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2024-1036",
   "summary": "Malicious code in djanggo (PyPI)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (011da0e2a451e787d1c7b54c29f3090de47bd2366de80983667665a70d885320)\nThe OpenSSF Package Analysis project identified 'djanggo' @ 0.0.6 (pypi) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (011da0e2a451e787d1c7b54c29f3090de47bd2366de80983667665a70d885320)\nThe OpenSSF Package Analysis project identified 'djanggo' @ 0.0.6 (pypi) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -22,7 +22,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -30,7 +30,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "011da0e2a451e787d1c7b54c29f3090de47bd2366de80983667665a70d885320",
         "import_time": "2024-02-23T08:33:35.579446822Z",
         "modified_time": "2024-02-23T08:30:53Z",
@@ -39,7 +39,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "5727c9581e2e107c966077fbd99061df88ddef1256c43f15dc0ffdef2335c824",
         "import_time": "2024-02-23T09:33:34.286499011Z",
         "modified_time": "2024-02-23T09:31:20Z",

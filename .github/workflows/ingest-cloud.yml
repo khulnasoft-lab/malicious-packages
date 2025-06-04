@@ -2,7 +2,7 @@ name: Ingest Cloud OSV
 
 on:
   schedule:
-    - cron: '*/30 * * * *' # Every 30 minutes
+  - cron: '*/30 * * * *' # Every hour
   workflow_dispatch:
 
 permissions: read-all
@@ -19,17 +19,34 @@ jobs:
       contents: write
 
     steps:
-    - uses: actions/checkout@v4.1.7
+    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       with:
-        token: ${{ secrets.ORG_REPO_TOKEN }}
-        
-    - uses: actions/setup-go@v5.5.0
+        token: ${{ secrets.GH_TOKEN }}
+    - uses: actions/setup-go@d35c59abb061a4a6fb18e82ac0862c26744d6ab5 # v5.5.0
       with:
-        go-version: "1.21"
+        go-version-file: 'go.mod'
 
+    # gocloud has an issue where it requires an ADC file to work with GCS, even
+    # for anonymous requests. This change tricks the auth code into succeeding.
     - name: GCP Credential Workaround
       run: |
         echo '{ "type": "service_account" }' > .dummy_adc.json
+    
+    # Setup v2 credentials for accessing AWS S3 buckets. Each set of credentials
+    # is given its own profile which is then set in the config using the
+    # "profile=PROFILENAME" query parameter in the source's bucket URL.
+    - name: AWS Credentials
+      run: |
+        mkdir "$HOME/.aws"
+        envsubst >"$HOME/.aws/credentials" <<EOF
+        [reversinglabs]
+        aws_access_key_id = $RL_AWS_ACCESS_KEY_ID
+        aws_secret_access_key = $RL_AWS_SECRET_ACCESS_KEY
+        EOF
+        echo '[profile reversinglabs]' > "$HOME/.aws/config"
+      env:
+        RL_AWS_ACCESS_KEY_ID: ${{ secrets.REVERSINGLABS_AWS_KEY_ID }}
+        RL_AWS_SECRET_ACCESS_KEY: ${{ secrets.REVERSINGLABS_AWS_KEY_SECRET }}
 
     - name: Ingest OSV
       run: |
@@ -42,9 +59,7 @@ jobs:
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add osv config/start-keys.yaml
-
     - name: Commit report changes
       run: git diff --cached --quiet || git commit -m 'Ingest OSV - Cloud Storage'
-
     - name: Push commit
       run: git push

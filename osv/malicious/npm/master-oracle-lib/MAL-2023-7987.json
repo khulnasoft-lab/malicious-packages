@@ -7,7 +7,7 @@
     "GHSA-pw8f-p87w-gxvw"
   ],
   "summary": "Malicious code in master-oracle-lib (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (1b5d683c33e479ccc6ca6bb739fae7fc1a6d64781f08d95866becdfdd08e26fb)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (54f28cfbf99658623937633879b611c72cd40230a179b53e4c4ac0b1460d1892)\nThe OpenSSF Package Analysis project identified 'master-oracle-lib' @ 20.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (1b5d683c33e479ccc6ca6bb739fae7fc1a6d64781f08d95866becdfdd08e26fb)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (54f28cfbf99658623937633879b611c72cd40230a179b53e4c4ac0b1460d1892)\nThe OpenSSF Package Analysis project identified 'master-oracle-lib' @ 20.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -49,7 +49,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -57,7 +57,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "54f28cfbf99658623937633879b611c72cd40230a179b53e4c4ac0b1460d1892",
         "import_time": "2023-09-02T16:05:44.543489183Z",
         "modified_time": "2023-09-02T15:39:19Z",

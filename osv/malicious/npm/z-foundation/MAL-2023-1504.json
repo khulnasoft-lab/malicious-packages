@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-1504",
   "summary": "Malicious code in z-foundation (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (d1df7db96fadf79c92ca77b7fd6e95a23c25f7d4c1f7507b4316730a4086d1dc)\nThe OpenSSF Package Analysis project identified 'z-foundation' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (d1df7db96fadf79c92ca77b7fd6e95a23c25f7d4c1f7507b4316730a4086d1dc)\nThe OpenSSF Package Analysis project identified 'z-foundation' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2023-08-20T14:34:10.731856348Z",
         "modified_time": "2023-08-20T14:10:42.526526023Z",
         "sha256": "d1df7db96fadf79c92ca77b7fd6e95a23c25f7d4c1f7507b4316730a4086d1dc",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "1.0.0"
         ]

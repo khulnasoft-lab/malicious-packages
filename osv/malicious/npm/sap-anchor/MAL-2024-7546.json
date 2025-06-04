@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2024-7546",
   "summary": "Malicious code in sap-anchor (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (03412160219bd651a9db70d48651f41e2e0af75a37170e0d71b22f70cb8b885e)\nThe OpenSSF Package Analysis project identified 'sap-anchor' @ 0.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (03412160219bd651a9db70d48651f41e2e0af75a37170e0d71b22f70cb8b885e)\nThe OpenSSF Package Analysis project identified 'sap-anchor' @ 0.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2024-07-11T02:19:16.387634081Z",
         "modified_time": "2024-07-11T02:17:15Z",
         "sha256": "03412160219bd651a9db70d48651f41e2e0af75a37170e0d71b22f70cb8b885e",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "0.0.0"
         ]

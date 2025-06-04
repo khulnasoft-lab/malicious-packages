@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-8765",
   "summary": "Malicious code in multicolored (PyPI)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (89f0e1660e4708cd5f0568f9c85ea2f35f883c21cb0f6a7d37e4d9d25a1dc8c8)\nThe OpenSSF Package Analysis project identified 'multicolored' @ 1.0.0 (pypi) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (89f0e1660e4708cd5f0568f9c85ea2f35f883c21cb0f6a7d37e4d9d25a1dc8c8)\nThe OpenSSF Package Analysis project identified 'multicolored' @ 1.0.0 (pypi) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2023-12-29T10:34:33.17623677Z",
         "modified_time": "2023-12-25T23:25:45Z",
         "sha256": "89f0e1660e4708cd5f0568f9c85ea2f35f883c21cb0f6a7d37e4d9d25a1dc8c8",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "1.0.0"
         ]

@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-8618",
   "summary": "Malicious code in place-zip-autocomplete-input (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (80a9eda07bbcecc8a168b9ef0252e04b4b97abe222e5d8445113a1ae34c71a6d)\nThe OpenSSF Package Analysis project identified 'place-zip-autocomplete-input' @ 3.7.14 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (80a9eda07bbcecc8a168b9ef0252e04b4b97abe222e5d8445113a1ae34c71a6d)\nThe OpenSSF Package Analysis project identified 'place-zip-autocomplete-input' @ 3.7.14 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2023-11-25T19:33:26.327455515Z",
         "modified_time": "2023-11-25T19:09:26Z",
         "sha256": "80a9eda07bbcecc8a168b9ef0252e04b4b97abe222e5d8445113a1ae34c71a6d",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "3.7.14"
         ]

@@ -7,7 +7,7 @@
     "GHSA-24xg-6669-3wp8"
   ],
   "summary": "Malicious code in braintree-utilities (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (6ba47f404b8012a3baa206a37fd59066ff35442cb95da8ba7bd1b44a6b9a7968)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (263738a1ac7201f4e324f5acc254d27d0494e8652aa4230c127c898905c8e03d)\nThe OpenSSF Package Analysis project identified 'braintree-utilities' @ 10.4.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (6ba47f404b8012a3baa206a37fd59066ff35442cb95da8ba7bd1b44a6b9a7968)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (263738a1ac7201f4e324f5acc254d27d0494e8652aa4230c127c898905c8e03d)\nThe OpenSSF Package Analysis project identified 'braintree-utilities' @ 10.4.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -50,7 +50,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -58,7 +58,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "263738a1ac7201f4e324f5acc254d27d0494e8652aa4230c127c898905c8e03d",
         "import_time": "2024-06-17T00:18:22.657147386Z",
         "modified_time": "2024-06-09T00:03:58Z",
@@ -67,7 +67,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "d3a0a5280fca831a763da60391812941082a4863fd78301d12c1d5e13b10f01f",
         "import_time": "2024-06-17T00:18:22.760751248Z",
         "modified_time": "2024-06-09T00:10:30Z",

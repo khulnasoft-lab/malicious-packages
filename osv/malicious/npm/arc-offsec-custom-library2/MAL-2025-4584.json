@@ -1,0 +1,42 @@
+{
+  "modified": "2025-05-29T13:44:00Z",
+  "published": "2025-05-29T13:44:00Z",
+  "schema_version": "1.5.0",
+  "id": "MAL-2025-4584",
+  "summary": "Malicious code in arc-offsec-custom-library2 (npm)",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (a8fa793672d2e0686853c58a6768867a936971cb91561c3a1cbcebda67c22121)\nThe OpenSSF Package Analysis project identified 'arc-offsec-custom-library2' @ 1.0.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "npm",
+        "name": "arc-offsec-custom-library2"
+      },
+      "versions": [
+        "1.0.9"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "name": "OpenSSF: Package Analysis",
+      "type": "FINDER",
+      "contact": [
+        "https://github.com/ossf/package-analysis",
+        "https://openssf.slack.com/channels/package_analysis"
+      ]
+    }
+  ],
+  "database_specific": {
+    "malicious-packages-origins": [
+      {
+        "import_time": "2025-05-29T14:06:09.131450917Z",
+        "modified_time": "2025-05-29T13:44:00Z",
+        "sha256": "a8fa793672d2e0686853c58a6768867a936971cb91561c3a1cbcebda67c22121",
+        "source": "ossf-package-analysis",
+        "versions": [
+          "1.0.9"
+        ]
+      }
+    ]
+  }
+}

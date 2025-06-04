@@ -7,7 +7,7 @@
     "GHSA-mm97-wjm9-qhch"
   ],
   "summary": "Malicious code in edgenuity (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (15e4c93cf6c84b166ccde43c18dfbd4c3095f530bca0139dc5086f17c244adf2)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (7ce03e77d24b9f055b2ca7991105d232f17c2782da4a64b4abfdbb6f5084ad7a)\nThe OpenSSF Package Analysis project identified 'edgenuity' @ 99.99.222 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (15e4c93cf6c84b166ccde43c18dfbd4c3095f530bca0139dc5086f17c244adf2)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (7ce03e77d24b9f055b2ca7991105d232f17c2782da4a64b4abfdbb6f5084ad7a)\nThe OpenSSF Package Analysis project identified 'edgenuity' @ 99.99.222 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -50,7 +50,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -75,7 +75,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "7ce03e77d24b9f055b2ca7991105d232f17c2782da4a64b4abfdbb6f5084ad7a",
         "import_time": "2024-03-15T05:04:21.012280871Z",
         "modified_time": "2024-03-14T04:26:25Z",
@@ -84,7 +84,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "a0f340a069fae3903cf96cce81f07b822da3a727ef887a1b8c2e64a9d74903a5",
         "import_time": "2024-03-15T05:04:20.918384383Z",
         "modified_time": "2024-03-14T03:31:05Z",

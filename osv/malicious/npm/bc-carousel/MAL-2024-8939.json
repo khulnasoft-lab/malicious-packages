@@ -7,7 +7,7 @@
     "GHSA-54qm-w9xh-3867"
   ],
   "summary": "Malicious code in bc-carousel (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (e3941632e7872e79a931f3a5f41f3fc042aab5864ebf162ea08ec70ebd5bc1d0)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (3305fb35af4284093dbaecb517cd8b32b42e46475f8c2249e5fc18eb2333fe91)\nThe OpenSSF Package Analysis project identified 'bc-carousel' @ 996.9.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (e3941632e7872e79a931f3a5f41f3fc042aab5864ebf162ea08ec70ebd5bc1d0)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (3305fb35af4284093dbaecb517cd8b32b42e46475f8c2249e5fc18eb2333fe91)\nThe OpenSSF Package Analysis project identified 'bc-carousel' @ 996.9.9 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -53,7 +53,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -61,7 +61,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "07c2b9c55e8c9a76ef1a1368810f29e51300ed45d71af9077d2dc04917a822e0",
         "import_time": "2024-09-22T22:35:19.347971507Z",
         "modified_time": "2024-09-20T04:13:41Z",
@@ -70,7 +70,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "3305fb35af4284093dbaecb517cd8b32b42e46475f8c2249e5fc18eb2333fe91",
         "import_time": "2024-09-22T22:35:20.903002552Z",
         "modified_time": "2024-09-21T09:42:22Z",
@@ -79,7 +79,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "5e00265c0538ad9640c316524715e17ba1f01c95ac560506e43a62a097174f19",
         "import_time": "2024-09-22T22:35:19.419710344Z",
         "modified_time": "2024-09-20T07:05:45Z",
@@ -88,7 +88,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "9505004c8492cc12e292b38fde4725c5fc6b85f88c7c3977654e1716eb035887",
         "import_time": "2024-09-22T22:35:20.391904798Z",
         "modified_time": "2024-09-21T09:33:00Z",
@@ -97,7 +97,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "c95a97603a758c93e5317e619e5d5d200c2004e605f9b7cc769e18824fff11cb",
         "import_time": "2024-09-22T22:35:19.681788338Z",
         "modified_time": "2024-09-20T07:15:51Z",

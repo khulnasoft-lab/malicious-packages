@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-8422",
   "summary": "Malicious code in bistrosk (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (275abca8527ba6a0a29bf30537bad45fb01533a199b59ca9543da88dda4f8334)\nThe OpenSSF Package Analysis project identified 'bistrosk' @ 200.0.3 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (275abca8527ba6a0a29bf30537bad45fb01533a199b59ca9543da88dda4f8334)\nThe OpenSSF Package Analysis project identified 'bistrosk' @ 200.0.3 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -22,7 +22,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     },
@@ -37,7 +37,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "275abca8527ba6a0a29bf30537bad45fb01533a199b59ca9543da88dda4f8334",
         "import_time": "2023-11-02T13:05:29.381767373Z",
         "modified_time": "2023-11-02T12:58:00Z",

@@ -1,5 +1,5 @@
 {
-  "modified": "2025-01-21T01:50:22Z",
+  "modified": "2025-01-21T00:31:58Z",
   "published": "2024-07-28T04:28:10Z",
   "schema_version": "1.5.0",
   "id": "MAL-2024-7828",
@@ -7,7 +7,7 @@
     "GHSA-67p9-8vq2-rx2h"
   ],
   "summary": "Malicious code in pkl-vscode (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (36b102f69e16083459cf07d2c10dfa74f8921dd7e8eda6686d1ded62b468de73)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (5e904d7cbcbe37a62d3d7190e7928a072a37fa19a76169ee335d993161c987fd)\nThe OpenSSF Package Analysis project identified 'pkl-vscode' @ 9.9.10 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (36b102f69e16083459cf07d2c10dfa74f8921dd7e8eda6686d1ded62b468de73)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (5e904d7cbcbe37a62d3d7190e7928a072a37fa19a76169ee335d993161c987fd)\nThe OpenSSF Package Analysis project identified 'pkl-vscode' @ 9.9.10 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -54,7 +54,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -62,7 +62,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "c51f23c178c841e46a7e60c15f1b61b309b6147bc543dc2edc13935fac000e61",
         "import_time": "2024-07-28T04:34:13.632551682Z",
         "modified_time": "2024-07-28T04:28:10Z",
@@ -71,7 +71,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "5e904d7cbcbe37a62d3d7190e7928a072a37fa19a76169ee335d993161c987fd",
         "import_time": "2024-07-28T05:05:34.812702242Z",
         "modified_time": "2024-07-28T04:44:07Z",
@@ -80,7 +80,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "2db2f2f7d41fbc8ea6c79cf2818bf4530968a00b430beaff4aac661e1c1dce82",
         "import_time": "2024-07-28T06:05:45.486998811Z",
         "modified_time": "2024-07-28T06:01:50Z",
@@ -89,7 +89,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "3240967d8e74d4240c8df34cf7cac69c20577105cd6a64d2bd577a9dbbfd612e",
         "import_time": "2024-07-29T01:31:58.39749884Z",
         "modified_time": "2024-07-29T01:20:40Z",
@@ -98,7 +98,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "0e51a479266a951abeb35a8b19f33072ee80cee6a7cbdffce8322b05756489f9",
         "import_time": "2024-07-29T02:19:50.105226597Z",
         "modified_time": "2024-07-29T01:45:16Z",
@@ -107,7 +107,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "e741290a447a2d57d4c66d416ccf45b8165bcbbd6bfbe836eecc4b7f7c245c30",
         "import_time": "2024-07-29T02:19:49.912794421Z",
         "modified_time": "2024-07-29T01:35:30Z",
@@ -118,7 +118,7 @@
       {
         "source": "ghsa-malware",
         "sha256": "36b102f69e16083459cf07d2c10dfa74f8921dd7e8eda6686d1ded62b468de73",
-        "import_time": "2025-01-21T01:49:58.303171762Z",
+        "import_time": "2025-01-21T00:31:36.124471269Z",
         "id": "GHSA-67p9-8vq2-rx2h",
         "modified_time": "2025-01-20T07:26:48Z",
         "ranges": [

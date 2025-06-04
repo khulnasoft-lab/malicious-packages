@@ -7,7 +7,7 @@
     "GHSA-xj93-c6c7-8hpg"
   ],
   "summary": "Malicious code in transaction-decoder (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (588e3ae64f6791e490455f6c01512f655440e86bb808155dc3a0ece45f77b016)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (c1ed3f3aac2263b1a97fbcef5dcca01d1cbc4b61f2a1e520cb5578130d36ba1c)\nThe OpenSSF Package Analysis project identified 'transaction-decoder' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (588e3ae64f6791e490455f6c01512f655440e86bb808155dc3a0ece45f77b016)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (c1ed3f3aac2263b1a97fbcef5dcca01d1cbc4b61f2a1e520cb5578130d36ba1c)\nThe OpenSSF Package Analysis project identified 'transaction-decoder' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -52,7 +52,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -60,7 +60,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "c1ed3f3aac2263b1a97fbcef5dcca01d1cbc4b61f2a1e520cb5578130d36ba1c",
         "import_time": "2023-11-01T16:36:36.778094001Z",
         "modified_time": "2023-11-01T16:07:48Z",
@@ -69,7 +69,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "2061a25171168f3549b8c1be9486523174e94a171cd4db927f2196baafb5ee67",
         "import_time": "2023-11-01T18:05:13.916602635Z",
         "modified_time": "2023-11-01T17:38:35Z",
@@ -78,7 +78,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "0a08b2a06b6342d3c7dafbc756ad9c2bf950c4260c06e764246ff948e51584c9",
         "import_time": "2023-11-01T18:34:33.024439909Z",
         "modified_time": "2023-11-01T18:26:57Z",
@@ -87,7 +87,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "0146bcfe1ff85799b5839b92546eeaf1270fedfc360346877586b12bf76ce553",
         "import_time": "2023-11-05T04:05:07.187728514Z",
         "modified_time": "2023-11-05T03:51:34Z",

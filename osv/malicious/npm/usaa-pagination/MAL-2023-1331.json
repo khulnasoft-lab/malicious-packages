@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-1331",
   "summary": "Malicious code in usaa-pagination (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (a0d9fe4420ea18c84929d5f69ae4aee3195444c279f3e9a7653bf5e6b992723a)\nThe OpenSSF Package Analysis project identified 'usaa-pagination' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (a0d9fe4420ea18c84929d5f69ae4aee3195444c279f3e9a7653bf5e6b992723a)\nThe OpenSSF Package Analysis project identified 'usaa-pagination' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2023-08-10T06:16:16.058109347Z",
         "modified_time": "2023-06-19T17:55:18.133419539Z",
         "sha256": "a0d9fe4420ea18c84929d5f69ae4aee3195444c279f3e9a7653bf5e6b992723a",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "1.0.0"
         ]

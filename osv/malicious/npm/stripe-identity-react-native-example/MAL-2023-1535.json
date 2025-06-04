@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-1535",
   "summary": "Malicious code in stripe-identity-react-native-example (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (cb5d2bc0139deaa57cabe88a2bee12171f6b1348c6a8ae5227efd82ec4a556af)\nThe OpenSSF Package Analysis project identified 'stripe-identity-react-native-example' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (cb5d2bc0139deaa57cabe88a2bee12171f6b1348c6a8ae5227efd82ec4a556af)\nThe OpenSSF Package Analysis project identified 'stripe-identity-react-native-example' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2023-08-22T11:34:10.42818208Z",
         "modified_time": "2023-08-22T11:16:13Z",
         "sha256": "cb5d2bc0139deaa57cabe88a2bee12171f6b1348c6a8ae5227efd82ec4a556af",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "1.0.0"
         ]

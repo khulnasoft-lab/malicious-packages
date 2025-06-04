@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-1295",
   "summary": "Malicious code in shein-bbl (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (eda3e2bdbc515dead593a808202f565c6b47090d1b73b40cda908b6786eaf4ac)\nThe OpenSSF Package Analysis project identified 'shein-bbl' @ 0.1.4-beta (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (eda3e2bdbc515dead593a808202f565c6b47090d1b73b40cda908b6786eaf4ac)\nThe OpenSSF Package Analysis project identified 'shein-bbl' @ 0.1.4-beta (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2023-08-10T06:16:39.552579651Z",
         "modified_time": "2023-07-24T04:42:43.38198377Z",
         "sha256": "eda3e2bdbc515dead593a808202f565c6b47090d1b73b40cda908b6786eaf4ac",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "0.1.4-beta"
         ]

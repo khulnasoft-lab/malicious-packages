@@ -7,7 +7,7 @@
     "GHSA-j46x-r3vq-cqcv"
   ],
   "summary": "Malicious code in profectus-components (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (062a69a64c4e77b2e5cebc7f5d21c239c51139c4d420c9fbf2e616f23ec838a3)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (8601a87a24e4a6e64efe6520a305278f8d6ecda849755138629352244c51d38e)\nThe OpenSSF Package Analysis project identified 'profectus-components' @ 10.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (062a69a64c4e77b2e5cebc7f5d21c239c51139c4d420c9fbf2e616f23ec838a3)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (8601a87a24e4a6e64efe6520a305278f8d6ecda849755138629352244c51d38e)\nThe OpenSSF Package Analysis project identified 'profectus-components' @ 10.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -51,7 +51,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -59,7 +59,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "8601a87a24e4a6e64efe6520a305278f8d6ecda849755138629352244c51d38e",
         "import_time": "2024-03-09T07:04:34.242537331Z",
         "modified_time": "2024-03-09T06:57:37Z",
@@ -68,7 +68,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "d7352cc8447d887dfab6ac75b815431b7dc0f6e80da357d262838a87b49552c5",
         "import_time": "2024-03-09T07:04:34.151745389Z",
         "modified_time": "2024-03-09T06:39:12Z",
@@ -77,7 +77,7 @@
         ]
       },
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "5b00b5cf3386dc8d0deffb597fd9d66879638ea4570f9a98d66015da89b8ef34",
         "import_time": "2024-03-11T05:05:02.036239305Z",
         "modified_time": "2024-03-11T04:45:44Z",

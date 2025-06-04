@@ -7,7 +7,7 @@
     "SNYK-JS-COMMENTRATING-3336076"
   ],
   "summary": "Malicious code in commentrating (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (87db588ebd8e7a42cbbbbf7fc21caa36fc553172a0ff4c4e9a58ce9354d62e7f)\nThe OpenSSF Package Analysis project identified 'commentrating' @ 99.9.1 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (87db588ebd8e7a42cbbbbf7fc21caa36fc553172a0ff4c4e9a58ce9354d62e7f)\nThe OpenSSF Package Analysis project identified 'commentrating' @ 99.9.1 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -31,7 +31,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     },
@@ -46,7 +46,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "87db588ebd8e7a42cbbbbf7fc21caa36fc553172a0ff4c4e9a58ce9354d62e7f",
         "import_time": "2023-08-10T06:15:19.3862734Z",
         "modified_time": "2023-04-29T10:29:52.557859646Z",

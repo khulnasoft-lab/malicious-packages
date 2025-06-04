@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-1325",
   "summary": "Malicious code in twodc-visualizer (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (a8320b928ec8230835a771ef3d18a7751bbf07d1ea39585419f48e7d5c41a9cd)\nThe OpenSSF Package Analysis project identified 'twodc-visualizer' @ 1.6.3 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (a8320b928ec8230835a771ef3d18a7751bbf07d1ea39585419f48e7d5c41a9cd)\nThe OpenSSF Package Analysis project identified 'twodc-visualizer' @ 1.6.3 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2023-08-10T06:16:52.988609287Z",
         "modified_time": "2023-08-02T19:09:32.526405594Z",
         "sha256": "a8320b928ec8230835a771ef3d18a7751bbf07d1ea39585419f48e7d5c41a9cd",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "1.6.3"
         ]

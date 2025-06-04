@@ -7,7 +7,7 @@
     "GHSA-xc86-9gxv-2h2x"
   ],
   "summary": "Malicious code in @monokera/react-components-storybook (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (bdf75e7663fbdb265190a8a2b33f0e6feb6e3d3cea6da8c936226cbe4c95f95c)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: khulnasoft-package-analysis (1e1cb8eec69751930d72ef278244adebda72029c05691d19c2970c1432ac9c1e)\nThe OpenSSF Package Analysis project identified '@monokera/react-components-storybook' @ 0.0.69 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ghsa-malware (bdf75e7663fbdb265190a8a2b33f0e6feb6e3d3cea6da8c936226cbe4c95f95c)\nAny computer that has this package installed or running should be considered fully compromised. All secrets and keys stored on that computer should be rotated immediately from a different computer. The package should be removed, but as full control of the computer may have been given to an outside entity, there is no guarantee that removing the package will remove all malicious software resulting from installing it.\n\n## Source: ossf-package-analysis (1e1cb8eec69751930d72ef278244adebda72029c05691d19c2970c1432ac9c1e)\nThe OpenSSF Package Analysis project identified '@monokera/react-components-storybook' @ 0.0.69 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -49,7 +49,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -57,7 +57,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "1e1cb8eec69751930d72ef278244adebda72029c05691d19c2970c1432ac9c1e",
         "import_time": "2024-01-05T20:34:03.831841024Z",
         "modified_time": "2024-01-05T20:30:40Z",

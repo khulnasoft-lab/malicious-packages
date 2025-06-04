@@ -7,7 +7,7 @@
     "SNYK-JS-FALSEPOSITIVECHECK6969-3336122"
   ],
   "summary": "Malicious code in falsepositivecheck6969 (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (cef392714b654bd14df8ba24c491e8844b54e08fee392bff62632f7f3e5d6fa1)\nThe OpenSSF Package Analysis project identified 'falsepositivecheck6969' @ 9999.9.9 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (cef392714b654bd14df8ba24c491e8844b54e08fee392bff62632f7f3e5d6fa1)\nThe OpenSSF Package Analysis project identified 'falsepositivecheck6969' @ 9999.9.9 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -30,7 +30,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     },
@@ -45,7 +45,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "cef392714b654bd14df8ba24c491e8844b54e08fee392bff62632f7f3e5d6fa1",
         "import_time": "2023-08-10T06:15:15.283243784Z",
         "modified_time": "2023-04-29T02:29:56.293078076Z",

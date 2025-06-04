@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-1189",
   "summary": "Malicious code in gp-screens (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (cd47b7e0b82292eb8e0cf4de06de3b9027df37daa726f014751598535afdacaf)\nThe OpenSSF Package Analysis project identified 'gp-screens' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (cd47b7e0b82292eb8e0cf4de06de3b9027df37daa726f014751598535afdacaf)\nThe OpenSSF Package Analysis project identified 'gp-screens' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2023-08-10T06:16:47.847583407Z",
         "modified_time": "2023-07-27T15:50:50.889524957Z",
         "sha256": "cd47b7e0b82292eb8e0cf4de06de3b9027df37daa726f014751598535afdacaf",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "1.0.0"
         ]

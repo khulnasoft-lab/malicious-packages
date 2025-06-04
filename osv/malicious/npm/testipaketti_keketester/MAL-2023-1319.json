@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-1319",
   "summary": "Malicious code in testipaketti_keketester (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (0d80c6896d6f1131eb5e9b88ce8f72fdfd575ff8f7666be6c09eccc7e1b13798)\nThe OpenSSF Package Analysis project identified 'testipaketti_keketester' @ 1.0.3 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (0d80c6896d6f1131eb5e9b88ce8f72fdfd575ff8f7666be6c09eccc7e1b13798)\nThe OpenSSF Package Analysis project identified 'testipaketti_keketester' @ 1.0.3 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2023-08-10T06:16:11.201770103Z",
         "modified_time": "2023-06-07T08:17:17.370456468Z",
         "sha256": "0d80c6896d6f1131eb5e9b88ce8f72fdfd575ff8f7666be6c09eccc7e1b13798",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "1.0.3"
         ]

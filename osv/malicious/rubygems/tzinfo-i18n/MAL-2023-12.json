@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-12",
   "summary": "Malicious code in tzinfo-i18n (RubyGems)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (80d76ff3efd3a37e90d86c31f34ad01633504eb17709869928335523c66a2a55)\nThe OpenSSF Package Analysis project identified 'tzinfo-i18n' @ 0.1.0 (rubygems) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (80d76ff3efd3a37e90d86c31f34ad01633504eb17709869928335523c66a2a55)\nThe OpenSSF Package Analysis project identified 'tzinfo-i18n' @ 0.1.0 (rubygems) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -31,7 +31,7 @@
       {
         "import_time": "2023-06-30T03:52:43.076676861Z",
         "sha256": "80d76ff3efd3a37e90d86c31f34ad01633504eb17709869928335523c66a2a55",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "0.1.0"
         ]

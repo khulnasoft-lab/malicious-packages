@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2024-7694",
   "summary": "Malicious code in dependencyconfusion7 (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (0f7917b183eaefa5d99ccf1984a0d7b5fec312946bc51784c3c850ef10676c89)\nThe OpenSSF Package Analysis project identified 'dependencyconfusion7' @ 2.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (0f7917b183eaefa5d99ccf1984a0d7b5fec312946bc51784c3c850ef10676c89)\nThe OpenSSF Package Analysis project identified 'dependencyconfusion7' @ 2.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2024-07-11T11:33:53.608028322Z",
         "modified_time": "2024-07-11T11:20:52Z",
         "sha256": "0f7917b183eaefa5d99ccf1984a0d7b5fec312946bc51784c3c850ef10676c89",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "2.0.0"
         ]

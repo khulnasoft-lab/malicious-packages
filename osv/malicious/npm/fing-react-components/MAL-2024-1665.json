@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2024-1665",
   "summary": "Malicious code in fing-react-components (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (4e606602dc2c4b6d0550d90156a68cf31799054412bac90062d266e5bcad3d76)\nThe OpenSSF Package Analysis project identified 'fing-react-components' @ 1.15.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (4e606602dc2c4b6d0550d90156a68cf31799054412bac90062d266e5bcad3d76)\nThe OpenSSF Package Analysis project identified 'fing-react-components' @ 1.15.0 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n",
   "affected": [
     {
       "package": {
@@ -21,7 +21,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -32,7 +32,7 @@
         "import_time": "2024-06-25T08:06:54.579895439Z",
         "modified_time": "2024-06-25T07:40:45Z",
         "sha256": "4e606602dc2c4b6d0550d90156a68cf31799054412bac90062d266e5bcad3d76",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "1.15.0"
         ]

@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2024-947",
   "summary": "Malicious code in moblig-npm (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (8a9601f46c6924bb210289c184590485d4dabf6696dc6c0da5720465002bcf06)\nThe OpenSSF Package Analysis project identified 'moblig-npm' @ 1.0.4 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (8a9601f46c6924bb210289c184590485d4dabf6696dc6c0da5720465002bcf06)\nThe OpenSSF Package Analysis project identified 'moblig-npm' @ 1.0.4 (npm) as malicious.\n\nIt is considered malicious because:\n\n- The package communicates with a domain associated with malicious activity.\n\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -22,7 +22,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     }
@@ -33,7 +33,7 @@
         "import_time": "2024-01-30T21:05:00.583878886Z",
         "modified_time": "2024-01-30T20:46:12Z",
         "sha256": "8a9601f46c6924bb210289c184590485d4dabf6696dc6c0da5720465002bcf06",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "1.0.4"
         ]
@@ -42,7 +42,7 @@
         "import_time": "2024-01-30T21:05:00.699644999Z",
         "modified_time": "2024-01-30T20:50:56Z",
         "sha256": "f2f443555ffeee0315391e7fb8c6bb6e3d42349b7dc40ed24886335612823b03",
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "versions": [
           "1.0.5"
         ]

@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2023-1216",
   "summary": "Malicious code in itfd (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: khulnasoft-package-analysis (b402206ef266d63280b9361618b5ece377520d29080572d05c4a7dd0010f1e54)\nThe OpenSSF Package Analysis project identified 'itfd' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n- The package executes one or more commands associated with malicious behavior.\n",
+  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n\n## Source: ossf-package-analysis (b402206ef266d63280b9361618b5ece377520d29080572d05c4a7dd0010f1e54)\nThe OpenSSF Package Analysis project identified 'itfd' @ 1.0.0 (npm) as malicious.\n\nIt is considered malicious because:\n- The package communicates with a domain associated with malicious activity.\n- The package executes one or more commands associated with malicious behavior.\n",
   "affected": [
     {
       "package": {
@@ -24,7 +24,7 @@
       "name": "OpenSSF: Package Analysis",
       "type": "FINDER",
       "contact": [
-        "https://github.com/khulnasoft-lab/package-analysis",
+        "https://github.com/ossf/package-analysis",
         "https://openssf.slack.com/channels/package_analysis"
       ]
     },
@@ -39,7 +39,7 @@
   "database_specific": {
     "malicious-packages-origins": [
       {
-        "source": "khulnasoft-package-analysis",
+        "source": "ossf-package-analysis",
         "sha256": "b402206ef266d63280b9361618b5ece377520d29080572d05c4a7dd0010f1e54",
         "import_time": "2023-08-10T06:15:56.279168867Z",
         "modified_time": "2023-05-14T23:55:03.832680612Z",
