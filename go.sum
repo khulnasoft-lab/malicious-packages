@@ -139,6 +139,7 @@ github.com/google/martian/v3 v3.3.3 h1:DIhPTQrbPkgs2yJYdXU/eNACCG5DVQjySNRNlflZ9
 github.com/google/martian/v3 v3.3.3/go.mod h1:iEPrYcgCF7jA9OtScMFQyAlZZ4YXTKEtJ1E6RWzmBA0=
 github.com/google/osv-scanner v1.9.2 h1:N5Arl9SA75afbjmX8mKURgOIaKyuK3NUjCaxDlj1KHI=
 github.com/google/osv-scanner v1.9.2/go.mod h1:ZTL8Dp9z/7Jr9kkQSOGqo8z6Csqt83qMIr58aZVx+pM=
+github.com/google/osv-scanner/v2 v2.0.2/go.mod h1:leFcHxjVBEbZYiKmii3/p89Nl5IEOqNRyzhOXI6meH4=
 github.com/google/renameio v1.0.1 h1:Lh/jXZmvZxb0BBeSY5VKEfidcbcbenKjZFzM/q0fSeU=
 github.com/google/renameio v1.0.1/go.mod h1:t/HQoYBZSsWSNK35C6CO/TpPLDVWvxOHboWUAweKUpk=
 github.com/google/s2a-go v0.1.9 h1:LGD7gtMgezd8a/Xak7mEWL0PjoTQFvpRudN895yqKW0=
