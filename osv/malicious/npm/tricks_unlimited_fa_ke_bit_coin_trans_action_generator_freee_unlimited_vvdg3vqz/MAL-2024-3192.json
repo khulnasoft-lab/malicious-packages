@@ -4,7 +4,7 @@
   "schema_version": "1.5.0",
   "id": "MAL-2024-3192",
   "summary": "Malicious code in tricks_unlimited_fa_ke_bit_coin_trans_action_generator_freee_unlimited_vvdg3vqz (npm)",
-  "details": "\n---\n_-= Per source details. Do not edit below this line.=-_\n",
+  "details": "This package was flagged as malicious by ReversingLabs. It contains obfuscated code that attempts to exfiltrate sensitive data. Users should avoid installing or using this package.\n---\n_-= Per source details. Do not edit below this line.=-_",
   "affected": [
     {
       "package": {
